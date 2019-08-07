@@ -1,0 +1,67 @@
+
+.build-display-synergy{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background-color:rgb(0, 0, 0);
+  margin-right:30px;
+  margin-bottom:10px;
+  padding: 0px .5em;
+}
+
+.build-display-synergy>div{
+  display:inline-flex;
+}
+
+
+.build-trait-effect{
+  flex-direction:column;
+}
+
+.build-trait-effect>.trait-progression>.opaque{
+  opacity:0.5;
+}
+
+.build-trait-count{
+  font-size:125%;
+  margin:.4em .2em;
+  padding:.2em;
+  background-color: rgb(26, 25, 25);
+}
+
+.build-traits-icon{
+  width:30px;
+}
+
+.bronze-trait{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image:url('../../img/dbronze.png');
+}
+
+.silver-trait{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image:url('../../img/dsilver.png');
+}
+
+.gold-trait{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image:url('../../img/dgold.png');
+}
+
+.no-trait{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image:url('../../img/no.png');
+}
+
+.build-traits-icon-box{
+  padding:10px;
+  align-items:center;
+}

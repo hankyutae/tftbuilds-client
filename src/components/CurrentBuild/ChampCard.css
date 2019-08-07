@@ -1,0 +1,129 @@
+.gold {
+  color: orange;
+}
+.silver{
+  color:silver;
+}
+.bronze{
+  color:rgb(112, 26, 26);
+}
+
+
+.build-display-champion-card{
+  position:relative;
+  background-color: azure;
+  padding:4px 2px;
+  margin:10px 0px;
+}
+.build-display-champion-card>.edit-notice{
+  position:absolute;/* 
+  color:rgb(238, 208, 172); */
+  color:red;
+  top:0;
+  left:2px;
+
+}
+
+.champion-simple-flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.build-champ-icon{
+  width:50px;
+}
+.build-display-champion-card p{
+  margin:0;
+  padding:0;
+}
+
+.build-display-champion-card .b1{
+  flex: 1 1 25%;
+}
+.build-display-champion-card .b2{
+  flex: 1 1 25%;
+}
+.build-display-champion-card .b3{
+  flex: 1 1 25%;
+}
+.build-display-champion-card .b4{
+  flex: 1 1 140px;
+}
+
+
+.item-img-div{
+  display:inline-block;
+}
+
+.build-item-icon{
+  width:35px;
+  margin-right:5px;
+}
+
+
+.remove-champ-button{
+  color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.build-display-card-expansion{
+  position:relative;
+  margin:5px;
+  padding:5px;
+  padding-top:17px;
+  background-color:rgb(225, 243, 202);
+  color:black;
+  text-align:left;
+}
+.build-display-card-expansion>section{
+  
+  margin:5px;
+  padding:5px;
+  border:1px solid grey;
+}
+.build-display-stats{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+.build-stats-table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  flex-grow:2;
+}
+.build-stats-table td{
+  border: 1px solid black;
+  padding:2px;
+}
+
+
+.build-display-card-expansion>.edit-notice{
+  position:absolute;
+  color:black(238, 208, 172);
+  top:0px;
+  right:2px;
+}
+
+
+.build-display-expanded-show-items{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

@@ -1,0 +1,35 @@
+.mana{
+  color:blue;
+}
+.initalMana{
+  color:blue;
+}
+
+.hp{
+  color:red;
+}
+
+.damage{
+  color:magenta;
+}
+
+.attackSpeed{
+  color:rgb(190, 125, 3);
+}
+.range{
+  color:rgb(196, 106, 4);
+}
+
+.critMultiplier{
+  color:rgb(179, 57, 0);
+}
+
+.critChance{
+  color:rgb(179, 57, 0);
+}
+.armor{
+  color:black;
+}
+.magicResist{
+  color:black;
+}

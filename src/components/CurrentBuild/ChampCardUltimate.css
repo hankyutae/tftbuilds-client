@@ -1,0 +1,10 @@
+
+.build-stats-ultimate{
+  padding:10px;
+  flex-basis:50%;
+  flex-grow:1;
+}
+
+.ult-prop-list{
+  color:magenta;
+}

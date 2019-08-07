@@ -1,0 +1,118 @@
+.champ-short-display{
+  position:relative;
+  height:110px;
+  min-width:200px;
+  margin: 15px 10px;
+  background-color:rgba(6, 15, 102, 0.74);
+  color: white;
+  text-align: left;
+  font-size:100%;
+}
+
+/* @media only screen and (max-width:440px){
+  .champ-short-display{
+    width:100%;
+  }
+} */
+
+.champ-long-display{
+  position:relative;
+  min-height:500px;
+  margin: 15px 10px;
+  background-color:rgba(6, 15, 102, 0.74);
+  color: white;
+}
+
+.champ-icon-box{
+  font-size:100%;
+  padding:10px;
+  padding-bottom:47px;
+}
+
+.champ-icon-box ul{
+  display:inline-block;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.champ-icon{
+  float:left;
+  width:50px;
+}
+.champ-name-box{
+  position:absolute; 
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgb(117, 68, 8);
+  font-size:100%;
+  padding:7px 15px;
+}
+.champ-name-box-name{
+  float:left;
+}
+.champ-name-box-cost{
+  float:right;
+}
+
+.coins-white{
+  display:inline-block;
+  width:10px;
+  height:10px;/* 
+  background-size: cover; */
+  background-repeat: no-repeat;/* 
+  background-position: 50% 50%; */
+  background-image:url('../../img/coins_gold.png');
+}
+
+.for-collapsing-margin{
+  height:15px;
+  width:100%;
+}
+
+.add-to-current-build{
+  position:absolute;
+  /* top:60px;
+  right:15px; */
+  bottom:4px;
+  right:45px;
+  font-size:100%;
+  color:red;
+  z-index:10;
+}
+
+/* .expand-collapse{
+  position:absolute;
+  top:10px;
+  right:10px;
+  font-size:100%;
+} */
+
+.champ-icon-in-long{
+  width:114px;
+  margin:auto;
+}
+
+.trait-descriptions-box{
+  text-align:left;
+}
+.padding-top{
+  padding-top:1em;
+}
+.trait-description{
+  font-size:95%;
+  margin:10px 5%;
+  padding:10px;
+  border:1px solid burlywood;
+}
+.champ-stats{
+  font-size:95%;
+  margin:10px 5%;
+  padding:10px;
+  border:1px solid burlywood;
+  text-align:left;
+}
+.champ-stats ul{
+  list-style-type:none;
+  padding-left:10px;
+}

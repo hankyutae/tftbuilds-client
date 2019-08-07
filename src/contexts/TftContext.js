@@ -1,0 +1,148 @@
+import React from 'react';
+
+export const TftContext = React.createContext({
+  error: null,
+  arrayOfPrices:[1,2,3,4,5],
+  arrayOfStars:['bronze','silver','gold'],
+  numOfBasicItems:8,
+  setError: () => { },
+  clearError: () => { },
+  setChampions: () => { },
+  setItems: () => { },
+  setTraits: () => { },
+  newCurrentBuild: () => { },
+  addChampToCurrentBuild: () => { },
+  removeChampFromCurrentBuild: ()=>{},
+  changeStarsOnChamp:() =>{},
+  addItemToChamp:() =>{},
+  removeItemFromChamp:() =>{},
+  switchItemOnChamp:() =>{},
+  toggleExpandedOnCurrentBuild:()=>{},
+  champions: {},
+  items: {},
+  traits: {},
+  currentBuild: []
+});
+
+export default TftContext;
+
+export class TftProvider extends React.Component {
+  state = {
+    arrayOfPrices:[1,2,3,4,5],
+    arrayOfStars:['bronze','silver','gold'],
+    numOfBasicItems:8,
+    champions: {},
+    items: {},
+    traits: {},
+    currentBuild:[],
+
+    toggleExpandedOnCurrentBuild:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], isExpanded:!(newBuild[index].isExpanded)};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+
+    changeStarsOnChamp:(index, stars)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], stars:stars};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+
+    addItemToChamp:(index,item) =>{
+      let newBuild=[...this.state.currentBuild];
+      let items=[...(newBuild[index].items)];
+      items.push(item);
+      newBuild[index]={...newBuild[index], items:items};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+
+    removeItemFromChamp:(index,indexOfItem) =>{
+      let newBuild=[...this.state.currentBuild];
+      let items=[...(newBuild[index].items)];
+      items.splice(indexOfItem,1);
+      newBuild[index]={...newBuild[index], items:items};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+
+    switchItemOnChamp:(index,item)=>{
+      let newBuild=[...this.state.currentBuild];
+      let items=[...(newBuild[index].items)];
+      items.pop();
+      items.push(item);
+      newBuild[index]={...newBuild[index], items:items};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+
+    removeChampFromCurrentBuild:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild.splice(index,1);
+      this.setState({
+        currentBuild: newBuild
+      })
+
+    },
+
+    addChampToCurrentBuild:(champ)=>{
+      /* champ.stars=1;
+      champ.items=[]; */
+      this.setState({
+        currentBuild: [...this.state.currentBuild,champ]
+      })
+    },
+
+    newCurrentBuild: () => {
+      this.setState({ currentBuild: [] })
+    },
+
+    setChampions: champions => {
+      this.setState({ champions })
+    },
+
+    setItems: items => {
+      this.setState({ items })
+    },
+
+    setTraits: traits => {
+      this.setState({ traits })
+    },
+
+    setError: error => {
+      console.error(error)
+      this.setState({ error })
+    },
+
+    clearError: () => {
+      this.setState({ error: null })
+    },
+
+  };
+
+  render() {
+    /* const value = {
+      error: this.state.error,
+      setError: this.setError,
+      clearError: this.clearError,
+      setTraits: this.setTraits,
+      setItems: this.setItems,
+      setChampions: this.setChampions,
+      items: this.items,
+      traits: this.traits,
+      champions: this.champions
+    } */
+    return (
+      <TftContext.Provider value={this.state}>
+        {this.props.children}
+      </TftContext.Provider>
+    )
+  }
+}

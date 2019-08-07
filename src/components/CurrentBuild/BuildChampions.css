@@ -1,0 +1,14 @@
+.build-display-champions{
+  background-color:antiquewhite;
+  padding:1px;
+  padding-bottom:0.5em;
+}
+
+.build-display-champion-cards-box{
+  position:relative;
+  min-height:180px;
+  margin: 15px 10px;
+  background-color:antiquewhite;
+  color: brown;
+  overflow-x:auto;
+}
