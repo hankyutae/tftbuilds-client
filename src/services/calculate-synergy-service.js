@@ -71,19 +71,19 @@ function countSynergyFromAnItem(accTraitsFromItems, itemNum) {
 
 
 const CalcService = {
-  calcSyn: (allTraits, currentBuild) => {
+  calcSyn: (allTraits, allChamps, currentBuild) => {
     const checkedChamps = [];
     const countTraits = {};
-    currentBuild.forEach(champ => {
+    currentBuild.forEach(champInfo => {
       //What I've seen from various bugs is that a single chess 
       //piece can only give at most one of every trait.
       let accTraits = [];
-      champ.items.forEach(item => {
+      champInfo.items.forEach(item => {
         countSynergyFromAnItem(accTraits, item);
-        
       })
 
 
+      let champ=allChamps[champInfo.id];
       //Multiple of same champ doesn't count towards synergy
       if (!checkedChamps.includes(champ.name)) {
         champ.traits.forEach(trait => {

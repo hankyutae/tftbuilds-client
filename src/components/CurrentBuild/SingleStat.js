@@ -13,7 +13,7 @@ class SingleStat extends React.Component {
     if(statType==='ap'){
       return;
     }
-    let baseStat=this.props.champ["stats"][statType];
+    let baseStat=this.props.champInfo["stats"][statType];
     if(statType==="hp" || statType==="damage"){
       baseStat*=this.props.statMod["damageHealthScale"][stars-1];
     }
@@ -53,17 +53,17 @@ class SingleStat extends React.Component {
     //initialMana stuff we can delete once we find out how to get it
     //Remmeber to also handle ROBOT in calculate-final-stats
     if(statType==="initalMana"){
-      if(this.props.champ.traits.includes("Robot")){
+      if(this.props.champInfo.traits.includes("Robot")){
         return (
         <tr className={statType}>
-          <td>{this.getDisplayStatType(statType)}</td>
-          <td>{this.props.champ["stats"]["mana"]}</td> 
+          <td className='table-stat-type'>{this.getDisplayStatType(statType)}</td>
+          <td>{this.props.champInfo["stats"]["mana"]}</td> 
         </tr>
         );
       }
       return (
         <tr className={statType}>
-          <td>{this.getDisplayStatType(statType)}</td>
+          <td className='table-stat-type'>{this.getDisplayStatType(statType)}</td>
           <td>{`Unknown + ${statModifiers.add}`}</td> 
         </tr>
         );
@@ -86,7 +86,7 @@ class SingleStat extends React.Component {
     return (
       
       <tr className={statType} onClick={this.handleExpand}>
-        <td>{this.getDisplayStatType(statType)}</td>
+        <td className='table-stat-type'>{this.getDisplayStatType(statType)}</td>
         {this.state.isExpanded? 
           <td>
             { (didChangeAdd||didChangeMult) &&

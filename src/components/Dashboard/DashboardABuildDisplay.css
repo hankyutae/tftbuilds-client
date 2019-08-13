@@ -1,0 +1,33 @@
+.build-display-in-dashboard{
+  position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:top;
+  background-color:whitesmoke;
+}
+.build-display-in-dashboard-box{
+  position:relative;
+  background-color:whitesmoke;
+  margin:10px 0px;
+}
+.load-and-share{
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:left;
+}
+.dash-delete-build{
+  position:absolute;
+  top:0;
+  right:0;
+}
+.build-share-link{ 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+}

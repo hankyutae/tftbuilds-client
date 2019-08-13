@@ -21,17 +21,17 @@ class BuildSynergies extends React.Component {
           Synergies
         </h3>
         {
-          Object.keys(this.props.syn).filter(trait=>this.props.syn[trait].effectNum!==-1).map(trait=>{
+          Object.keys(this.props.syn).filter(trait=>this.props.syn[trait].effectNum!==-1).map((trait,index)=>{
             return (
-              <ASynergy key={trait} trait={this.props.syn[trait]}/>
+              <ASynergy key={index} trait={this.props.syn[trait]}/>
             )
           })
         }
         {
           this.state.isExpanded &&
-          Object.keys(this.props.syn).filter(trait=>this.props.syn[trait].effectNum===-1).map(trait=>{
+          Object.keys(this.props.syn).filter(trait=>this.props.syn[trait].effectNum===-1).map((trait,index)=>{
             return (
-              <ASynergy key={trait} trait={this.props.syn[trait]}/>
+              <ASynergy key={index} trait={this.props.syn[trait]}/>
             )
           })
         }

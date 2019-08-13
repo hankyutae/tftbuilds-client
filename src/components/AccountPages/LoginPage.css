@@ -1,0 +1,63 @@
+.login-box {
+  height: 500px;
+  width: 300px;
+  background: rgba(128, 128, 128, 0.24);
+
+  position: relative;
+  top:18px;
+  
+  /* margin-top: -250px; */
+}
+
+@media screen and (min-width:300px){
+  .login-box{
+    left: calc(50% - 150px);
+  }
+}
+
+@media screen and (min-height:538px){
+  .login-box{
+    top: calc(50vh - 250px);
+  }
+}
+
+.login-box{
+padding:12px 10px;
+}
+
+.login-box .fieldset-style{
+padding:0;
+margin:0;
+text-align:left;
+border:0;
+} 
+
+.login-box .fieldset-style > legend{
+margin-bottom: 2%;
+}
+
+.login-box input{
+width:100%;
+}
+.login-box .login-sign-in{
+width:100%;
+}
+
+.login-box .login-helper{
+text-align:left;
+}
+.login-box .forgot-login{
+float:left;
+}
+.login-box .login-signup-link{
+float:right;
+}
+.login-box h1.login-box-logo{
+padding:0;
+margin:0;/* 
+position:absolute;
+top: 20px;
+left:67px; */
+margin-bottom:25px;
+}
+.red{color:red;}

@@ -1,0 +1,72 @@
+.champs-grid{
+  overflow-x:auto;
+  background-color:rgb(34, 33, 33);
+  padding:10px 0px;
+}
+.champs-grid .grid-champ-icon{
+  width:30px;
+  height:30px;
+  border-radius: 30px;
+  border:1px solid white;
+}
+.champs-grid .grid-champ-origin{
+  width:30px;
+  height:30px;/* 
+  border-radius: 30px; */
+}
+.champs-grid .grid-champ-class{
+  width:30px;
+  height:30px;/* 
+  border-radius: 30px; */
+}
+.champs-grid>table{
+  margin:auto;
+  border: 1px solid rgba(255, 217, 0, 0.568);
+  border-collapse: collapse;
+}
+.champs-grid>table td{
+  border: 1px solid rgba(255, 217, 0, 0.568);
+  
+  /* 
+  width:40px;
+  word-break: break-all; word-wrap: break-word; */
+}
+
+.champs-grid .grid-champ-icon-box{
+  display:inline-block;
+}
+
+.grid-class-name{
+  display:none;
+  word-break: break-all; 
+  word-wrap: break-word;
+  color:white;
+
+}
+.grid-origin-name{
+  display:none;
+  word-break: break-all; 
+  word-wrap: break-word;
+  color:white;
+}
+
+@media screen and (min-width:800px){
+  .champs-grid .grid-champ-icon{
+    width:45px;
+    height:45px;
+    border-radius: 45px;
+    border:1.5px solid white;
+  }
+  .champs-grid>table td{
+    width:50px;
+  }
+  .champs-grid>table td{
+    width:auto;
+  }
+  .grid-class-name{
+    display:block;
+  }
+  .grid-origin-name{
+    display:block;
+  }
+}

@@ -1,0 +1,28 @@
+nav,footer{
+  background-color:gainsboro;
+}
+
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  height:30px;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.home-link{
+  margin-left:10px;
+}
+
+.nav-links>a{
+  margin-right:10px;
+}
+
+.nav-link{
+  text-decoration:none;
+}

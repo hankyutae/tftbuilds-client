@@ -5,7 +5,6 @@ class ChampsSearchFilter extends React.Component {
   render() {
     return (
       <form className="champs-search-form" onSubmit={(e)=>e.preventDefault()}>
-        <h2>Add a Champion </h2>
        
         <select aria-label="Champ origin filter" name="search-champ" id="search-form-champ-origin" value={this.props.filterOrigin} onChange={(e)=>this.props.handleOrigin(e.target.value)}>
           <option value="Any"> Any Origin </option>

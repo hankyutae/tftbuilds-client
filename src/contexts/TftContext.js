@@ -5,6 +5,8 @@ export const TftContext = React.createContext({
   arrayOfPrices:[1,2,3,4,5],
   arrayOfStars:['bronze','silver','gold'],
   numOfBasicItems:8,
+  loginState:0,
+  toggleLoginState :  ()=>{ },
   setError: () => { },
   clearError: () => { },
   setChampions: () => { },
@@ -35,7 +37,13 @@ export class TftProvider extends React.Component {
     items: {},
     traits: {},
     currentBuild:[],
-
+    loginState:0,
+    toggleLoginState:()=>{
+      console.log('even made it here');
+      this.setstate({
+        loginState:(this.state.loginState+1)
+      })
+    },
     toggleExpandedOnCurrentBuild:(index)=>{
       let newBuild=[...this.state.currentBuild];
       newBuild[index]={...newBuild[index], isExpanded:!(newBuild[index].isExpanded)};
@@ -72,11 +80,10 @@ export class TftProvider extends React.Component {
       })
     },
 
-    switchItemOnChamp:(index,item)=>{
+    switchItemOnChamp:(index,item,itemIndex)=>{
       let newBuild=[...this.state.currentBuild];
       let items=[...(newBuild[index].items)];
-      items.pop();
-      items.push(item);
+      items.splice(itemIndex,1,item);
       newBuild[index]={...newBuild[index], items:items};
       this.setState({
         currentBuild: newBuild
@@ -89,19 +96,21 @@ export class TftProvider extends React.Component {
       this.setState({
         currentBuild: newBuild
       })
-
     },
 
     addChampToCurrentBuild:(champ)=>{
-      /* champ.stars=1;
-      champ.items=[]; */
+      let curtChamp={
+        id:champ.id,
+      };
+      curtChamp.stars=1;
+      curtChamp.items=[];
       this.setState({
-        currentBuild: [...this.state.currentBuild,champ]
+        currentBuild: [...this.state.currentBuild,curtChamp]
       })
     },
 
-    newCurrentBuild: () => {
-      this.setState({ currentBuild: [] })
+    setCurrentBuild: (newBuild) => {
+      this.setState({ currentBuild: newBuild })
     },
 
     setChampions: champions => {

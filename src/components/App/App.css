@@ -1,6 +1,16 @@
-.App {
-  text-align: center;
+
+footer { 
+  position:absolute; 
+  left:0;
+  right:0;
+  bottom:0;
 }
+
+
+/* .App {
+  text-align: center;
+} */
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

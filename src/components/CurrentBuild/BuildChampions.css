@@ -12,3 +12,21 @@
   color: brown;
   overflow-x:auto;
 }
+
+/* .headertwo-undertext{
+  font-size:80%;
+  display:flex;
+  font-weight:500;
+  justify-content:space-evenly;
+  align-items: center;
+} */
+
+.current-build-page-new-build{
+  margin-left:15px;
+  float:left;
+}
+
+.current-build-page-save-build{
+  margin-right:15px;
+  float:right;
+}

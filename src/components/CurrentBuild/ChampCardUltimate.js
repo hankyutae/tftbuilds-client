@@ -28,22 +28,18 @@ class ChampCardUltimate extends React.Component {
   parseDesc=(stars=1)=>{
     let namesArr=[];
     let valuesArr=[];
-    this.props.champ.ability.variables.forEach(variable=>{
+    this.props.champInfo.ability.variables.forEach(variable=>{
       namesArr.push(variable.key)
       valuesArr.push(variable.values[stars])
     })
-    let desc=this.stringFixer(this.props.champ.ability.desc);
-
-    console.log(desc);
-    console.log(namesArr);
-    console.log(valuesArr);
+    let desc=this.stringFixer(this.props.champInfo.ability.desc);
     namesArr.forEach((name,index)=>{
       desc=desc.split(`@${name.toLowerCase()}@`).join(valuesArr[index]);
     })
     return desc;
 
-    /* let arr=this.props.champ.ability.desc.split('@');
-    let sourceArr=this.props.champ.ability.variables;
+    /* let arr=this.props.champInfo.ability.desc.split('@');
+    let sourceArr=this.props.champInfo.ability.variables;
     arr.forEach((string,index,arr)=>{
       for(let i=0;i<sourceArr.length;i++){
         if(sourceArr[i].key===string){
@@ -60,12 +56,33 @@ class ChampCardUltimate extends React.Component {
     return Math.round(num*scale)/scale;
   }
   handleUltStat=(prop,apmult,mod,stars)=>{
-    if(mod.includes(prop.key)){
-      return `${prop.values[stars]} * ${this.roundToTwoDecimalPlaces(apmult)} = ${this.roundToTwoDecimalPlaces(prop.values[stars]*apmult)}`;
+    if(mod.includes(prop.key) &&apmult!==1){
+      return <div className='adding-final'>
+       {`${prop.values[stars]} * ${this.roundToTwoDecimalPlaces(apmult)} = `}
+       <span className='adjusted-final'> 
+        {this.roundToTwoDecimalPlaces(prop.values[stars]*apmult)}  
+       </span>
+      </div>;
     }
     else{
-      return prop.values[stars];
+      return <div className='adding-final'>
+          {prop.values[stars]}
+        </div>;
     }
+  }
+  handleDumbCaseToSentenceCase=(str)=>{
+    const arr=[];
+    for(let i=0;i<str.length;i++){
+      if( str[i]<='z' && str[i]>='a'){
+        arr.push(str[i]);
+      }
+      else if(str[i]<='Z' && str[i]>='A'){
+        arr.push(' ');
+        arr.push(str[i]);
+      }
+    }
+    return arr.join('');
+    
   }
   render() {
     const stars=this.props.champ.stars;
@@ -77,9 +94,9 @@ class ChampCardUltimate extends React.Component {
           {this.parseDesc(stars)}
         </p>
         <ul className='ult-prop-list'>
-          {this.props.champ.ability.variables.map(prop=>{
+          {this.props.champInfo.ability.variables.map(prop=>{
             return (
-              <li key={prop.key}> {prop.key+': '+this.handleUltStat(prop,apmult,mod,stars)} </li>
+              <li key={prop.key}> {this.handleDumbCaseToSentenceCase(prop.key)+': '} {this.handleUltStat(prop,apmult,mod,stars)} </li>
             )
           })}
         </ul>

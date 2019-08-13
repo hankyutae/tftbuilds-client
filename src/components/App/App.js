@@ -6,6 +6,19 @@ import TftContext from '../../contexts/TftContext';
 import TftBuildsApiService from '../../services/tftbuilds-api-service';
 
 class App extends React.Component {
+  state = { 
+    hasError: false, 
+    forceNavRender:0, 
+    toggleForceNavRender:()=>{
+      this.setState({forceNavRender:(this.state.forceNavRender+1)})
+    }
+  }
+
+  static getDerivedStateFromError(error) {
+    console.error(error)
+    console.log('getderived')
+    return { hasError: true }
+  }
   static contextType=TftContext
   componentDidMount(){
     this.context.clearError();
@@ -26,14 +39,14 @@ class App extends React.Component {
       .catch(this.context.setError)
     
   }
-
   render() {
     
     return (
       <div className="App">
-        <Nav />
-        <Main />
-        <footer></footer>
+        <Nav renderNav={this.state.forceNavRender}/>
+        {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
+        <Main renderNav={this.state.toggleForceNavRender}/>
+        <footer role="content-info">Footer</footer>
       </div>
     );
   }

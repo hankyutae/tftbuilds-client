@@ -51,19 +51,33 @@
   flex: 1 1 140px;
 }
 
+.selecting-stars-box{
+  display:flex;
+}
+.selecting-stars{
+  padding:5px 5px;
+  margin:0px 20px;
+}
+
 
 .item-img-div{
   display:inline-block;
 }
 
 .build-item-icon{
-  width:35px;
+  width:30px;
   margin-right:5px;
 }
 
 
 .remove-champ-button{
   color:red;
+}
+
+.top-right{
+  position:absolute;
+  top:0;
+  right:0px;
 }
 
 
@@ -99,14 +113,16 @@
 }
 .build-display-stats{
   display:flex;
+  flex-wrap:wrap;
   flex-direction:row;
   justify-content:center;
   align-items:center;
+  overflow-x:auto;
 }
 .build-stats-table{
   border: 1px solid black;
-  border-collapse: collapse;
-  flex-grow:2;
+  border-collapse: collapse;/* 
+  flex-grow:1; */
 }
 .build-stats-table td{
   border: 1px solid black;
@@ -124,6 +140,7 @@
 
 .build-display-expanded-show-items{
   display:flex;
+  flex-wrap:wrap;
   align-items:center;
   justify-content:center;
 }

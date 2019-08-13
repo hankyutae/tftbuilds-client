@@ -16,6 +16,7 @@
 
 .build-trait-effect{
   flex-direction:column;
+  margin-right:15px;
 }
 
 .build-trait-effect>.trait-progression>.opaque{
@@ -64,4 +65,16 @@
 .build-traits-icon-box{
   padding:10px;
   align-items:center;
+}
+
+.syn-desc-opaque{
+  opacity:.5;
+}
+.build-display-synergy-expand p{
+  margin-top:0px;
+}
+.build-display-synergy-expand{
+  padding:10px 0px;
+  flex-direction:column;
+  max-width:400px;
 }

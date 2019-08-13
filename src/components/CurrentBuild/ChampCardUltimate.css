@@ -1,10 +1,18 @@
 
 .build-stats-ultimate{
-  padding:10px;
-  flex-basis:50%;
-  flex-grow:1;
+  padding:10px;/* 
+  flex-basis:50%; *//* 
+  flex-grow:1; */
 }
 
 .ult-prop-list{
+  font-weight:600;
+}
+.adding-final{
+  display:inline;
   color:magenta;
+  font-weight:600;
+}
+.adjusted-final{
+  font-weight:700;
 }

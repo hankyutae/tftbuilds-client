@@ -1,0 +1,16 @@
+.champs-search .view-type{
+  display:inline-block;
+  flex-basis:50%;
+}
+
+.champs-search .view-type-box{
+  display:flex;
+}
+
+.champs-search .selected{
+  background-color:yellow;
+}
+
+.champs-search .unselected{
+  background-color:gray;
+}

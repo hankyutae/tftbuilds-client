@@ -1,0 +1,18 @@
+.front-page-div h1{
+  padding: 100px 0%;
+}
+.front-page-div section{
+  min-height:200px;
+  padding:50px 0%;
+}
+.front-page-div .s1{
+  padding-left:15%;
+  padding-right:15%;
+
+}
+
+.front-page-div .header-undertext{
+  font-size:50%;
+  display:block;
+  font-weight:normal;
+}
