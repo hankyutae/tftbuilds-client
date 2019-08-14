@@ -11,7 +11,7 @@ class BuildChampions extends React.Component {
         <h3 className='champion-header'>
           Champions{/* 
           <div className='headertwo-undertext'> */}
-            <button className='current-build-page-new-build' onClick={this.props.newBuild}>
+            {/* <button className='current-build-page-new-build' onClick={this.props.newBuild}>
               New Build
             </button>
             {TokenService.hasAuthToken() ?
@@ -22,7 +22,7 @@ class BuildChampions extends React.Component {
                   Log in To Save!
                 </Link>
               </button>
-            }
+            } */}
             
             { /* 
             </div> */}

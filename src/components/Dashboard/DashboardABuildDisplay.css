@@ -3,11 +3,11 @@
   display:flex;
   flex-wrap:wrap;
   align-items:top;
-  background-color:whitesmoke;
+  background-color:antiquewhite;
 }
 .build-display-in-dashboard-box{
   position:relative;
-  background-color:whitesmoke;
+  background-color:antiquewhite;
   margin:10px 0px;
 }
 .dashboard-build-top{

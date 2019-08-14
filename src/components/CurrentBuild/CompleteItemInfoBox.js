@@ -3,12 +3,13 @@ import './CompleteItemInfoBox.css';
 import ImgLink from '../../services/create-img-link-service'
 
 class CompleteItemInfoBox extends React.Component {
-  state={
-    isExpanded:this.props.isExpanded
+  state={/* 
+    isExpanded:this.props.isExpanded */
+    isExpanded:true
   };
   handleExpand=()=>{
     this.setState({
-      isExpanded:!this.state.isExpanded
+      isExpanded:/* !this.state.isExpanded */true
     })
   };
   stringFixer=(string)=>{
@@ -63,15 +64,15 @@ class CompleteItemInfoBox extends React.Component {
     const itemInfo=this.props.items[this.props.item];
     return (
       <div className='flex-box-complete-item-info'>
-        <div className='item-img-div' >
-          <img className='build-item-icon' src={ImgLink.createLink(itemInfo.icon)} alt={`${itemInfo.name} icon`} onClick={(e) => { this.handleExpand(); }} />
+        <div className='item-img-div' onClick={(e)=>this.props.handleRemove(this.props.itemIndex)}>
+          <img className='build-item-icon' src={ImgLink.createLink(itemInfo.icon)} alt={`${itemInfo.name} icon`} /* onClick={(e) => { this.handleExpand(); }} */ />
         </div>
         {
-          this.state.isExpanded && 
+          /* this.state.isExpanded &&  */
           <div className='item-info-box'>
-            <div className='item-name'>
+            {/* <div className='item-name'>
               {itemInfo.name}
-            </div>
+            </div> */}
             <div className='item-desc'>
               {this.parseDesc(itemInfo,this.props.item)}
             </div>

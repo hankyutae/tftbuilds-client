@@ -10,3 +10,9 @@
   flex-direction:column;
   justify-content:center;
 }
+
+.item-desc{
+  font-size:90%;
+  max-width:300px;
+  padding:3px 0px;
+}

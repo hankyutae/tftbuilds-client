@@ -53,13 +53,21 @@
 
 .selecting-stars-box{
   display:flex;
+  flex-wrap:wrap;
 }
 .selecting-stars{
   padding:5px 5px;
   margin:0px 20px;
 }
 
-
+/* .build-display-add-items{
+} */
+.build-display-item-grid-box{
+  overflow-x:auto;
+}
+.build-display-item-grid{
+  margin:auto;
+}
 .item-img-div{
   display:inline-block;
 }
@@ -68,7 +76,23 @@
   width:30px;
   margin-right:5px;
 }
+.grid-build-item-icon{
+  
+  width:26px;
+  margin-right:4px;
+}
 
+@media screen and (min-width:650px){
+  .build-item-icon{
+    width:35px;
+    margin-right:5px;
+  }
+  .grid-build-item-icon{
+    
+    width:35px;
+    margin-right:5px;
+  }
+}
 
 .remove-champ-button{
   color:red;
@@ -114,15 +138,16 @@
 .build-display-stats{
   display:flex;
   flex-wrap:wrap;
-  flex-direction:row;
+  flex-direction:row;/* 
   justify-content:center;
-  align-items:center;
+  align-items:center; */
   overflow-x:auto;
 }
 .build-stats-table{
   border: 1px solid black;
   border-collapse: collapse;/* 
   flex-grow:1; */
+  margin:auto;
 }
 .build-stats-table td{
   border: 1px solid black;
@@ -141,6 +166,6 @@
 .build-display-expanded-show-items{
   display:flex;
   flex-wrap:wrap;
-  align-items:center;
-  justify-content:center;
+  align-items:center;/* 
+  justify-content:center; */
 }

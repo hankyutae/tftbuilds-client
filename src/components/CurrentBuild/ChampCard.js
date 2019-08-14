@@ -58,7 +58,7 @@ class ChampCard extends React.Component {
   }
   validateAddItem = () =>{
     if(handleAddItem(this.context.items,this.context.currentBuild[this.props.index].items,11)==='Too many items'){
-      return 'Potentially too many items, may remove items by clicking on the item icons above'
+      return 'Potentially too many items, may remove items by clicking on the item icons below'
     }
   }
   createItemSelection =() =>{
@@ -79,6 +79,36 @@ class ChampCard extends React.Component {
       
     }
     return arr;
+  }
+  createItemSelectionGrid =() =>{
+    const completeGrid=[];
+    const firstRow=[<td key={0}></td>];
+    for(let i=1;i<=this.context.numOfBasicItems;i++){   
+      firstRow.push(<td key={i}><img  className='grid-build-item-icon' src={ImgLink.createLink(this.context.items[i].icon)} alt={`${this.context.items[i].name} icon`} onClick={(e)=>{e.stopPropagation(); this.handleAddItemSubmit(i);}}/> </td>)
+      
+    }
+    completeGrid.push(
+      <tr key={0}>
+        {firstRow}
+      </tr>
+    );
+
+    for(let i=1;i<=this.context.numOfBasicItems;i++){
+      let row=[];
+      row.push(<td key={i}><img className='grid-build-item-icon' src={ImgLink.createLink(this.context.items[i].icon)} alt={`${this.context.items[i].name} icon`} onClick={(e)=>{e.stopPropagation(); this.handleAddItemSubmit(i);}}/> </td>);
+      for(let j=1;j<=this.context.numOfBasicItems;j++){
+        let index=(i<j)? i*10+j : j*10+i;
+        row.push(<td key={index}><img className='grid-build-item-icon' src={ImgLink.createLink(this.context.items[index].icon)} alt={`${this.context.items[index].name} icon`} onClick={(e)=>{e.stopPropagation(); this.handleAddItemSubmit(index);}}/> </td>);
+      }
+      completeGrid.push(
+        <tr key={i}>
+          {row}
+        </tr>
+      );
+    }
+    return completeGrid;
+
+
   }
   createStarsSelection=()=>{
     let arr=[];
@@ -199,14 +229,21 @@ class ChampCard extends React.Component {
                     {this.createItemSelection()}
                   </select>
                   <button>Submit</button> */}
-                  {this.createItemSelection()}
-                  <ValidationError message={this.validateAddItem()}/>
+                  {/* this.createItemSelection() */}
+                <div className='build-display-item-grid-box'>
+                  <table className='build-display-item-grid'>
+                    <tbody>
+                      {this.createItemSelectionGrid()}
+                    </tbody>
+                  </table>
+                </div>
+                <ValidationError message={this.validateAddItem()}/>
                {/*  </form> */}
             </section> 
             {currentChamp.items.length!==0 &&
               <section className='build-display-expanded-show-items'>
                 {currentChamp.items.map((item,index)=>{
-                  return <CompleteItemInfoBox key={index} items={this.context.items} item={item} isExpanded={false}/>
+                  return <CompleteItemInfoBox key={index} items={this.context.items} item={item} isExpanded={true} itemIndex={index} handleRemove={this.handleRemoveItem}/>
                 })}
               </section>
             }

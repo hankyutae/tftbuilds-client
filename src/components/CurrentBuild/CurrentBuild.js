@@ -1,5 +1,6 @@
 import React from 'react';
 import "./CurrentBuild.css";
+import {Link} from 'react-router-dom';
 import BuildSynergies from './BuildSynergies';
 import BuildChampions from './BuildChampions';
 import TftContext from '../../contexts/TftContext';
@@ -32,7 +33,18 @@ class CurrentBuild extends React.Component {
       <div className="current-build-display">
         <h2 className='h2-nav-is-above'>
           Your Current Build
-          
+          <button className='current-build-page-new-build' onClick={this.newBuild}>
+              New Build
+            </button>
+            {TokenService.hasAuthToken() ?
+              <button className='current-build-page-save-build' onClick={this.saveBuild}>Save Build</button>
+              :
+              <button className='current-build-page-save-build'>
+                <Link className='nav-link' to='/login'>
+                  Log in To Save!
+                </Link>
+              </button>
+            }
         </h2>
 
         {
