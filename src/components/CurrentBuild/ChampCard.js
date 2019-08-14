@@ -158,7 +158,7 @@ class ChampCard extends React.Component {
           e.stopPropagation();
           this.context.removeChampFromCurrentBuild(this.props.index);
         }}>
-          <strong>Remove</strong>
+          <strong>Remove Champ</strong>
         </button>
         <div className='champion-simple-flex' onClick={() => this.context.toggleExpandedOnCurrentBuild(this.props.index)}>
           <div className='b1'>
