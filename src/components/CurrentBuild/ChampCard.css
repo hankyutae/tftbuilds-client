@@ -13,7 +13,9 @@
   position:relative;
   background-color: azure;
   padding:4px 2px;
-  margin:10px 0px;
+  width:100%;/* 
+  max-width:550px; */
+  margin:10px auto;
 }
 .build-display-champion-card>.edit-notice{
   position:absolute;/* 
@@ -82,7 +84,7 @@
   margin-right:4px;
 }
 
-@media screen and (min-width:650px){
+@media screen and (min-width:550px){
   .build-item-icon{
     width:35px;
     margin-right:5px;

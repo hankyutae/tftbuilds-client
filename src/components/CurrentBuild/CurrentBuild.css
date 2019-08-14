@@ -9,3 +9,21 @@
 /* .current-build-page-new-build{
   
 } */
+
+
+.current-build-page-new-build{
+  color:red;
+  font-weight:550;
+}
+
+.current-build-page-save-build{
+  color:darkblue;
+  font-weight:550;
+}
+
+.new-or-save-box{
+  margin:auto;
+  width: 211px;
+  display:flex;
+  justify-content: space-between;
+}

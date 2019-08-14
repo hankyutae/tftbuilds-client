@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CurrentBuild.css";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import BuildSynergies from './BuildSynergies';
 import BuildChampions from './BuildChampions';
 import TftContext from '../../contexts/TftContext';
@@ -33,7 +33,9 @@ class CurrentBuild extends React.Component {
       <div className="current-build-display">
         <h2 className='h2-nav-is-above'>
           Your Current Build
-          <button className='current-build-page-new-build' onClick={this.newBuild}>
+          <br />
+          <div className='new-or-save-box'>
+            <button className='current-build-page-new-build' onClick={this.newBuild}>
               New Build
             </button>
             {TokenService.hasAuthToken() ?
@@ -45,6 +47,7 @@ class CurrentBuild extends React.Component {
                 </Link>
               </button>
             }
+          </div>
         </h2>
 
         {
@@ -53,7 +56,7 @@ class CurrentBuild extends React.Component {
           Object.keys(this.context.items).length !== 0 &&
           (<div>
             <BuildSynergies syn={calcSyn} />
-            <BuildChampions champs={this.context.currentBuild} allChamps={this.context.champions} syn={calcSyn} saveBuild={this.saveBuild} newBuild={this.newBuild}/>
+            <BuildChampions champs={this.context.currentBuild} allChamps={this.context.champions} syn={calcSyn} saveBuild={this.saveBuild} newBuild={this.newBuild} />
           </div>)
         }
       </div >
