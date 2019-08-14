@@ -119,6 +119,8 @@ class ChampsSearch extends React.Component {
 
         {
           Object.keys(this.context.traits).length !== 0 &&
+          Object.keys(this.context.champions).length !== 0 &&
+          Object.keys(this.context.items).length !== 0 &&
           this.state.filterView ?
           <>
             <ChampsSearchFilter

@@ -37,6 +37,8 @@ class CurrentBuild extends React.Component {
 
         {
           Object.keys(this.context.traits).length !== 0 &&
+          Object.keys(this.context.champions).length !== 0 &&
+          Object.keys(this.context.items).length !== 0 &&
           (<div>
             <BuildSynergies syn={calcSyn} />
             <BuildChampions champs={this.context.currentBuild} allChamps={this.context.champions} syn={calcSyn} saveBuild={this.saveBuild} newBuild={this.newBuild}/>
