@@ -1,3 +1,6 @@
+.front-page-div{
+  color:white;
+}
 .front-page-div h1{
   padding: 100px 0%;
 }
@@ -16,3 +19,60 @@
   display:block;
   font-weight:normal;
 }
+
+.front-page-header{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:gold;
+  min-height:50vw;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ), url('../../img/backsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.front-page-header>h1{
+  z-index:5;
+
+}
+
+/* .front-page-header>img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.15;
+
+} */
+
+/* .front-page-header:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('../../img/backsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+} */

@@ -28,10 +28,11 @@ export default class Dashboard extends React.Component {
         {/* <h2>Your Account</h2>
         <div className='account-stuff'>
 
-        </div> */}
-        <h2>Your Builds</h2>
-        {
+        </div> */
           <div className='display-account-builds-box'>
+            
+            <h2>Your Builds</h2>
+        
             {this.state.allbuilds.length !== 0 &&
               this.state.allbuilds.map((build, index) => {
                 return <DashboardABuildDisplay key={index} build={build} index={index} handleRemove={this.state.removeABuild} />

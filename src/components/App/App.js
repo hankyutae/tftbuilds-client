@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
+import { Route } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import TftContext from '../../contexts/TftContext';
 import TftBuildsApiService from '../../services/tftbuilds-api-service';
 
 class App extends React.Component {
-  state = { 
-    hasError: false, 
-    forceNavRender:0, 
-    toggleForceNavRender:()=>{
-      this.setState({forceNavRender:(this.state.forceNavRender+1)})
+  state = {
+    hasError: false,
+    forceNavRender: 0,
+    toggleForceNavRender: () => {
+      this.setState({ forceNavRender: (this.state.forceNavRender + 1) })
     }
   }
 
@@ -19,14 +20,14 @@ class App extends React.Component {
     console.log('getderived')
     return { hasError: true }
   }
-  static contextType=TftContext
-  componentDidMount(){
+  static contextType = TftContext
+  componentDidMount() {
     this.context.clearError();
     TftBuildsApiService.getChampions()
       .then(this.context.setChampions)
       /* .then(()=>{
         Object.keys(this.context.champions).forEach(key=>{
-          this.context.addChampToCurrentBuild({...this.context.champions[key],stars:Math.ceil(Math.random()*3),items:[36,37,38]});
+          this.context.addChampToCurrentBuild({...this.context.champions[key],stars:Math.ceil(Math.random()*3),items:[1,2,3]});
         })
         
       }) */
@@ -37,15 +38,20 @@ class App extends React.Component {
     TftBuildsApiService.getTraits()
       .then(this.context.setTraits)
       .catch(this.context.setError)
-    
+
   }
   render() {
-    
+
     return (
       <div className="App">
-        <Nav renderNav={this.state.forceNavRender}/>
+        <Route
+          path='/'
+          render={routeProps => (
+            <Nav {...routeProps} renderNav={this.state.forceNavRender} />
+          )}
+        />
         {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
-        <Main renderNav={this.state.toggleForceNavRender}/>
+        <Main renderNav={this.state.toggleForceNavRender} />
         <footer role="content-info">Footer</footer>
       </div>
     );

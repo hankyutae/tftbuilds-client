@@ -1,5 +1,5 @@
 import React from 'react';
-import './ChampSearchFilter.css';
+import './ChampsSearchFilter.css';
 
 class ChampsSearchFilter extends React.Component {
   render() {

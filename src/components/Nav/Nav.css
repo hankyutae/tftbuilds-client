@@ -1,5 +1,5 @@
 nav,footer{
-  background-color:gainsboro;
+  background-color:#909090;
 }
 
 
@@ -25,4 +25,14 @@ nav{
 
 .nav-link{
   text-decoration:none;
+}
+
+.active-nav-link{
+  color:gold;
+  font-weight:650;
+}
+
+.inactive-nav-link{
+  color:rgb(40, 61, 129);
+  font-weight:600;
 }

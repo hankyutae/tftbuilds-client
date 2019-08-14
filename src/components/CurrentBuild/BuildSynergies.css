@@ -6,6 +6,25 @@
   position:relative;
 }
 
+@media screen and (max-width:550px){
+  .build-display-synergies{
+    font-size:70%;
+  }
+  .build-display-synergies>.synergy-header{
+    font-size:18.72px;
+  }
+  .build-display-synergies>.build-display-synergy{
+    margin:5px 5px;
+  }
+  .build-display-synergies>.build-display-synergy>.build-traits-icon-box{
+    padding:5px;
+  }
+  .build-display-synergies>.build-display-synergy>.build-traits-icon-box>.build-traits-icon{
+    width:15px;
+    height:15px;
+  }
+}
+
 .build-display-synergies .expand-collapse{
   font-size:80%;
 }

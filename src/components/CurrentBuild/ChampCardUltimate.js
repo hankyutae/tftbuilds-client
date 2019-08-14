@@ -30,7 +30,10 @@ class ChampCardUltimate extends React.Component {
     let valuesArr=[];
     this.props.champInfo.ability.variables.forEach(variable=>{
       namesArr.push(variable.key)
-      valuesArr.push(variable.values[stars])
+      if(variable.values==null)
+        valuesArr.push('NULL')
+      else
+        valuesArr.push(variable.values[stars])
     })
     let desc=this.stringFixer(this.props.champInfo.ability.desc);
     namesArr.forEach((name,index)=>{

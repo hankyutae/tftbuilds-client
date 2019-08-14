@@ -1,5 +1,5 @@
 form.champs-search-form{
-  background: rgba(128, 128, 128, 0.103);
+  background: rgb(200, 198, 198);
   padding-top:18px;
   padding-bottom:18px;
 }
@@ -20,4 +20,16 @@ h2.nav-is-above{
 
 .champs-search-form select{
   padding:15px;
+}
+
+#search-form-champ-origin{
+  margin:5px 10px;
+}
+#search-form-champ-class{
+  margin:5px 10px;
+
+}
+#search-form-champ-price{
+  margin:5px 10px;
+
 }

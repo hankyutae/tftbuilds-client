@@ -86,9 +86,17 @@ class ChampsSearch extends React.Component {
     return (
       <div className="champs-search">
 
-        <h2>Add a Champion </h2>
+        <h2 className='champs-search-h2'> 
+          Add a Champion 
+          <div className='filter-view-instructions'>
+          {this.state.filterView ?
+            'Click anywhere on the card to add': 'Click on icon to add'
+          }
+          </div>
+        </h2>
         {this.state.filterView ?
           <div className='view-type-box'>
+            
             <div className='view-type selected' onClick={()=>this.handleViewToggle('filter')}>
               Filter View
               </div>

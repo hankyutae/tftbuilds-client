@@ -1,22 +1,23 @@
 import React from 'react';
 import './FrontPage.css';
 import { Link } from 'react-router-dom';
-/* import {Link} from ; */
+/* import backgroundSplash from '../../img/backsplash.jpg' */
 export default class FrontPage extends React.Component {
   render() {
     return (
       <div className='front-page-div'>
-        <header role="banner">
+        <header className='front-page-header' role="banner">
           <h1>
-            <span>TFT Comps</span>
+            <span>TFT Builds</span>
             <span className="header-undertext">Build comps. Win Games</span>
 
           </h1>
+          {/* <img src={backgroundSplash} alt='background splash'/> */}
         </header>
 
         <section className="s1">
           <p>
-            TFT Comps lets you build a hypothetical composition along with items before you enter the arena! Each champions' stats will update based on the synergies/items/star levels.
+            TFT Builds allows you to build a hypothetical composition along with items before you enter the arena! Each champions' stats will update based on the synergies/items/star levels.
           </p>
           <button>
             <Link  className='nav-link'  to='/create-build'>

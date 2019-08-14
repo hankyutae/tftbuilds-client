@@ -1,7 +1,7 @@
 .champs-grid{
   overflow-x:auto;
   background-color:rgb(34, 33, 33);
-  padding:10px 0px;
+  padding:10px 5px;
 }
 .champs-grid .grid-champ-icon{
   width:30px;

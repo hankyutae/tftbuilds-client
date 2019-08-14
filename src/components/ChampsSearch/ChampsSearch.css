@@ -1,10 +1,21 @@
 .champs-search .view-type{
   display:inline-block;
+  position:relative;
   flex-basis:50%;
 }
 
 .champs-search .view-type-box{
   display:flex;
+}
+
+.champs-search-h2{
+  position:relative;
+}
+
+.champs-search .filter-view-instructions{
+  font-weight:normal;
+  font-size:50%;
+  color: yellow;
 }
 
 .champs-search .selected{

@@ -4,3 +4,11 @@
   right:10px;
   font-size:100%;
 }
+
+.create-builds-page{
+  background-color:#636363;
+}
+
+.create-builds-page h2{
+  color: rgb(255, 254, 254);
+}

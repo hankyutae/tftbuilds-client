@@ -1,7 +1,7 @@
 .signup-box {
-  height: 400px;
+  height: 450px;
   width: 300px;
-  background: rgba(128, 128, 128, 0.24);
+  background: rgb(200, 200, 200);
 
   position: relative;
   top:18px;
@@ -13,9 +13,9 @@
   }
 }
 
-@media screen and (min-height:538px){
+@media screen and (min-height:500px){
   .signup-box{
-    top: calc(50vh - 250px);
+    top: calc(50vh - 225px);
   }
 }
 
@@ -44,8 +44,9 @@ width:100%;
 .signup-box h1.signup-box-logo{
 padding:0;
 margin:0;
-position:absolute;
+/* position:absolute;
 top: -50px;
-left:67px;
+left:67px; */
+margin-bottom:25px;
 
 }

@@ -30,7 +30,7 @@ class CurrentBuild extends React.Component {
 
     return (
       <div className="current-build-display">
-        <h2>
+        <h2 className='h2-nav-is-above'>
           Your Current Build
           
         </h2>

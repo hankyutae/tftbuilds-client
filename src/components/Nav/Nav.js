@@ -2,13 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import TokenService from '../../services/token-service';
 import './Nav.css';
-import TftContext from '../../contexts/TftContext';
 
 export default class Nav extends React.Component {
   state = {
     signal: this.props.signal
   }
-  static contextType = TftContext
   handleLogoutClick = () => {
     TokenService.clearAuthToken()
     this.setState({
@@ -18,11 +16,10 @@ export default class Nav extends React.Component {
   renderLogoutLink() {
     return (
       <>
-        <Link className='nav-link' 
-          to='/dash'>
-          Account
-        </Link>
-        <Link className='nav-link' 
+        {
+          this.getNavLink('Account', '/dash', ['nav-link'])
+        }
+        <Link className='nav-link inactive-nav-link'
           onClick={this.handleLogoutClick}
           to='/'>
           Logout
@@ -32,33 +29,46 @@ export default class Nav extends React.Component {
   }
   renderLoginLink() {
     return (
-      <> 
-        <Link  className='nav-link' 
-          to='/login'>
-          Log in
-        </Link>
-        <Link className='nav-link' 
-          to='/signup'>
-          Register
-        </Link>
+      <>
+        {
+          this.getNavLink('Log in', '/login', ['nav-link'])
+        }
+
+        {
+          this.getNavLink('Register', '/signup', ['nav-link'])
+        }
       </>
+    )
+  }
+  getNavLink = (name, link, classNames) => {
+    if (this.props.location.pathname === link) {
+      classNames.push('active-nav-link')
+    }
+    else{
+      classNames.push('inactive-nav-link')
+    }
+    return (
+      <Link className={classNames.join(' ')} to={link}>
+        {name}
+      </Link>
     )
   }
   render() {
     return (
       <nav role="navigation">
-        <Link className='nav-link home-link' to='/'>
-          Home
-      </Link>
+        {
+          this.getNavLink('Home', '/', ['nav-link', 'home-link'])
+        }
+
         <div className="nav-links">
           {
             TokenService.hasAuthToken()
               ? this.renderLogoutLink()
               : this.renderLoginLink()
           }
-          <Link className='nav-link' to='/create-build'>
-            Your Build
-        </Link>
+          {
+            this.getNavLink('Your Build', '/create-build', ['nav-link'])
+          }
         </div>
       </nav>
     );

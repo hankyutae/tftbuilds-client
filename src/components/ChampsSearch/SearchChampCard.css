@@ -2,8 +2,8 @@
   position:relative;
   height:110px;
   min-width:200px;
-  margin: 15px 10px;
-  background-color:rgba(6, 15, 102, 0.74);
+  margin: 5px 10px;
+  background-color:rgb(63, 69, 122);
   color: white;
   text-align: left;
   font-size:100%;
@@ -73,9 +73,11 @@
 .add-to-current-build{
   position:absolute;
   /* top:60px;
-  right:15px; */
+  right:15px; *//* 
   bottom:4px;
-  right:45px;
+  right:45px; */
+  top:60px;
+  left:15px;
   font-size:100%;
   color:red;
   z-index:10;

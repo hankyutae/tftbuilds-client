@@ -7,15 +7,22 @@ class SearchChampCard extends React.Component {
   render() {
     if (this.props.locale === 'build-page') {
       return (
-        <div className="champ-short-display">
-          <button className="add-to-current-build" onClick={()=>{
+        <div className="champ-short-display" onClick={(e)=>{
+          e.stopPropagation();
+          let champ = {...this.props.champ};
+          champ.stars=1;
+          champ.items=[];
+          this.props.handleAdd(champ);
+        }}>
+          {/* <button className="add-to-current-build" onClick={(e)=>{
+            e.stopPropagation();
             let champ = {...this.props.champ};
             champ.stars=1;
             champ.items=[];
             this.props.handleAdd(champ);
           }}>
-            Add 
-          </button>
+            Click Anywhere To Add 
+          </button> */}
           <div className="champ-icon-box">
             <img className="champ-icon" src={ImgLink.createLink(this.props.champ.splash)} alt={`${this.props.champ.name} icon`}/>
               <ul>

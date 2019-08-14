@@ -5,5 +5,9 @@
 }
 .display-account-builds-box{
   background-color:rgb(155, 200, 87);
-  padding:20px 15px;
+  padding-left:15px;
+  padding-right:15px;
+  padding-bottom:10px;
+  padding-top:1px;
+  margin-top:20px;
 }

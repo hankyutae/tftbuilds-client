@@ -101,9 +101,11 @@ export class TftProvider extends React.Component {
     addChampToCurrentBuild:(champ)=>{
       let curtChamp={
         id:champ.id,
-      };
+        stars:champ.stars? champ.stars: 1,
+        items:champ.items? champ.items: [],
+      };/* 
       curtChamp.stars=1;
-      curtChamp.items=[];
+      curtChamp.items=[]; */
       this.setState({
         currentBuild: [...this.state.currentBuild,curtChamp]
       })

@@ -47,49 +47,51 @@ export default class DashboardABuildDisplay extends React.Component {
   render() {
     return (
       <div className='build-display-in-dashboard-box'>
+        {Object.keys(this.context.champions).length !== 0 && Object.keys(this.context.items).length !== 0 &&
+          <>
+            <div className='dashboard-build-top'>
+              <div className='load-and-share'>
+                <button>
+                  <Link className='nav-link' to='/create-build' onClick={this.handleLoadBuildClick}> Load Build</Link>
+                </button>
+                <button onClick={this.handleMakePublicClick}>
+                  Share
+                  </button>
+              </div>
+              <div className='dash-delete-build'>
+                <button className='red' onClick={this.handleDeleteClick}>Delete </button>
+              </div>
 
-        <div className='build-display-in-dashboard' onClick={this.handleBuildClick}>
-          {Object.keys(this.context.champions).length !== 0 &&
-            <>
-              {/* this.state.isExpanded && */
-                <div className='load-and-share'>
-                  <button>
-                    <Link className='nav-link' to='/create-build' onClick={this.handleLoadBuildClick}> Load Build</Link>
-                  </button>
-                  <button onClick={this.handleMakePublicClick}>
-                    Share
-                  </button>
-                </div>
+            </div>
+            <div className='build-display-in-dashboard' onClick={this.handleBuildClick}>
+              {
+
+
+
+
+                this.props.build['build_data'].filter((champ, index) => index < 11).map((champ, index) => {
+                  return (
+                    <div key={index} className='dash-build-champ-details'>
+                      <img key={index} className='dash-build-champ-icon' src={ImgLink.createLink(this.context.champions[champ.id].splash)} alt={this.context.champions[champ.id].name + ' icon'} />
+                      <div className='dash-box-champ-items'>
+                        {champ.items.map((item,index)=>{
+                          return <img key={index} className='dash-build-item-icon' src={ImgLink.createLink(this.context.items[item].icon)} alt={this.context.items[item].name + ' icon'} />
+                        })}
+                      </div>
+                    </div>
+                  )
+                })
 
               }
-
-
-
-              {this.props.build['build_data'].filter((champ, index) => index < 11).map((champ, index) => {
-                return <img key={index} className='build-champ-icon' src={ImgLink.createLink(this.context.champions[champ.id].splash)} alt={this.context.champions[champ.id].name + ' icon'} />
-              })}
-
-
-
-
-
-
-            </>
-          }
-
-          {/* this.state.isExpanded && */
-            <div className='dash-delete-build'>
-              <button className='red' onClick={this.handleDeleteClick}>Delete </button>
             </div>
-          }
-        </div>
 
-        {this.state.isRevealed &&
-          <Link className='build-share-link' to={`/build/${this.props.build.id}`}>
-            {`${window.location.origin}/build/${this.props.build.id}`}
-          </Link>
+            {this.state.isRevealed &&
+              <Link className='build-share-link' to={`/build/${this.props.build.id}`}>
+                {`${window.location.origin}/build/${this.props.build.id}`}
+              </Link>
+            }
+          </>
         }
-
       </div>
     )
   }
