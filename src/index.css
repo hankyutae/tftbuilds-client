@@ -29,3 +29,7 @@ html,body{
 .h2-nav-is-above{
   padding-top:30px;
 }
+
+.button-cursor{
+  cursor:pointer;
+}

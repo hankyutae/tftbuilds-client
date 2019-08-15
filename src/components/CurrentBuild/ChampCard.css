@@ -11,29 +11,57 @@
 
 .build-display-champion-card{
   position:relative;
-  background-color: azure;
-  padding:4px 2px;
+  background-color: azure;/* 
+  padding:4px 2px; */
   width:100%;/* 
   max-width:550px; */
   margin:10px auto;
+  overflow-x:auto;
+  overflow-y:hidden;
 }
-.build-display-champion-card>.edit-notice{
+.edit-notice{
   position:absolute;/* 
   color:rgb(238, 208, 172); */
-  color:red;
+  color:darkblue;
   top:0;
   left:2px;
+  backdrop-filter: blur(3px);
 
+}
+
+.build-buttons{/* 
+  display:inline-block; */
+  padding:2px;
+  font-weight:bolder;
+  color:darkblue;/* 
+  background-color: rgb(221,221,221);
+  backdrop-filter: blur(3px); */
 }
 
 .champion-simple-flex{
-  display:flex;
+  position:relative;
+  display:flex;/* 
   align-items:center;
-  justify-content:space-around;
+  justify-content:space-around; */
+  font-size:70%;
+  height: 68px;/* 
+  overflow-x:auto;
+  overflow-y:auto; */
+
+}
+
+@media screen and (min-width:760px){
+  .champion-simple-flex{
+    font-size:100%;
+  }
+}
+
+.champion-simple-flex>div{
+  margin:auto;
 }
 
 .build-champ-icon{
-  width:50px;
+  width:35px;
 }
 .build-display-champion-card p{
   margin:0;
@@ -41,17 +69,95 @@
 }
 
 .build-display-champion-card .b1{
-  flex: 1 1 25%;
+  flex: 1 1 24%;
 }
 .build-display-champion-card .b2{
-  flex: 1 1 25%;
+  flex: 1 1 24%;
 }
 .build-display-champion-card .b3{
-  flex: 1 1 25%;
+  flex: 1 1 24%;
 }
 .build-display-champion-card .b4{
   flex: 1 1 140px;
 }
+
+
+@media screen and (min-width:550px){
+  .champion-simple-flex{
+    height: 73px;
+  }
+}
+
+
+@media screen and (min-width:760px){
+  .champion-simple-flex{
+    height: 90px;
+  }
+  .build-display-champion-card .b1{
+    flex: 0 0 100px;
+    max-height:90px;
+  }
+  .build-display-champion-card .b2{
+    flex: 0 0 100px;
+    max-height:90px;
+  }
+  .build-display-champion-card .b3{
+    flex: 0 0 45px;
+    max-height:90px;
+  }
+  .build-display-champion-card .b4{
+    flex: 0 0 140px;
+    max-height:90px;
+  }
+  .build-display-champion-card .build-stats-table-div{
+    flex: 10  0 200px;
+    overflow-y:auto;
+    max-height:90px;
+  }
+  .build-display-champion-card .b5-remove{
+    width:15px;
+    flex: 0 0 15px;
+  }
+}
+
+@media screen and (min-width:1599px){
+  .champion-simple-flex{
+    max-height: 90px;
+  }
+  .build-display-champion-card .b1{
+    flex: 0 0 100px;
+  }
+  .build-display-champion-card .b2{
+    flex: 0 0 100px;
+  }
+  .build-display-champion-card .b3{
+    flex: 0 0 45px;
+  }
+  .build-display-champion-card .b4{
+    flex: 0 0 140px;
+  }
+  .build-display-champion-card .build-stats-table-div{
+    flex: 1 0 400px;
+    overflow-y:auto;
+  }
+  .build-display-champion-card .build-stats-ultimate{
+    flex: 3 0;
+    overflow-y:auto;
+    max-height: 90px;
+  }
+  .build-display-champion-card .build-stats-ultimate .ult-prop-list{
+    overflow-y:auto;
+  }
+  .build-display-champion-card .build-stats-ultimate .build-ult-desc{
+    overflow-y:auto;
+  }
+  .build-display-champion-card .b5-remove{
+    width:15px;
+    flex: 0 0 15px;
+  }
+
+}
+
 
 .selecting-stars-box{
   display:flex;
@@ -65,7 +171,8 @@
 /* .build-display-add-items{
 } */
 .build-display-item-grid-box{
-  overflow-x:auto;
+  overflow-x:auto;/* 
+  background-color:rgb(225, 243, 202); */
 }
 .build-display-item-grid{
   margin:auto;
@@ -84,6 +191,11 @@
   margin-right:4px;
 }
 
+.build-items-box{
+  min-height:30px;
+  margin:2px 0px;
+}
+
 @media screen and (min-width:550px){
   .build-item-icon{
     width:35px;
@@ -96,9 +208,32 @@
   }
 }
 
-.remove-champ-button{
+
+
+/* .b5-remove .remove-champ-button{
+  font-size:70%;
+  justify-self:right;
+} */
+
+.b5-remove{
+  width:10px;
+  height:100%;
   color:red;
+  background-color:rgb(250, 250, 250);
+  justify-self:right;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
+.b5-remove>div{
+  font-weight:900;
+}
+
+/* .remove-champ-button{
+  color:red;
+  transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+} */
 
 .top-right{
   position:absolute;
@@ -122,7 +257,7 @@
 
 
 
-.build-display-card-expansion{
+/* .build-display-card-expansion{
   position:relative;
   margin:5px;
   padding:5px;
@@ -130,7 +265,7 @@
   background-color:rgb(225, 243, 202);
   color:black;
   text-align:left;
-}
+} */
 .build-display-card-expansion>section{
   
   margin:5px;
@@ -150,19 +285,23 @@
   border-collapse: collapse;/* 
   flex-grow:1; */
   margin:auto;
+  font-size:70%;
 }
 .build-stats-table td{
   border: 1px solid black;
   padding:2px;
 }
-
-
-.build-display-card-expansion>.edit-notice{
-  position:absolute;
-  color:black(238, 208, 172);
-  top:0px;
-  right:2px;
+.build-stats-table-div{
+  overflow-x:auto;
+  overflow-y:hidden;
 }
+
+@media screen and (min-width:900px){
+  .build-stats-table{
+    font-size:100%;
+  }
+}
+
 
 
 .build-display-expanded-show-items{
@@ -171,3 +310,11 @@
   align-items:center; *//* 
   justify-content:center; */
 }
+
+@media screen and (min-width: 760px){
+  .build-champ-icon{
+    width:50px;
+  }
+}
+
+

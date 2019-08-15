@@ -16,10 +16,15 @@ export const TftContext = React.createContext({
   addChampToCurrentBuild: () => { },
   removeChampFromCurrentBuild: ()=>{},
   changeStarsOnChamp:() =>{},
+  lowerStarsOnChamp:() =>{},
+  raiseStarsOnChamp: () =>{},
   addItemToChamp:() =>{},
   removeItemFromChamp:() =>{},
   switchItemOnChamp:() =>{},
   toggleExpandedOnCurrentBuild:()=>{},
+  toggleStatsOnCurrentBuild:()=>{},
+  toggleAddItemOnCurrentBuild:()=>{},
+  toggleUltOnCurrentBuild:()=>{},
   champions: {},
   items: {},
   traits: {},
@@ -51,10 +56,45 @@ export class TftProvider extends React.Component {
         currentBuild: newBuild
       })
     },
+    toggleStatsOnCurrentBuild:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], isStatsExpanded:!(newBuild[index].isStatsExpanded)};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+    toggleAddItemOnCurrentBuild:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], isAddItemExpanded:!(newBuild[index].isAddItemExpanded)};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+    toggleUltOnCurrentBuild:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], isUltExpanded:!(newBuild[index].isUltExpanded)};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
 
     changeStarsOnChamp:(index, stars)=>{
       let newBuild=[...this.state.currentBuild];
       newBuild[index]={...newBuild[index], stars:stars};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+    lowerStarsOnChamp:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], stars:newBuild[index].stars<=1? 1: newBuild[index].stars-1};
+      this.setState({
+        currentBuild: newBuild
+      })
+    },
+    raiseStarsOnChamp:(index)=>{
+      let newBuild=[...this.state.currentBuild];
+      newBuild[index]={...newBuild[index], stars:newBuild[index].stars>=this.state.arrayOfStars.length? this.state.arrayOfStars.length: newBuild[index].stars+1};
       this.setState({
         currentBuild: newBuild
       })

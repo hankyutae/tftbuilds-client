@@ -55,17 +55,11 @@ class SingleStat extends React.Component {
     if(statType==="initalMana"){
       if(this.props.champInfo.traits.includes("Robot")){
         return (
-        <tr className={statType}>
-          <td className='table-stat-type'>{this.getDisplayStatType(statType)}</td>
-          <td>{this.props.champInfo["stats"]["mana"]}</td> 
-        </tr>
+          <td className={statType}>{this.props.champInfo["stats"]["mana"]}</td> 
         );
       }
       return (
-        <tr className={statType}>
-          <td className='table-stat-type'>{this.getDisplayStatType(statType)}</td>
-          <td>{`Unknown + ${statModifiers.add}`}</td> 
-        </tr>
+          <td className={statType}>{`Unknown + ${statModifiers.add}`}</td> 
         );
     }
     
@@ -85,10 +79,9 @@ class SingleStat extends React.Component {
 
     return (
       
-      <tr className={statType} onClick={this.handleExpand}>
-        <td className='table-stat-type'>{this.getDisplayStatType(statType)}</td>
+      <>
         {this.state.isExpanded? 
-          <td>
+          <td className={statType} onClick={this.handleExpand}>
             { (didChangeAdd||didChangeMult) &&
               calculationDisplayArray
             }
@@ -96,14 +89,13 @@ class SingleStat extends React.Component {
               {finalStat}
             </strong>
           </td> : 
-          <td>
+          <td className={statType} onClick={this.handleExpand}>
             <strong>
               {finalStat}
             </strong>
           </td> 
         }
-      </tr>
-
+      </>
     )
   }
 

@@ -25,6 +25,9 @@ export default class FrontPage extends React.Component {
             </Link>
           </button>
         </section>
+        <div>
+
+        </div>
 
         <section className="s2">
           <p>

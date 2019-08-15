@@ -155,7 +155,6 @@ class ASynergy extends React.Component {
     if(trait.name.toLowerCase()==='imperial'){
       desc=desc+'<br><br>Note: Not calculated into stats, but most tests show that Imperial buff appears to simply double the damage after everything else (AP/AD) is applied';
     }
-    console.log(desc==false);
     return (
       <div className='build-display-synergy-expand'>
         <div>

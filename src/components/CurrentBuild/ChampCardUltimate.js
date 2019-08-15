@@ -38,6 +38,7 @@ class ChampCardUltimate extends React.Component {
     let desc=this.stringFixer(this.props.champInfo.ability.desc);
     namesArr.forEach((name,index)=>{
       desc=desc.split(`@${name.toLowerCase()}@`).join(valuesArr[index]);
+      desc=desc.split(`@${name.toLowerCase()}*100@`).join(valuesArr[index]*100);
     })
     return desc;
 
@@ -93,16 +94,16 @@ class ChampCardUltimate extends React.Component {
     const mod=this.props.statMod.ultDescAffectedByAp;
     return (
       <div className="build-stats-ultimate">
-        <p>
+        <div className='build-ult-desc'>
           {this.parseDesc(stars)}
-        </p>
-        <ul className='ult-prop-list'>
+        </div>
+        <div className='ult-prop-list'>
           {this.props.champInfo.ability.variables.map(prop=>{
             return (
-              <li key={prop.key}> {this.handleDumbCaseToSentenceCase(prop.key)+': '} {this.handleUltStat(prop,apmult,mod,stars)} </li>
+              <div className='ult-prop' key={prop.key}> {this.handleDumbCaseToSentenceCase(prop.key)+': '} {this.handleUltStat(prop,apmult,mod,stars)} </div>
             )
           })}
-        </ul>
+        </div>
       </div>
     )
   }

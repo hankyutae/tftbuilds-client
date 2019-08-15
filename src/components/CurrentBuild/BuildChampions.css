@@ -5,9 +5,9 @@
 }
 
 .build-display-champion-cards-box{
-  position:relative;
+  position:relative;/* 
   display:flex;
-  flex-wrap:wrap;
+  flex-wrap:wrap; */
   min-height:180px;
   margin: 15px 10px;
   background-color:antiquewhite;
