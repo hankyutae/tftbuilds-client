@@ -4,10 +4,11 @@
   padding-top:30px;
 }
 .display-account-builds-box{
-  background-color:rgb(155, 200, 87);
+  background-color:rgba(155, 200, 87,0.8);
   padding-left:15px;
   padding-right:15px;
   padding-bottom:10px;
   padding-top:1px;
   margin-top:20px;
+  border-radius:10px;
 }

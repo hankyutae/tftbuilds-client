@@ -22,8 +22,23 @@ html,body{
   min-height:100vh !important;
   text-align:center;
   margin:0;
-  background-color:#636363/* 
+  background-color:rgb(34, 33, 33);
+  /* 
   overflow-x:auto; */
+}
+
+html,body{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ), url('./img/backsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .h2-nav-is-above{
@@ -32,4 +47,24 @@ html,body{
 
 .button-cursor{
   cursor:pointer;
+}
+@media (hover:hover) {
+  .button-cursor:hover{
+    background:rgba(0,0,0,0.6);
+  }
+  .button-hover-darken:hover{
+    background:rgba(0,0,0,0.2);
+  }
+  .button-hover-darken2:hover{
+    background:rgba(0,0,0,0.6);
+  }
+  
+  .button-hover-lighten:hover{
+    background:rgba(255,255,255,0.2);
+  }
+  
+  .increase-fontsize-on-hover:hover{
+    font-size:125%; 
+  }
+
 }

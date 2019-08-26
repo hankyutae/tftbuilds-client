@@ -8,7 +8,7 @@ export default class FrontPage extends React.Component {
       <div className='front-page-div'>
         <header className='front-page-header' role="banner">
           <h1>
-            <span>TFT Builds</span>
+            <span>TFTBuilds</span>
             <span className="header-undertext">Build comps. Win Games</span>
 
           </h1>
@@ -17,13 +17,13 @@ export default class FrontPage extends React.Component {
 
         <section className="s1">
           <p>
-            TFT Builds allows you to build a hypothetical composition along with items before you enter the arena! Each champions' stats will update based on the synergies/items/star levels.
+            TFTBuilds allows you to build a hypothetical composition along with items before you enter the arena! Each champions' stats will update based on the synergies/items/star levels.
           </p>
-          <button>
+          <div className='btn'>
             <Link  className='nav-link'  to='/create-build'>
               Build a comp
             </Link>
-          </button>
+          </div>
         </section>
         <div>
 
@@ -33,16 +33,16 @@ export default class FrontPage extends React.Component {
           <p>
             Sign up to save your builds!
           </p>
-          <button style={{marginRight:'5px'}}>
+          <div className='btn'>
             <Link  className='nav-link' to='/login'>
               Log in
             </Link>
-          </button>
-          <button>
+          </div>
+          <div className='btn'>
             <Link className='nav-link'  to='/signup'>
               Sign up
             </Link>
-          </button>
+          </div>
         </section>
       </div>
     );

@@ -1,6 +1,7 @@
 .build-display-champions{
   background-color:antiquewhite;
-  padding:1px;
+  position:relative;
+  padding:1px 10px;
   padding-bottom:0.5em;
 }
 
@@ -9,12 +10,55 @@
   display:flex;
   flex-wrap:wrap; */
   min-height:180px;
-  margin: 15px 10px;
+  margin: 15px 0px;
   background-color:antiquewhite;
   color: brown;
   overflow-x:auto;
 }
 
+.current-build-page-save-build{
+  color:darkblue;
+  font-weight:550;
+  border:0;
+  padding:1rem;
+  border-radius:5px;
+  width:100%;
+  margin:auto;
+  margin-bottom:1rem;
+  background-color:#A2B9B1;
+  display:block;
+
+}
+
+.current-build-page-new-build{
+  position:absolute;
+  top:10px;
+  right:10px;
+  color:red;
+  font-weight:550;
+  border:0;
+  padding:0.5rem;
+  border-radius:5px;
+  margin-bottom:1rem;
+  background-color:#A2B9B1;
+}
+
+
+.building-notice{
+  max-width:400px;
+  padding:1rem;
+  border-radius:5px;
+  margin:auto;
+  background-color:#7A7861;
+  color:rgb(19, 49, 88);
+  font-weight:550;
+}
+
+@media screen and (min-width:550px){
+  .current-build-page-save-build{
+    width:400px;
+  }
+}
 /* .headertwo-undertext{
   font-size:80%;
   display:flex;

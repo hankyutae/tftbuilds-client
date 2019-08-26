@@ -81,7 +81,7 @@ class SingleStat extends React.Component {
       
       <>
         {this.state.isExpanded? 
-          <td className={statType} onClick={this.handleExpand}>
+          <td className={(didChangeAdd||didChangeMult) ? `button-cursor button-hover-darken ${statType}`: statType} onClick={this.handleExpand}>
             { (didChangeAdd||didChangeMult) &&
               calculationDisplayArray
             }
@@ -89,7 +89,7 @@ class SingleStat extends React.Component {
               {finalStat}
             </strong>
           </td> : 
-          <td className={statType} onClick={this.handleExpand}>
+          <td className={(didChangeAdd||didChangeMult) ? `button-cursor button-hover-darken ${statType}`: statType} onClick={this.handleExpand}>
             <strong>
               {finalStat}
             </strong>

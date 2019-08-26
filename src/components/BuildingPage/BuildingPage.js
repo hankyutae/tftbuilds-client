@@ -7,7 +7,10 @@ class BuildingPage extends React.Component {
   render() {
     return (
       <div className="create-builds-page">
-        <CurrentBuild/>
+        <CurrentBuild/>{/* 
+        <div className='search-and-build-separator'>
+
+        </div> */}
         <ChampsSearch locale='build-page'/>
       </div >
     );

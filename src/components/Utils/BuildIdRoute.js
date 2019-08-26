@@ -5,7 +5,7 @@ import TftContext from '../../contexts/TftContext'
 
 export default function BuildIdRoute({ component, ...props }) {
   
-  const Component = component;
+  //const Component = component;
 
   return (
     <TftContext.Consumer>

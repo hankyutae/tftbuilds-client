@@ -3,12 +3,10 @@
   background-color:rgb(34, 33, 33);
   padding:10px 5px;
 }
-.champs-grid .grid-champ-icon{
+/* .champs-grid .grid-champ-icon{
   width:30px;
   height:30px;
-  border-radius: 30px;
-  border:1px solid white;
-}
+} */
 .champs-grid .grid-champ-origin{
   width:30px;
   height:30px;/* 
@@ -50,13 +48,17 @@
   color:white;
 }
 
-@media screen and (min-width:800px){
+
+
+@media screen and (min-width:760px){
+  .champs-grid{
+    padding: 1rem;
+  }/* 
   .champs-grid .grid-champ-icon{
     width:45px;
     height:45px;
-    border-radius: 45px;
-    border:1.5px solid white;
-  }
+  } */
+  
   .champs-grid>table td{
     width:50px;
   }

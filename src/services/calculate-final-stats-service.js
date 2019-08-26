@@ -27,7 +27,7 @@ function handleSyn(stats, deepCopy, syn) {
   }
 
   //Local Syns that change passive stats
-  //Assassin,Imperial(?)
+  //Assassin,Imperial(?),Brawler, Ninja
   if (syn["Assassin"] !== undefined && syn["Assassin"].effectNum >= 0) {
     if (deepCopy.traits.includes("Assassin") || checkIfItemsGiveSynergy(deepCopy.items,"Assassin")) {
       console.log(syn["Assassin"].effects[syn["Assassin"].effectNum]["vars"]["value"]);
@@ -41,6 +41,21 @@ function handleSyn(stats, deepCopy, syn) {
       stats.imperial = 2;
     }
   }
+
+  if (syn["Brawler"] !== undefined && syn["Brawler"].effectNum >= 0) {
+    if (deepCopy.traits.includes("Brawler") || checkIfItemsGiveSynergy(deepCopy.items,"Brawler")) {
+      stats.hp.add+=syn['Brawler'].effects[syn['Brawler'].effectNum]['vars'][0]['value'];
+    }
+  }
+
+  if (syn["Ninja"] !== undefined && syn["Ninja"].effectNum >= 0) {
+    if (deepCopy.traits.includes("Ninja") || checkIfItemsGiveSynergy(deepCopy.items,"Ninja")) {
+      stats.damage.add+=syn['Ninja'].effects[syn['Ninja'].effectNum]['vars'][0]['value'];
+      stats.ap.mult+=syn['Ninja'].effects[syn['Ninja'].effectNum]['vars'][1]['value'];
+    }
+  }
+
+
 
   //Syns to keep a lookout for:
   //Robot - once initial mana is fixed
@@ -87,7 +102,7 @@ function handleItem(id, stats, allItems) {
     //Rabadon's Deathcap
     //stacks seen ingame in patch 9.14
     if (id === 33) {
-      stats.ap.mult += allItems[id].effects[0].value;
+      stats.ap.multmult += allItems[id].effects[0].value;
     }
 
   }
@@ -144,7 +159,9 @@ function ultDamageEdgeCases(deepCopy,ultPropKey,stats){
 }
 
 function ultHealEdgeCases(deepCopy,ultPropKey,stats){
-  
+  if(ultPropKey.toLowerCase()==="transformhealth"){
+    return true;
+  }
 }
 
 function handleUlt(stats, deepCopy) {
@@ -165,10 +182,10 @@ function handleUlt(stats, deepCopy) {
       stats.ultDescAffectedByAp.push(ultProp["key"]);
       return;
     }
-    if (ultProp["key"].toLowerCase()==='manasteal'){
+    /* if (ultProp["key"].toLowerCase()==='manasteal'){
       stats.ultDescAffectedByAp.push(ultProp["key"]);
       return;
-    }
+    } */
   })
 
 }
@@ -188,7 +205,7 @@ function calcStats(deepCopy, syn, allItems) {
     armor: { add: 0, mult: 100 },
     magicResist: { add: 0, mult: 100 },
     range: { add: 0, mult: 100 },
-    ap: { add: 0, mult: 100 },
+    ap: { add: 0, mult: 100, multmult:100 },
     critChance: { add: 0, mult: 100 },
     critMultiplier: { add: 0, mult: 100 },
     ultDescAffectedByAp: [],
@@ -200,6 +217,7 @@ function calcStats(deepCopy, syn, allItems) {
   handleSyn(statsToWatch, deepCopy, syn);
   handleUlt(statsToWatch, deepCopy);
   //final scaling some stat values
+  statsToWatch.ap.mult=100+(statsToWatch.ap.mult-100)*(statsToWatch.ap.multmult/100)
   statsToWatch.critMultiplier.add /= 100;
   statsToWatch.attackSpeed.add /= 100;
   for (let [key, value] of Object.entries(statsToWatch)) {

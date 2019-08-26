@@ -1,12 +1,49 @@
 .login-box {
+  
+  z-index:2;
   height: 500px;
-  width: 300px;
-  background: rgb(200, 200, 200);
+  width: 300px;/* 
+  background: rgba(200, 200, 200, 0.88); */
 
-  position: relative;
-  top:18px;
+  position: absolute;
+  top:150px;
   
   /* margin-top: -250px; */
+}
+
+
+.offset1{
+  stop-color:rgb(199, 175, 89);
+  stop-color:#FFF0A2;
+  stop-opacity:1;
+}
+
+.offset2{
+  stop-color:rgb(255,215,0);
+  stop-opacity:1;
+}
+
+
+/* .svg-gold{
+} */
+.svg-div{
+  padding-top:70px;
+  padding-left:10px;
+  padding-bottom:20px;
+}
+.hex-gold{
+  fill:rgba(255,215,0,0.6);
+  fill:#FBAF47;
+}
+.hex-black{
+  
+  fill:rgba(211, 211, 211, 0.6);/* 
+  fill:rgb(34, 33, 33,0.7); */
+}
+
+.login-box input{
+  border-radius:5px;
+  border:0;
 }
 
 @media screen and (min-width:300px){
@@ -15,9 +52,10 @@
   }
 }
 
-@media screen and (min-height:538px){
-  .login-box{
-    top: calc(50vh - 250px);
+@media screen and (max-width:300px){
+  main{
+    position:relative;
+    overflow-x:scroll;
   }
 }
 
@@ -40,7 +78,27 @@ margin-bottom: 2%;
 width:100%;
 }
 .login-box .login-sign-in{
-width:100%;
+  width:100%;
+  border:0px;
+  padding:0.5rem;
+  border-radius:5px;
+  background-color:#A2B9B1;
+  background-color:#e8e5f3;
+  font-weight:550;
+}
+
+
+@media (hover:hover){
+  .login-box .login-sign-in:hover{
+    background-color:rgba(162,185,177,0.8);
+  }
+  .create-account-from-login:hover{
+    background-color:rgba(0,0,0,0.4);
+  
+  }
+}
+.login-box input{
+  padding:0.5rem;
 }
 
 .login-box .login-helper{
@@ -61,3 +119,9 @@ left:67px; */
 margin-bottom:25px;
 }
 .red{color:red;}
+
+/* @media screen and (max-height:538px){
+  main{
+    min-height:700px;
+  }
+} */

@@ -91,7 +91,7 @@ class ChampCard extends React.Component {
     const completeGrid = [];
     const firstRow = [<td key={0}></td>];
     for (let i = 1; i <= this.context.numOfBasicItems; i++) {
-      firstRow.push(<td key={i}><img className='grid-build-item-icon' src={ImgLink.createLink(this.context.items[i].icon)} alt={`${this.context.items[i].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleAddItemSubmit(i); }} /> </td>)
+      firstRow.push(<td key={i}><img className='grid-build-item-icon button-cursor' src={ImgLink.createLink(this.context.items[i].icon)} alt={`${this.context.items[i].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleAddItemSubmit(i); }} /> </td>)
 
     }
     completeGrid.push(
@@ -102,10 +102,10 @@ class ChampCard extends React.Component {
 
     for (let i = 1; i <= this.context.numOfBasicItems; i++) {
       let row = [];
-      row.push(<td key={i}><img className='grid-build-item-icon' src={ImgLink.createLink(this.context.items[i].icon)} alt={`${this.context.items[i].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleAddItemSubmit(i); }} /> </td>);
+      row.push(<td key={i}><img className='grid-build-item-icon button-cursor' src={ImgLink.createLink(this.context.items[i].icon)} alt={`${this.context.items[i].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleAddItemSubmit(i); }} /> </td>);
       for (let j = 1; j <= this.context.numOfBasicItems; j++) {
         let index = (i < j) ? i * 10 + j : j * 10 + i;
-        row.push(<td key={index}><img className='grid-build-item-icon' src={ImgLink.createLink(this.context.items[index].icon)} alt={`${this.context.items[index].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleAddItemSubmit(index); }} /> </td>);
+        row.push(<td key={index}><img className='grid-build-item-icon button-cursor' src={ImgLink.createLink(this.context.items[index].icon)} alt={`${this.context.items[index].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleAddItemSubmit(index); }} /> </td>);
       }
       completeGrid.push(
         <tr key={i}>
@@ -177,12 +177,17 @@ class ChampCard extends React.Component {
 
         <div className='champion-simple-flex'>
           {(this.props.screenSize!==2) &&
-            <div className="edit-notice button-cursor" onClick={() => this.context.toggleUltOnCurrentBuild(this.props.index)}>
+            <div className="edit-notice button-cursor button-hover-darken" onClick={() => this.context.toggleUltOnCurrentBuild(this.props.index)}>
               <strong>{currentChamp.isUltExpanded ? 'Hide Ult' : 'Show Ult'}</strong>
            </div>
           }
           <div className='b1'>
-            <img className='build-champ-icon' src={ImgLink.createLink(currentChampInfo.splash)} alt={currentChampInfo.name + ' icon'} />
+            <div className={`build-champ-icon-box `}>
+              <img className={`build-champ-icon cost${currentChampInfo.cost}`} src={ImgLink.createLink(currentChampInfo.splash)} alt={currentChampInfo.name + ' icon'} />
+              <div className={`build-champ-icon-box-price${currentChampInfo.cost}`}>
+                {currentChampInfo.cost}
+              </div>
+            </div>
             <p>
               {currentChampInfo.name}
             </p>
@@ -193,22 +198,22 @@ class ChampCard extends React.Component {
             )}
           </div>
           <div className='b3'>
-            <i className="fa fa-chevron-up button-cursor" aria-hidden="true" onClick={this.raiseStarsOnChamp}></i>
+            <i className="fa fa-chevron-up button-cursor increase-fontsize-on-hover" aria-hidden="true" onClick={this.raiseStarsOnChamp}></i>
             <div className="champ-stars">
               {this.generateStars(currentChamp.stars)}
             </div>
 
-            <span className="fa fa-chevron-down button-cursor" aria-hidden="true" onClick={this.lowerStarsOnChamp}></span>
+            <span className="fa fa-chevron-down button-cursor increase-fontsize-on-hover" aria-hidden="true" onClick={this.lowerStarsOnChamp}></span>
           </div>
           <div className='b4'>
-            <div className='button-cursor build-buttons' onClick={(e) => { e.stopPropagation(); this.context.toggleAddItemOnCurrentBuild(this.props.index) }}>
+            <div className='button-cursor build-buttons button-hover-darken add-items-button' onClick={(e) => { e.stopPropagation(); this.context.toggleAddItemOnCurrentBuild(this.props.index) }}>
               {currentChamp.isAddItemExpanded ? "Hide Items" : "Add Items"}
             </div>
             <div className='build-items-box'>
               {
                 currentChamp.items.map((item, index) => (
                   <div key={index} className='item-img-div' >
-                    <img className='build-item-icon' src={ImgLink.createLink(this.context.items[item].icon)} alt={`${this.context.items[item].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleRemoveItem(index); }} />
+                    <img className='build-item-icon button-cursor' src={ImgLink.createLink(this.context.items[item].icon)} alt={`${this.context.items[item].name} icon`} onClick={(e) => { e.stopPropagation(); this.handleRemoveItem(index); }} />
                   </div>
                 )
                 )
@@ -216,8 +221,8 @@ class ChampCard extends React.Component {
             </div>
 
             {this.props.screenSize===0 &&
-              <div className='button-cursor build-buttons' onClick={(e) => { e.stopPropagation(); this.context.toggleStatsOnCurrentBuild(this.props.index) }}>
-                {currentChamp.isStatsExpanded ? 'Hide Champ Stats' : 'Show Champ Stats'}
+              <div className='button-cursor build-buttons button-hover-darken' onClick={(e) => { e.stopPropagation(); this.context.toggleStatsOnCurrentBuild(this.props.index) }}>
+                {currentChamp.isStatsExpanded ? 'Hide Stats' : 'Show Stats'}
               </div>
               /* :
               <div className='button-cursor' onClick={(e) => { e.stopPropagation(); this.context.toggleUltOnCurrentBuild(this.props.index) }}>Show Ult Stats</div> */
@@ -256,7 +261,7 @@ class ChampCard extends React.Component {
             <ChampCardUltimate champ={currentChamp} champInfo={currentChampInfo} statMod={statMod} />
           }
 
-          <div className='b5-remove button-cursor' onClick={(e) => {
+          <div className='b5-remove button-cursor button-hover-darken' onClick={(e) => {
             e.stopPropagation();
             this.context.removeChampFromCurrentBuild(this.props.index);
           }}>

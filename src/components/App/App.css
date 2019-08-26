@@ -1,9 +1,22 @@
 
 footer { 
-  position:absolute; 
-  left:0;
-  right:0;
-  bottom:0;
+  color:rgb(163, 185, 224);
+}
+.footer-border{
+  height:5rem;
+  width:100%;
+  border-bottom: 2px dotted rgb(163, 185, 224);
+}
+
+.thank-you-mr-rito{
+  max-width:80%;
+  margin:auto;
+}
+
+.App{
+  display:flex;
+  flex-direction:column;
+
 }
 
 

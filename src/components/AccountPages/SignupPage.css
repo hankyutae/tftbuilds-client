@@ -1,10 +1,36 @@
 .signup-box {
   height: 450px;
-  width: 300px;
-  background: rgb(200, 200, 200);
+  width: 300px;/* 
+  background: rgba(200, 200, 200,0.88); */
 
-  position: relative;
-  top:18px;
+  position: absolute;
+  top:150px;
+  border-radius:5px;
+  z-index:2;
+}
+
+
+.offset1signin{
+  stop-color:#FDE1BC;
+  stop-opacity:1;
+}
+
+.offset2signin{
+  stop-color:rgb(251,175,71);
+  stop-opacity:1;
+}
+
+
+.hex-bronze{
+  fill:rgba(112, 26, 26,.8);
+}
+.hex-silver{
+  fill:#FBAF47;
+}
+
+.signup-box input{
+  
+  border-radius:4px;
 }
 
 @media screen and (min-width:300px){
@@ -13,11 +39,6 @@
   }
 }
 
-@media screen and (min-height:500px){
-  .signup-box{
-    top: calc(50vh - 225px);
-  }
-}
 
 .signup-box{
   padding:12px 10px;
@@ -41,12 +62,38 @@ width:100%;
 width:100%;
 }
 
+.signup-box .signup-sign-up{
+  width:100%;
+  border:0px;
+  padding:0.5rem;
+  border-radius:5px;
+  background-color:#A2B9B1;
+  background-color:#e8e5f3;
+  font-weight:550;
+}
+
+
+@media (hover:hover){
+  .signup-box .signup-sign-up:hover{
+    background-color:rgba(162,185,177,0.8);
+  }
+}
+.signup-box input{
+  padding:0.3rem;
+  border:0px;
+}
+
 .signup-box h1.signup-box-logo{
 padding:0;
 margin:0;
 /* position:absolute;
 top: -50px;
 left:67px; */
-margin-bottom:25px;
+margin-bottom:0px;
 
-}
+}/* 
+@media screen and (max-height:499px){
+  main{
+    min-height:600px;
+  }
+} */

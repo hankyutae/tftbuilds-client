@@ -45,13 +45,13 @@ export default class ChampsGrid extends React.Component {
                       this.props.classes.map((aClass, index) => {
                         return (
                           <td key={index}>
-                            {Object.values(this.props.champs).filter(champ => {
+                            {Object.keys(this.props.champs).map(key=>this.props.champs[key]).filter(champ => {
                               return champ.traits.includes(aClass.name) && champ.traits.includes(origin.name)
-                            })
+                            }).sort((a,b)=>a.cost-b.cost)
                               .map((champ, index) => {
                                 return (
-                                  <div className='grid-champ-icon-box' key={index}>
-                                    <img className='grid-champ-icon' src={ImgLink.createLink(champ.splash)} alt={`${champ.name} icon`} onClick={() => this.props.handleAdd(champ)} />
+                                  <div className={`build-champ-icon-box  grid-champ-icon-box`} key={index}>
+                                    <img className={`build-champ-icon button-cursor cost${champ.cost}`} src={ImgLink.createLink(champ.splash)} alt={`${champ.name} icon`} onClick={() => this.props.handleAdd(champ)} />
                                   </div>
                                 );
                               })}

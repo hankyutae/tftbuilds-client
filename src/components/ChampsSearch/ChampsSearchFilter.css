@@ -10,6 +10,13 @@ form.nav-is-above{
 
 }
 
+.reset-filters-box{
+  display:inline-block;
+  margin:5px 10px;
+  padding: 5px;
+  background-color:white;
+}
+
 h2.nav-is-above{
   padding-top: 18px;
 }

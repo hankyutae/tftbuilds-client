@@ -4,7 +4,7 @@ import './BuildSynergies.css';
 
 class BuildSynergies extends React.Component {
   state={
-    isExpanded:false
+    isExpanded:true
   }
   handleClick = ()=>{
     this.setState({
@@ -14,12 +14,13 @@ class BuildSynergies extends React.Component {
   render() {
     return (
       <div className="build-display-synergies">
-        <div className="expand-collapse" onClick={()=>this.handleClick()}>
+        <div className="synergies-expand-collapse button-cursor" onClick={()=>this.handleClick()}>
           {this.state.isExpanded? 'Collapse' : 'Expand'}
         </div>
         <h3 className="synergy-header">
           Synergies
         </h3>
+        <div className='synergies-box'>
         {
           Object.keys(this.props.syn).filter(trait=>this.props.syn[trait].effectNum!==-1).map((trait,index)=>{
             return (
@@ -35,6 +36,7 @@ class BuildSynergies extends React.Component {
             )
           })
         }
+        </div>
       </div >
     );
   }

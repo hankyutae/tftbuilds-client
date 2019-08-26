@@ -8,7 +8,7 @@ import TftContext from '../../contexts/TftContext';
 
 class ChampsSearch extends React.Component {
   state = {
-    filterView: true,
+    filterView: false,
     filterOrigin: "Any",
     filterClass: "Any",
     filterPrice: "0",
@@ -16,7 +16,7 @@ class ChampsSearch extends React.Component {
     changeOrigin: (filterOrigin) => { this.setState({ filterOrigin }) },
     changeClass: (filterClass) => { this.setState({ filterClass }) },
     changePrice: (filterPrice) => { this.setState({ filterPrice }) },
-    changeName: (filterName) => { this.setState({ filterName: filterName.toLowerCase() }) },
+    changeName: (filterName) => { this.setState({ filterName: filterName}) },
 
   }
   static contextType = TftContext
@@ -43,7 +43,7 @@ class ChampsSearch extends React.Component {
         }
       }
       if (this.state.filterName !== "") {
-        if (!(value.name).toLowerCase().includes(this.state.filterName)) {
+        if (!(value.name).toLowerCase().includes(this.state.filterName.toLowerCase())) {
           delete oneLvlDeepCopy[key];
           continue;
         }
@@ -77,6 +77,8 @@ class ChampsSearch extends React.Component {
         classes.push(this.context.traits[trait])
       }
     })
+    origins.sort((a,b)=>a.name<b.name?-1:a.name>b.name?1:0);
+    classes.sort((a,b)=>a.name<b.name?-1:a.name>b.name?1:0);
     return{
       origins,
       classes
@@ -85,7 +87,7 @@ class ChampsSearch extends React.Component {
   render() {
     return (
       <div className="champs-search">
-
+        
         <h2 className='champs-search-h2'> 
           Add a Champion 
           <div className='filter-view-instructions'>
@@ -97,19 +99,19 @@ class ChampsSearch extends React.Component {
         {this.state.filterView ?
           <div className='view-type-box'>
             
-            <div className='view-type selected' onClick={()=>this.handleViewToggle('filter')}>
-              Filter View
+            <div className='view-type selected button-cursor' onClick={()=>this.handleViewToggle('filter')}>
+              Card View
               </div>
-            <div className='view-type unselected' onClick={()=>this.handleViewToggle('grid')}>
+            <div className='view-type unselected button-cursor button-hover-lighten' onClick={()=>this.handleViewToggle('grid')}>
               Grid View
               </div>
           </div>
           :
           <div className='view-type-box'>
-            <div className='view-type unselected' onClick={()=>this.handleViewToggle('filter')}>
-              Filter View
+            <div className='view-type unselected button-cursor button-hover-lighten' onClick={()=>this.handleViewToggle('filter')}>
+              Card View
               </div>
-            <div className='view-type selected' onClick={()=>this.handleViewToggle('grid')}>
+            <div className='view-type selected button-cursor' onClick={()=>this.handleViewToggle('grid')}>
               Grid View
               </div>
           </div>
@@ -117,7 +119,37 @@ class ChampsSearch extends React.Component {
         }
 
 
-        {
+{
+          Object.keys(this.context.traits).length !== 0 &&
+          Object.keys(this.context.champions).length !== 0 &&
+          Object.keys(this.context.items).length !== 0 &&
+          <>
+            <ChampsSearchFilter
+              traits={this.context.traits}
+              prices={this.context.arrayOfPrices}
+
+              filterOrigin={this.state.filterOrigin}
+              filterClass={this.state.filterClass}
+              filterPrice={this.state.filterPrice}
+              filterName={this.state.filterName}
+              handleOrigin={this.state.changeOrigin}
+              handleClass={this.state.changeClass}
+              handlePrice={this.state.changePrice}
+              handleName={this.state.changeName}
+
+            />
+            {this.state.filterView ?
+              <ChampsSearchResults champs={this.filteredChampionList()} handleAdd={this.context.addChampToCurrentBuild} locale={this.props.locale} />
+              :
+              <ChampsGrid origins={this.createOriginsAndClasses().origins} classes={this.createOriginsAndClasses().classes} champs={this.filteredChampionList()}  handleAdd={this.context.addChampToCurrentBuild}/>
+            }
+            
+          </>
+          
+
+        }
+
+        {/* 
           Object.keys(this.context.traits).length !== 0 &&
           Object.keys(this.context.champions).length !== 0 &&
           Object.keys(this.context.items).length !== 0 &&
@@ -142,7 +174,7 @@ class ChampsSearch extends React.Component {
           :
           <ChampsGrid origins={this.createOriginsAndClasses().origins} classes={this.createOriginsAndClasses().classes} champs={this.context.champions}  handleAdd={this.context.addChampToCurrentBuild}/>
 
-        }
+         */}
       </div >
     );
   }

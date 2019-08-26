@@ -9,19 +9,21 @@
 }
 
 .build-ult-desc{
-  flex-basis:50%;
+  flex-basis:60%;
   padding:5px;
 }
 .ult-prop-list{
-  flex-basis:50%;
+  flex-basis:40%;
+  max-width:300px;
   font-weight:600;
   display:flex;
-  flex-wrap:wrap;
+  flex-direction:column;
+  justify-content:flex-start;
   padding:5px;
 }
-.ult-prop{
+/* .ult-prop{
   margin-right:15px;
-}
+} */
 .adding-final{
   display:inline;
   color:magenta;

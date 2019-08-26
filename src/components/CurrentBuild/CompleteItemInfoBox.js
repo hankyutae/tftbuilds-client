@@ -1,6 +1,7 @@
 import React from 'react';
 import './CompleteItemInfoBox.css';
-import ImgLink from '../../services/create-img-link-service'
+import ImgLink from '../../services/create-img-link-service';
+import ReactHtmlParser from 'react-html-parser';
 
 class CompleteItemInfoBox extends React.Component {
   state={/* 
@@ -37,11 +38,9 @@ class CompleteItemInfoBox extends React.Component {
     return arr.join('');
   }
   parseDesc=(itemInfo,item)=>{
-    let namesArr=[];
-    let valuesArr=[];
+    let namesToVal={};
     itemInfo.effects.forEach(effect=>{
-      namesArr.push(effect.name);
-      valuesArr.push(effect.value);
+      namesToVal[effect.name.toLowerCase()]=effect.value
     })
     let desc=this.stringFixer(itemInfo.desc);
     const problemItemDescs=[18,28,38,48,58,68,78];
@@ -50,11 +49,18 @@ class CompleteItemInfoBox extends React.Component {
       desc.shift();
       desc=desc.join('');
     }
-    namesArr.forEach((name,index)=>{
-      desc=desc.split(`@${name.toLowerCase()}@`).join(valuesArr[index]);
+    Object.keys(namesToVal).forEach((name,index)=>{
+      desc=desc.split(`@${name.toLowerCase()}@`).join(namesToVal[name]);
+      desc=desc.split(`@chanceonhittodisarm@`).join(namesToVal['2426EA7E'.toLowerCase()]);      
+      desc=desc.split(`@chanceonhittosilence@`).join(namesToVal['2275757B'.toLowerCase()]);      
+      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);       
+      desc=desc.split(`@stasisduration@`).join(namesToVal['C425872E'.toLowerCase()]);        
+      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);        
+      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);        
+      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);                                            
     })
 
-    return desc;
+    return <div>{ReactHtmlParser(desc)}</div>;
     
 
 
@@ -65,7 +71,7 @@ class CompleteItemInfoBox extends React.Component {
     return (
       <div className='flex-box-complete-item-info'>
         <div className='item-img-div' onClick={(e)=>this.props.handleRemove(this.props.itemIndex)}>
-          <img className='build-item-icon' src={ImgLink.createLink(itemInfo.icon)} alt={`${itemInfo.name} icon`} /* onClick={(e) => { this.handleExpand(); }} */ />
+          <img className='build-item-icon button-cursor' src={ImgLink.createLink(itemInfo.icon)} alt={`${itemInfo.name} icon`} /* onClick={(e) => { this.handleExpand(); }} */ />
         </div>
         {
           /* this.state.isExpanded &&  */

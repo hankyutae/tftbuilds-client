@@ -1,12 +1,16 @@
 
+.synergies-box{
+  font-size:70%;
+}
+
 .build-display-synergy{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  background-color:rgb(0, 0, 0);/* 
+  background-color:rgba(0,0,0,0.5);/* 
   margin-right:30px;
   margin-bottom:10px; */
-  margin:5px 25px;
+  margin:5px 5px;
   padding: 0px .5em;
 }
 
@@ -25,13 +29,13 @@
 
 .build-trait-count{
   font-size:125%;
-  margin:.4em .2em;
+  margin:0em .2em;
   padding:.2em;
   background-color: rgb(26, 25, 25);
 }
 
 .build-traits-icon{
-  width:30px;
+  width:15px;
 }
 
 .bronze-trait{
@@ -63,7 +67,7 @@
 }
 
 .build-traits-icon-box{
-  padding:10px;
+  padding:5px;
   align-items:center;
 }
 
@@ -78,4 +82,52 @@
   padding:10px 0px;
   flex-direction:column;
   max-width:400px;
+}
+
+@media screen and (min-width:550px){
+  .synergies-box{
+    font-size:84%;
+  }
+  .synergies-box>.build-display-synergy{
+    margin:5px 10px;
+  }
+  .synergies-box>.build-display-synergy>.build-traits-icon-box{
+    padding:6px;
+  }
+  .synergies-box>.build-display-synergy>.build-traits-icon-box>.build-traits-icon{
+    width:18px;
+  }
+}
+
+@media screen and (min-width:760px){
+  .synergies-box{
+    font-size:90%;
+  }
+  .synergies-box>.build-display-synergy{
+    margin:5px 15px;
+  }
+  .synergies-box>.build-display-synergy>.build-traits-icon-box{
+    padding:7px;
+  }
+  .synergies-box>.build-display-synergy>.build-traits-icon-box>.build-traits-icon{
+    width:21px;
+  }
+}
+
+@media screen and (min-width:1400px){
+  .synergies-box{
+    font-size:100%;
+  }
+  .synergies-box>.synergy-header{
+    font-size:18.72px;
+  }
+  .synergies-box>.build-display-synergy{
+    margin:5px 15px;
+  }
+  .synergies-box>.build-display-synergy>.build-traits-icon-box{
+    padding:8px;
+  }
+  .synergies-box>.build-display-synergy>.build-traits-icon-box>.build-traits-icon{
+    width:24px;
+  }
 }

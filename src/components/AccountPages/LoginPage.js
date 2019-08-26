@@ -31,7 +31,7 @@ export default class LoginPage extends React.Component{
 
 
   onLoginSuccess = () => {
-    const { location, history } = this.props;/* 
+    const { /* location, */ history } = this.props;/* 
     const destination = (location.state || {}).from || '/'; */
     this.props.propForComponent();/* 
     history.push(destination) */
@@ -41,14 +41,36 @@ export default class LoginPage extends React.Component{
 
   render(){
     const { error } = this.state;
-    return(
-      <form className='login-box'  onSubmit={this.handleSubmitJwtAuth}>
+    return(<>
+      <div className='svg-div'>
         
+        <svg className='svg-gold' width="310" height="600">
+          
+          {/* <polyline className='hex-gold' points="150,0 300,87 300,260 150,346 0,260 0,87 150,0"/> */}
+          
+          <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="90%" fx="50%" fy="50%">
+      <stop offset="0%" className='offset1'/>
+      <stop offset="100%" className='offset2'/>
+    </radialGradient>
+  </defs>
+          <polyline className='hex-black' points="150,0 300,87 300,97 150,10 0,97 0,87 150,0"/> />
+          <polyline className='hex-black' points="150,556 300,470 300,480 150,566 0,480 0,470 150,556"/>
+          <polygon /* className='hex-gold' */ points="150,10 300,97 300,470 150,556 0,470 0,97 150,10" fill="url(#grad1)"/>
+        </svg>
+      </div>
+      
+      
+      <form className='login-box'  onSubmit={this.handleSubmitJwtAuth}></form>
+
+      <form className='login-box'  onSubmit={this.handleSubmitJwtAuth}>
+      
+      
       <h1 className="login-box-logo">
-        TFT Comps
+        Login
       </h1>
       <fieldset className='fieldset-style'>
-          <legend>Sign in </legend>
+          {/* <legend>Sign in </legend> */}
           <div role='alert'>
           {error && <p className='red'>{error}</p>}
           </div>
@@ -63,22 +85,22 @@ export default class LoginPage extends React.Component{
       </fieldset>
       <button className="login-sign-in" type='submit'> Sign in </button> <br/>
       <div className="login-helper">
-        <div className="forgot-login">
+        {/* <div className="forgot-login">
           <p>
             <a>Forgot username?</a>
           </p>
           <p>
             <a>Forgot password?</a>
           </p>
-        </div>
+        </div> */}
         <div className="login-signup-link">
           <p>
-            <Link to='/signup'>Create account?</Link>
+            <Link className='create-account-from-login' to='/signup'>Create account?</Link>
           </p>
         </div>
       </div>
     </form>
-
+</>
     );
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import "./CurrentBuild.css";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import BuildSynergies from './BuildSynergies';
 import BuildChampions from './BuildChampions';
 import TftContext from '../../contexts/TftContext';
 import CalcService from '../../services/calculate-synergy-service';
 import TftBuildsApiService from '../../services/tftbuilds-api-service';
-import TokenService from '../../services/token-service';
+//import TokenService from '../../services/token-service';
 
 class CurrentBuild extends React.Component {
   state = {
@@ -31,23 +31,26 @@ class CurrentBuild extends React.Component {
 
     return (
       <div className="current-build-display">
-        <h2 className='h2-nav-is-above'>
+        {/* <h2 className='current-build-title'>
           Your Current Build
           <br />
           <div className='new-or-save-box'>
-            <button className='current-build-page-new-build' onClick={this.newBuild}>
+            <button className='current-build-page-new-build button-cursor' onClick={this.newBuild}>
               New Build
             </button>
             {TokenService.hasAuthToken() ?
-              <button className='current-build-page-save-build' onClick={this.saveBuild}>Save Build</button>
+              <button className='current-build-page-save-build button-cursor' onClick={this.saveBuild}>Save Build</button>
               :
-              <button className='current-build-page-save-build'>
+              <button className='current-build-page-save-build button-cursor'>
                 <Link className='nav-link' to='/login'>
                   Log in To Save!
                 </Link>
               </button>
             }
           </div>
+        </h2> */}
+        <h2 className='current-build-title'>
+          Your Current Build
         </h2>
 
         {
@@ -57,6 +60,7 @@ class CurrentBuild extends React.Component {
           (<div>
             <BuildSynergies syn={calcSyn} />
             <BuildChampions champs={this.context.currentBuild} allChamps={this.context.champions} syn={calcSyn} saveBuild={this.saveBuild} newBuild={this.newBuild} />
+            
           </div>)
         }
       </div >

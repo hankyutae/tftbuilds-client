@@ -31,7 +31,7 @@ export default class Nav extends React.Component {
     return (
       <>
         {
-          this.getNavLink('Log in', '/login', ['nav-link'])
+          this.getNavLink('Login', '/login', ['nav-link'])
         }
 
         {
@@ -57,7 +57,7 @@ export default class Nav extends React.Component {
     return (
       <nav role="navigation">
         {
-          this.getNavLink('Home', '/', ['nav-link', 'home-link'])
+          this.getNavLink('TFTBuilds', '/', ['nav-link', 'home-link'])
         }
 
         <div className="nav-links">
@@ -67,7 +67,7 @@ export default class Nav extends React.Component {
               : this.renderLoginLink()
           }
           {
-            this.getNavLink('Your Build', '/create-build', ['nav-link'])
+            this.getNavLink('Your Build', '/create-build', ['nav-link','rightmost-nav-link'])
           }
         </div>
       </nav>

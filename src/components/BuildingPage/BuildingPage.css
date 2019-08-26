@@ -12,3 +12,9 @@
 .create-builds-page h2{
   color: rgb(255, 254, 254);
 }
+
+.search-and-build-separator{
+  height:30px;
+  width:100%;
+  background-color:red;
+}

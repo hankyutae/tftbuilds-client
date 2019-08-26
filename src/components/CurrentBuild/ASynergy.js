@@ -223,7 +223,7 @@ class ASynergy extends React.Component {
 
 
       return (
-        <div className='build-display-synergy' onClick={this.handleExpand}>
+        <div className='build-display-synergy button-cursor button-hover-darken2' onClick={this.handleExpand}>
           <div className={`build-traits-icon-box ${traitTier}`} >
             <img className='build-traits-icon' src={ImgLink.createLink(this.props.trait.icon)} alt={this.props.trait.name + ' icon'} />
           </div>
@@ -250,7 +250,7 @@ class ASynergy extends React.Component {
 
 
       return (
-        <div className='build-display-synergy' onClick={this.handleExpand}>
+        <div className='build-display-synergy button-cursor button-hover-darken2' onClick={this.handleExpand}>
           <div className='build-traits-icon-box no-trait'>
             <img className='build-traits-icon' src={ImgLink.createLink(this.props.trait.icon)} alt={this.props.trait.name + ' icon'} />
           </div>

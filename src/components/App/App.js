@@ -52,7 +52,15 @@ class App extends React.Component {
         />
         {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
         <Main renderNav={this.state.toggleForceNavRender} />
-        <footer role="content-info">Footer</footer>
+        <div className='footer-border'></div>
+        <footer /* role="content-info" */>
+          <div>
+            <div className='thank-you-mr-rito'>
+              tftBuilds isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+            </div>
+          </div>
+          
+        </footer>
       </div>
     );
   }

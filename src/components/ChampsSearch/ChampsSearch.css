@@ -10,6 +10,8 @@
 
 .champs-search-h2{
   position:relative;
+  margin:0px;
+  padding:1em 0em;
 }
 
 .champs-search .filter-view-instructions{
@@ -24,4 +26,22 @@
 
 .champs-search .unselected{
   background-color:gray;
+}
+
+.champs-search .unselected:hover{
+  background-color:rgba(255, 255, 0, 0.65);
+}
+
+.champs-search{
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)
+  ), url('../../img/backsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }

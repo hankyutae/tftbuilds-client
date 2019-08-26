@@ -1,32 +1,37 @@
 .champ-short-display{
   position:relative;
-  height:110px;
-  min-width:200px;
-  margin: 5px 10px;
+  min-width:111px;
+  margin: 5px 3px;
   background-color:rgb(63, 69, 122);
   color: white;
   text-align: left;
-  font-size:100%;
+  font-size:70%;
+}
+@media screen and (min-width:550px){
+  .champ-short-display{
+    font-size:84%;
+    min-width:140px;
+  }
+}
+@media screen and (min-width:760px){
+  .champ-short-display{
+    font-size:90%;
+    min-width:150px;
+  }
 }
 
-/* @media only screen and (max-width:440px){
-  .champ-short-display{
-    width:100%;
-  }
+.search-champ-icon-box-traits-box{
+  vertical-align:top;
+  display:inline-flex;
+  flex-direction: column;
+  margin-left:5px;
+}
+/* .search-champ-icon-box-traits{
+
 } */
 
-.champ-long-display{
-  position:relative;
-  min-height:500px;
-  margin: 15px 10px;
-  background-color:rgba(6, 15, 102, 0.74);
-  color: white;
-}
-
 .champ-icon-box{
-  font-size:100%;
-  padding:10px;
-  padding-bottom:47px;
+  padding:5px;
 }
 
 .champ-icon-box ul{
@@ -36,17 +41,14 @@
 }
 
 .champ-icon{
-  float:left;
-  width:50px;
+  width:36px;
 }
 .champ-name-box{
-  position:absolute; 
-  left:0;
-  right:0;
-  bottom:0;
   background-color:rgb(117, 68, 8);
   font-size:100%;
-  padding:7px 15px;
+  padding:5px 10px;
+  display:flex;
+  justify-content: space-between
 }
 .champ-name-box-name{
   float:left;
@@ -65,56 +67,3 @@
   background-image:url('../../img/coins_gold.png');
 }
 
-.for-collapsing-margin{
-  height:15px;
-  width:100%;
-}
-
-.add-to-current-build{
-  position:absolute;
-  /* top:60px;
-  right:15px; *//* 
-  bottom:4px;
-  right:45px; */
-  top:60px;
-  left:15px;
-  font-size:100%;
-  color:red;
-  z-index:10;
-}
-
-/* .expand-collapse{
-  position:absolute;
-  top:10px;
-  right:10px;
-  font-size:100%;
-} */
-
-.champ-icon-in-long{
-  width:114px;
-  margin:auto;
-}
-
-.trait-descriptions-box{
-  text-align:left;
-}
-.padding-top{
-  padding-top:1em;
-}
-.trait-description{
-  font-size:95%;
-  margin:10px 5%;
-  padding:10px;
-  border:1px solid burlywood;
-}
-.champ-stats{
-  font-size:95%;
-  margin:10px 5%;
-  padding:10px;
-  border:1px solid burlywood;
-  text-align:left;
-}
-.champ-stats ul{
-  list-style-type:none;
-  padding-left:10px;
-}
