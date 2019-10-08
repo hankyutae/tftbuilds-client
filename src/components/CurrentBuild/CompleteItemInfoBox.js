@@ -47,8 +47,16 @@ class CompleteItemInfoBox extends React.Component {
     if(problemItemDescs.includes(item)){
       desc=desc.split('<br>');
       desc.shift();
-      desc=desc.join('');
+      desc=desc.join('<br>');
     }
+    desc=desc.split('<tftitemrules>');
+    desc=desc.join('');
+    desc=desc.split('</tftitemrules>');
+    desc=desc.join('');
+
+    //converting <br><br> into single <br>
+    desc=desc.split('<br>').map(str=>str.trim()).join('<br>').split('<br><br>').join('<br>')
+
     Object.keys(namesToVal).forEach((name,index)=>{
       desc=desc.split(`@${name.toLowerCase()}@`).join(namesToVal[name]);
       desc=desc.split(`@chanceonhittodisarm@`).join(namesToVal['2426EA7E'.toLowerCase()]);      

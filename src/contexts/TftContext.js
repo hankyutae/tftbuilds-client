@@ -4,7 +4,7 @@ export const TftContext = React.createContext({
   error: null,
   arrayOfPrices:[1,2,3,4,5],
   arrayOfStars:['bronze','silver','gold'],
-  numOfBasicItems:8,
+  numOfBasicItems:9,
   loginState:0,
   toggleLoginState :  ()=>{ },
   setError: () => { },
@@ -37,7 +37,7 @@ export class TftProvider extends React.Component {
   state = {
     arrayOfPrices:[1,2,3,4,5],
     arrayOfStars:['bronze','silver','gold'],
-    numOfBasicItems:8,
+    numOfBasicItems:9,
     champions: {},
     items: {},
     traits: {},

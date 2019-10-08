@@ -32,8 +32,8 @@ function completeInfo(allTraits, countTraits) {
 }
 
 function countSynergyFromAnItem(accTraitsFromItems, itemNum) {
-  if (itemNum % 10 === 8) {
-    let num = Math.floor(itemNum / 10) % 10;
+  if (itemNum % 10 === 8 || itemNum===89) {
+    let num = (itemNum!==89)? Math.floor(itemNum / 10) % 10 : 9;
     let trait;
     if (num === 1) {
       trait = 'Assassin';
@@ -57,9 +57,10 @@ function countSynergyFromAnItem(accTraitsFromItems, itemNum) {
       trait = 'Glacial';
     }
     else if (num === 9) {
-      return;
+      trait= 'Yordle';
     }
     else {
+
       return;
     }
     //Multiple of the Same Synergy adding Item doesn't work -- learned this the hard way

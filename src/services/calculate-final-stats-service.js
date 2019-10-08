@@ -1,5 +1,21 @@
 import { countSynergyFromAnItem } from './calculate-synergy-service';
 
+
+
+const ruleOfThumb={
+  'critChance':'add',
+  'initialMana':'add',
+  'hp':'add',
+  'attackSpeed':'mult',
+  'armor':'add',
+  'magicResist':'add',
+  'ap':'mult',
+  'critMultiplier':'add',
+  'dodgeChance':'add',
+  'damage':'add'
+}
+
+
 function checkIfItemsGiveSynergy(items, synergy) {
   let hasSynergyFromItem = false;
   items.forEach(item => {
@@ -30,10 +46,15 @@ function handleSyn(stats, deepCopy, syn) {
   //Assassin,Imperial(?),Brawler, Ninja
   if (syn["Assassin"] !== undefined && syn["Assassin"].effectNum >= 0) {
     if (deepCopy.traits.includes("Assassin") || checkIfItemsGiveSynergy(deepCopy.items,"Assassin")) {
-      console.log(syn["Assassin"].effects[syn["Assassin"].effectNum]["vars"]["value"]);
       stats.critMultiplier.add += syn["Assassin"].effects[syn["Assassin"].effectNum]["vars"][0]["value"];
+      stats.critChance.add+= syn["Assassin"].effects[syn["Assassin"].effectNum]["vars"][1]["value"];
     }
+  }
 
+  if (syn["Yordle"] !== undefined && syn["Yordle"].effectNum >= 0) {
+    if (deepCopy.traits.includes("Yordle") || checkIfItemsGiveSynergy(deepCopy.items,"Yordle")) {
+      stats.dodgeChance.add+= syn["Yordle"].effects[syn["Yordle"].effectNum]["vars"][0]["value"];
+    }
   }
 
   if (syn["Imperial"] !== undefined && syn["Imperial"].effectNum === 1) {
@@ -57,6 +78,7 @@ function handleSyn(stats, deepCopy, syn) {
 
 
 
+
   //Syns to keep a lookout for:
   //Robot - once initial mana is fixed
   //Wild - To add potential
@@ -67,25 +89,35 @@ function handleSyn(stats, deepCopy, syn) {
 function handleItem(id, stats, allItems) {
   let ones = id % 10;
   let tens = Math.floor(id / 10) % 10;
-  if (ones === 8) {
-    //Synergy buffs get handled by syn
-    //Spatula doubles the effect of the other item
-    itemNumberToStat(tens, stats, allItems)
-    itemNumberToStat(tens, stats, allItems)
-  }
-  else {
-    itemNumberToStat(ones, stats, allItems)
-    itemNumberToStat(tens, stats, allItems)
+  if(tens===0){
+    itemNumberToStat(ones, stats, allItems);
   }
 
-  //Handle Item with bonuses to passive stats
-  //Currently assumes all of them stack might have to add exceptions
-  if (tens !== 0) {
+  else{
+    //if gloves is involved
+    if(ones === 9 || tens===9){
+      //Riot's data files have started including the entirety of effects of the items, but only for gloves items, so might handle it that way
+      itemNumberToStatV2(allItems[id],stats);
+    }
+    else if (ones === 8) {
+      //Synergy buffs get handled by syn
+      //Spatula doubles the effect of the other item
+      itemNumberToStat(tens, stats, allItems);
+      itemNumberToStat(tens, stats, allItems);
+    }
+    else {
+      itemNumberToStat(ones, stats, allItems);
+      itemNumberToStat(tens, stats, allItems);
+    }
+
+    //Handle Item with bonuses to passive stats
+    //Currently assumes all of them stack might have to add exceptions
     //IE
     //Probably stacks, haven't checked though.
-    if (id === 11) {
+    //this is now deathblade
+    /* if (id === 11) {
       stats.critMultiplier.add += allItems[id].effects[0].value;
-    }
+    } */
 
     //Zeke's Herald
     //stacks tested 9.14
@@ -104,11 +136,30 @@ function handleItem(id, stats, allItems) {
     if (id === 33) {
       stats.ap.multmult += allItems[id].effects[0].value;
     }
-
   }
+}
 
-
-
+function itemNumberToStatV2(item,stats){
+  let conversion={
+    'CritChance':'critChance',
+    'DodgeChance':'dodgeChance',
+    'Health':'hp',
+    'MagicResist':'magicResist',
+    'extraMR':'magicResist',
+    'Armor':'armor',
+    'Mana':'initalMana',
+    'AP':'ap',
+    'AS':'attackSpeed',
+    'AttackSpeed':'attackSpeed',
+    'AD':'damage',
+    'CriticalStrikeAmp':'critMultiplier'
+  }
+  item.effects.forEach((effect)=>{
+    let affectedStat=conversion[effect.name];
+    if(affectedStat){
+      stats[affectedStat][ruleOfThumb[affectedStat]]+=effect.value;
+    }
+  })
 }
 
 function itemNumberToStat(num, stats, allItems) {
@@ -137,7 +188,8 @@ function itemNumberToStat(num, stats, allItems) {
     return;
   }
   else if (num === 9) {
-    return;
+    stats.critChance.add+=allItems[num].effects[0].value;
+    stats.dodgeChance.add+=allItems[num].effects[1].value;
   }
   else {
     return;
@@ -208,8 +260,10 @@ function calcStats(deepCopy, syn, allItems) {
     ap: { add: 0, mult: 100, multmult:100 },
     critChance: { add: 0, mult: 100 },
     critMultiplier: { add: 0, mult: 100 },
+    dodgeChance:{ add: 0, mult: 100 },
     ultDescAffectedByAp: [],
   }
+  
   if (deepCopy.traits.includes("Imperial")) {
     statsToWatch.imperial = 1;
   }
@@ -219,6 +273,8 @@ function calcStats(deepCopy, syn, allItems) {
   //final scaling some stat values
   statsToWatch.ap.mult=100+(statsToWatch.ap.mult-100)*(statsToWatch.ap.multmult/100)
   statsToWatch.critMultiplier.add /= 100;
+  statsToWatch.critChance.add /= 100;
+  statsToWatch.dodgeChance.add /= 100;
   statsToWatch.attackSpeed.add /= 100;
   for (let [key, value] of Object.entries(statsToWatch)) {
     if (typeof value !== "object" || Array.isArray(value)) {

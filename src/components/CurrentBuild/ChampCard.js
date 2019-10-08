@@ -142,6 +142,7 @@ class ChampCard extends React.Component {
       "range",
       "critMultiplier",
       "critChance",
+      "dodgeChance",
       "armor",
       "magicResist"
     ]
@@ -159,6 +160,7 @@ class ChampCard extends React.Component {
       attackSpeed: "AS",
       range: "Range",
       armor: 'Armor',
+      dodgeChance: 'Dodge'
     }
     return table[statType];
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './SingleStat.css';
+import {getBaseStat,getFinalStat,roundToNDecimalPlaces} from '../../services/stat-calc-helpers';
 class SingleStat extends React.Component {
   state={
     isExpanded:false
@@ -8,19 +9,6 @@ class SingleStat extends React.Component {
     this.setState({
       isExpanded:!this.state.isExpanded
     })
-  }
-  getBaseStat=(statType,stars)=>{
-    if(statType==='ap'){
-      return;
-    }
-    let baseStat=this.props.champInfo["stats"][statType];
-    if(statType==="hp" || statType==="damage"){
-      baseStat*=this.props.statMod["damageHealthScale"][stars-1];
-    }
-    if(statType==="initalMana"){
-      baseStat=0;
-    }
-    return baseStat;
   }
   getDisplayStatType=(statType)=>{
     let table={
@@ -37,18 +25,13 @@ class SingleStat extends React.Component {
     }
     return table[statType];
   }
-  roundToNDecimalPlaces=(num,n)=>{
-    const scale=Math.pow(10,n);
-    return Math.round(num*scale)/scale;
-  }
 
   render(){
     const stars=this.props.champ.stars;
     const statType=this.props.statType;
-    const baseStat=this.getBaseStat(statType,stars);
+    const baseStat=getBaseStat(this.props.champInfo,this.props.statMod,statType,stars);
     const statModifiers=this.props.statMod[statType];
-    let finalStat=(baseStat+statModifiers.add)*statModifiers.mult;
-    finalStat=this.roundToNDecimalPlaces(finalStat,2);
+    const finalStat=getFinalStat(this.props.champInfo,this.props.statMod,statType,stars)
 
     //initialMana stuff we can delete once we find out how to get it
     //Remmeber to also handle ROBOT in calculate-final-stats
@@ -58,22 +41,19 @@ class SingleStat extends React.Component {
           <td className={statType}>{this.props.champInfo["stats"]["mana"]}</td> 
         );
       }
-      return (
-          <td className={statType}>{`Unknown + ${statModifiers.add}`}</td> 
-        );
     }
     
     //Wanna display appropriate info
     const didChangeAdd=(statModifiers.add!==0);
     const didChangeMult=(statModifiers.mult!==1);
-    let calculationDisplayArray=[`${this.roundToNDecimalPlaces(baseStat,2)}`];
+    let calculationDisplayArray=[`${roundToNDecimalPlaces(baseStat,2)}`];
     if(didChangeAdd){
       calculationDisplayArray.unshift('(');
-      calculationDisplayArray.push(` + ${this.roundToNDecimalPlaces(statModifiers.add,2)})`);
+      calculationDisplayArray.push(` + ${roundToNDecimalPlaces(statModifiers.add,2)})`);
     }
     if(didChangeMult){
       calculationDisplayArray.push(` 
-      * ${this.roundToNDecimalPlaces(statModifiers.mult,2)}`)
+      * ${roundToNDecimalPlaces(statModifiers.mult,2)}`)
     }
     calculationDisplayArray.push(' = ');
 

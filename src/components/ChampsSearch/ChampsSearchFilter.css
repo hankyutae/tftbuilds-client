@@ -3,6 +3,9 @@ form.champs-search-form{
   padding-top:18px;
   padding-bottom:18px;
 }
+form.champs-search-form>select{
+  border-radius:9px;
+}
 
 form.nav-is-above{
   
@@ -39,4 +42,8 @@ h2.nav-is-above{
 #search-form-champ-price{
   margin:5px 10px;
 
+}
+
+#search-form-champ-name{
+  padding:10px;
 }

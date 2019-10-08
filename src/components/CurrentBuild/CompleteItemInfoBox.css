@@ -1,9 +1,12 @@
 .flex-box-complete-item-info{
   display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  margin:auto;
+  align-items:center;/* 
+  justify-content:center; */
+  margin:0;
+
+  padding: 2px 10px;
   text-align:left;
+  width:300px;
 
 }
 
@@ -13,8 +16,19 @@
   justify-content:center;
 }
 
-.item-desc{
-  font-size:90%;
-  max-width:300px;
+.item-desc{/* 
+  max-width:300px; */
   padding:3px 3px;
+}
+
+@media screen and (min-width:500px){
+  .flex-box-complete-item-info{
+    width:400px;
+  }
+}
+
+@media screen and (min-width:760px){
+  .flex-box-complete-item-info{
+    width:500px;
+  }
 }

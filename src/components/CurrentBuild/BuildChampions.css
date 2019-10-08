@@ -12,7 +12,8 @@
   min-height:180px;
   margin: 15px 0px;
   background-color:antiquewhite;
-  color: brown;
+  color: #5A1717;
+  font-weight:500;
   overflow-x:auto;
 }
 

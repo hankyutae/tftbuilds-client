@@ -1,6 +1,7 @@
 import React from 'react';
 import './ChampCardUltimate.css';
 import ReactHtmlParser from 'react-html-parser';
+import {getBaseStat,getFinalStat,roundToNDecimalPlaces} from '../../services/stat-calc-helpers';
 
 class ChampCardUltimate extends React.Component {
   stringFixer = (string) => {
@@ -38,6 +39,7 @@ class ChampCardUltimate extends React.Component {
     Object.keys(nameToVal).forEach((name) => {
       desc = desc.split(`@${name.toLowerCase()}@`).join(nameToVal[name]);
       desc = desc.split(`@${name.toLowerCase()}percent@`).join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100) + '%');
+      desc = desc.split(`@${name.toLowerCase()}*100@`).join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100));
       desc = desc.split(`@modified${name.toLowerCase()}@`).join(this.roundToTwoDecimalPlaces(nameToVal[name] * apmult))
     })
 
@@ -46,7 +48,7 @@ class ChampCardUltimate extends React.Component {
     //specialcases
     if (splitByAt.length > 1) {
       //cases where modifiedDamage/modifiedheal is needed and they have exactly one stat with string Damage/Heal in it
-      let oneDamageNameCases = ['twisted fate', 'warwick', 'miss fortune', 'evelyn', 'nidalee', 'poppy', 'shyvana', 'lucian', 'rek\'sai', 'anivia', 'vayne'];
+      let oneDamageNameCases = ['twisted fate', 'warwick', 'miss fortune', 'evelyn', 'nidalee', 'poppy', 'shyvana', 'lucian', 'rek\'sai', 'anivia', 'vayne','pantheon','jinx'];
       let oneHealNameCases=['nidalee']
 
       //one modifiedDamage for many damage names
@@ -76,11 +78,11 @@ class ChampCardUltimate extends React.Component {
         return rounding((base+statMod[statType].add)*statMod[statType].mult)
       }
       let oneToOneNameTimesOneStatCases={
-        'akali':['critdamage','damage',quickCalc('critMultiplier')*apmult],
-        'graves':['bonusdamage','damagemultiplier',quickCalc('damage')],
-        'volibear':['chaindamage','chainadmult',quickCalc('damage')],
-        'rengar':['leapdamage','admult',quickCalc('damage')],
-        'draven':['bonusaddamage','admult',quickCalc('damage')],
+        'akali':['critdamage','damage',getFinalStat(this.props.champInfo,statMod,'critMultiplier',stars)*apmult],
+        'graves':['bonusdamage','damagemultiplier',getFinalStat(this.props.champInfo,statMod,'damage',stars)],
+        'volibear':['chaindamage','chainadmult',getFinalStat(this.props.champInfo,statMod,'damage',stars)],
+        'rengar':['leapdamage','admult',getFinalStat(this.props.champInfo,statMod,'damage',stars)],
+        'draven':['bonusaddamage','admult',getFinalStat(this.props.champInfo,statMod,'damage',stars)],
 
       };
 
@@ -99,7 +101,7 @@ class ChampCardUltimate extends React.Component {
           }
 
         }
-        if (splitByAt[i] === 'modifieddamage') {
+        else if (splitByAt[i] === 'modifieddamage') {
           if (oneDamageNameCases.includes(this.props.champInfo.name.toLowerCase())) {
             splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal[Object.keys(nameToVal).find(name => name.toLowerCase().includes('damage'))] * apmult);
           }
@@ -111,43 +113,58 @@ class ChampCardUltimate extends React.Component {
             splitByAt[i]=this.roundToTwoDecimalPlaces(nameToVal[arr[0]]*nameToVal[arr[1]]*apmult);
           }
         }
-        if (splitByAt[i] === 'modifiedshield') {
+        else if (splitByAt[i] === 'modifiedshield') {
           if (this.props.champInfo.name.toLowerCase() === "kassadin") {
             splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['manasteal'] * apmult)
           }
         }
-        if(splitByAt[i]==='targets'){
+        else if(splitByAt[i]==='targets'){
           if (this.props.champInfo.name.toLowerCase() === "kayle") {
             if(nameToVal['extratargets']!==undefined)
             splitByAt[i] = nameToVal['extratargets']+1; 
           }
         }
-        if(splitByAt[i]==='executethreshholdpercent'){
+        else if(splitByAt[i]==='executethreshholdpercent'){
           if (this.props.champInfo.name.toLowerCase() === "evelynn") {
             if(nameToVal['critthreshold']!==undefined)
               splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['critthreshold']*100)+'%'; 
           }
         }
-        if(splitByAt[i]==='modifiedmaxdamage'){
+        else if(splitByAt[i]==='modifiedmaxdamage'){
           if (this.props.champInfo.name.toLowerCase() === "tristana") {
             if(nameToVal['maxchargedamage']!==undefined)
               splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['maxchargedamage']*apmult); 
           }
         }
-        if(splitByAt[i]==='percentdamageincrease'){
+        else if(splitByAt[i]==='percentdamageincrease'){
           if (this.props.champInfo.name.toLowerCase() === "tristana") {
             if(nameToVal['percentdamageincreaseperstack']!==undefined)
               splitByAt[i] = nameToVal['percentdamageincreaseperstack']*100+'%'; 
           }
         }
-        if(splitByAt[i]==='modifiedcritdamage'){
+        else if(splitByAt[i]==='modifiedcritdamage'){
           if (this.props.champInfo.name.toLowerCase() === "evelynn") {
             splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['damage']*nameToVal['critmultiplier']); 
           }
         }
-        if(splitByAt[i]==='critchance'){
+        else if(splitByAt[i]==='critchance'){
           if (this.props.champInfo.name.toLowerCase() === "akali") {
             splitByAt[i] = this.roundToTwoDecimalPlaces(quickCalc('critChance')*100)+'%'; 
+          }
+        }
+        else if(splitByAt[i]==='selfultpercentage'){
+          if (this.props.champInfo.name.toLowerCase() === "lissandra") {
+            splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['selfulthealthpercent'])*100+'%'; 
+          }
+        }
+        else if(splitByAt[i]==='selfultpercentage'){
+          if (this.props.champInfo.name.toLowerCase() === "lissandra") {
+            splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['selfulthealthpercent'])*100+'%'; 
+          }
+        }
+        else if(splitByAt[i]==='percentattackspeed'){
+          if (this.props.champInfo.name.toLowerCase() === "jinx") {
+            splitByAt[i] = this.roundToTwoDecimalPlaces(nameToVal['attackspeedbonus'])*100+'%'; 
           }
         }
 
