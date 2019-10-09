@@ -8,12 +8,22 @@ import TftBuildsApiService from '../../services/tftbuilds-api-service';
 export default class DashboardABuildDisplay extends React.Component {
   state = {
     isExpanded: false,
-    isRevealed: false
+    isRevealed: false,
+    copySuccess: '',
+    isDeleting:false,
   }
   static contextType = TftContext
   handleLoadBuildClick = (e) => {
     e.stopPropagation();
     this.context.setCurrentBuild(this.props.build['build_data']);
+  }
+  componentDidUpdate(prevProps){
+    /* this.setState({
+      isExpanded: false,
+      isRevealed: false,
+      copySuccess: '',
+      isDeleting:false,
+    }) */
   }
   handleBuildClick = (e) => {
     e.stopPropagation();
@@ -25,8 +35,20 @@ export default class DashboardABuildDisplay extends React.Component {
     e.stopPropagation();
     TftBuildsApiService.deleteBuild(this.props.build.id)
       .then(res => {
-        this.props.handleRemove(this.props.index);
+        this.setState({
+          isExpanded: false,
+          isRevealed: false,
+          copySuccess: '',
+          isDeleting:false,
+        },()=>{
+          this.props.handleRemove(this.props.index);
+        })
       })
+  }
+  toggleDeleting = (e)=>{
+    this.setState({
+      isDeleting:!this.state.isDeleting
+    })
   }
   handleMakePublicClick = (e) => {
     e.stopPropagation();
@@ -44,6 +66,11 @@ export default class DashboardABuildDisplay extends React.Component {
         })
     }
   }
+  copyLink =(e)=>{
+    this.textArea.select();
+    document.execCommand('copy');
+    this.setState({copySuccess:'Copied!'})
+  }
   render() {
     return (
       <div className='build-display-in-dashboard-box'>
@@ -51,45 +78,80 @@ export default class DashboardABuildDisplay extends React.Component {
           <>
             <div className='dashboard-build-top'>
               <div className='load-and-share'>
-                <button>
+                <div className='load-build-button button-hover-lighten'>
                   <Link className='nav-link' to='/create-build' onClick={this.handleLoadBuildClick}> Load Build</Link>
-                </button>
-                <button onClick={this.handleMakePublicClick}>
+                </div>
+                <div className='share-build-button button-hover-lighten' onClick={this.handleMakePublicClick}>
                   Share
-                  </button>
+                </div>
               </div>
               <div className='dash-delete-build'>
-                <button className='red' onClick={this.handleDeleteClick}>Delete </button>
+                {
+                  this.state.isDeleting? 
+                  <div className='delete-yes-or-no-container'>
+                    <div className='yes-delete-build-button deleting-yes-or-no-button button-hover-lighten'onClick={this.handleDeleteClick}>
+                      Delete
+                    </div>
+                    <div className='no-delete-build-button deleting-yes-or-no-button button-hover-lighten' onClick={this.toggleDeleting}>
+                      No
+                    </div>
+                  </div>
+                  :
+                  <div className='red delete-build-button button-hover-lighten' onClick={this.toggleDeleting}>Delete </div>
+                }
+                
               </div>
 
             </div>
-            <div className='build-display-in-dashboard' onClick={this.handleBuildClick}>
-              {
+            <div className='dashboard-build-bottom'>
+
+            
+              <div className='build-display-in-dashboard' onClick={this.handleBuildClick}>
+                {
 
 
 
 
-                this.props.build['build_data'].filter((champ, index) => index < 11).map((champ, index) => {
-                  return (
-                    <div key={index} className='dash-build-champ-details'>
-                      <img key={index} className='dash-build-champ-icon' src={ImgLink.createLink(this.context.champions[champ.id].splash)} alt={this.context.champions[champ.id].name + ' icon'} />
-                      <div className='dash-box-champ-items'>
-                        {champ.items.map((item,index)=>{
-                          return <img key={index} className='dash-build-item-icon' src={ImgLink.createLink(this.context.items[item].icon)} alt={this.context.items[item].name + ' icon'} />
-                        })}
+                  this.props.build['build_data'].filter((champ, index) => index < 11).map((champ, index) => {
+                    return (
+                      <div key={index} className='dash-build-champ-details'>
+                        <img key={index} className='dash-build-champ-icon' src={ImgLink.createLink(this.context.champions[champ.id].splash)} alt={this.context.champions[champ.id].name + ' icon'} />
+                        <div className='dash-box-champ-items'>
+                          {champ.items.map((item,index)=>{
+                            return <img key={index} className='dash-build-item-icon' src={ImgLink.createLink(this.context.items[item].icon)} alt={this.context.items[item].name + ' icon'} />
+                          })}
+                        </div>
                       </div>
-                    </div>
-                  )
-                })
+                    )
+                  })
 
+                }
+              </div>
+
+              {this.state.isRevealed &&
+                <div className='build-link-container'>
+                  <textarea 
+                    className='build-share-link' 
+                    ref={(textarea) => this.textArea = textarea} 
+                    value={`${window.location.origin}/build/${this.props.build.id}`}
+                    readOnly
+                  />
+                  {
+                    document.queryCommandSupported('copy') &&
+                    <div className='copy-link-button' onClick={this.copyLink}>
+                      Copy
+                    </div>
+                  }
+                  {
+                    this.state.copySuccess &&
+                    <span className='copy-success'>
+                      {this.state.copySuccess}
+                    </span>
+                  }
+
+                </div>
               }
             </div>
-
-            {this.state.isRevealed &&
-              <Link className='build-share-link' to={`/build/${this.props.build.id}`}>
-                {`${window.location.origin}/build/${this.props.build.id}`}
-              </Link>
-            }
           </>
         }
       </div>

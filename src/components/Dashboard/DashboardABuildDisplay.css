@@ -9,10 +9,14 @@
   position:relative;
   background-color:antiquewhite;
   margin:10px 0px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
 }
 .dashboard-build-top{
   position:relative;
   background-color:darkgoldenrod;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
 }
 .load-and-share{
   display:inline-flex;/* 
@@ -26,12 +30,6 @@
   right:0;
 }
 .build-share-link{ 
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
   /* Instead use this non-standard one: */
   word-break: break-word;
 }
@@ -57,6 +55,101 @@
   z-index:2;
 }
 
+.delete-build-button{
+  padding:10px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  background-color:antiquewhite;
+  font-weight:500;
+  cursor:pointer;
+  border-bottom:1px solid black;
+  color:rgb(155, 0, 0);
+}
+.deleting-yes-or-no-button{
+  background-color:antiquewhite;
+  font-weight:500;
+  cursor:pointer;
+}
+.yes-delete-build-button{
+  display:inline-block;
+  padding:10px;/* 
+  border-top-left-radius:5px; */
+  border-top-left-radius:5px;
+  background-color:antiquewhite;
+  font-weight:600;
+  cursor:pointer;
+  border-bottom:1px solid black;
+  border-right:1px solid black;
+  color:rgb(155, 0, 0);
+}
+
+.no-delete-build-button{
+  display:inline-block;
+  padding:10px;/* 
+  border-top-left-radius:5px; */
+  border-top-right-radius:5px;
+  background-color:antiquewhite;
+  font-weight:500;
+  cursor:pointer;
+  border-bottom:1px solid black;
+  color:rgb(0, 66, 25);
+}
+
+.load-build-button{
+  padding:10px;
+  border-top-left-radius:5px;/* 
+  border-top-right-radius:5px; */
+  background-color:antiquewhite;
+  font-weight:500;
+  cursor:pointer;
+  color:rgb(0, 66, 25);
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+
+}
+.share-build-button{
+  padding:10px;/* 
+  border-top-left-radius:5px; */
+  border-top-right-radius:5px;
+  background-color:antiquewhite;
+  font-weight:500;
+  cursor:pointer;
+  border-bottom:1px solid black;
+  color:rgb(0, 66, 25);
+
+}
+
+
+.dashboard-build-bottom{
+  padding:3px;
+}
+
+.build-share-link{
+  padding:5px;
+  flex-grow:2;
+  max-width:500px;
+}
+.build-link-container{
+  margin:5px auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+.copy-link-button{
+  background-color:#463B00;
+  color:#e8e5f3;
+  padding:10px;
+  font-weight:500;
+  margin-left:5px;
+}
+.copy-success{
+  margin-left:5px;
+  font-weight:500;
+  color:rgb(0, 66, 25);
+}
+
+
 @media screen and (max-width:420px){
   .dash-build-champ-icon{
     width:45px;
@@ -67,5 +160,8 @@
   .dash-build-item-icon{
     width:13px;
     height:13px;
+  }
+  .build-display-in-dashboard-box{
+    font-size:80%;
   }
 }
