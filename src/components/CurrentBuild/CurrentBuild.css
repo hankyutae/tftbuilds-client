@@ -20,13 +20,9 @@
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.65)
   ), url('../../img/backsplash.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 0, 50% 0;
+  background-size: 150% auto;
 }
 .current-build-page-new-build{
   color:red;
