@@ -12,6 +12,13 @@ export default class Dashboard extends React.Component {
       this.setState({
         allbuilds: oneLvlDeepCopy
       })
+    }, 
+    makePublic: (index) =>{
+      let oneLvlDeepCopy = [...this.state.allbuilds];
+      oneLvlDeepCopy[index].is_public=true;
+      this.setState({
+        allbuilds: oneLvlDeepCopy
+      })
     }
   }
   componentDidMount() {
@@ -35,7 +42,7 @@ export default class Dashboard extends React.Component {
         
             {this.state.allbuilds.length !== 0 &&
               this.state.allbuilds.map((build, index) => {
-                return <DashboardABuildDisplay key={index} build={build} index={index} handleRemove={this.state.removeABuild} />
+                return <DashboardABuildDisplay key={index} build={build} index={index} handleRemove={this.state.removeABuild} handleMakePublic={this.state.makePublic}/>
               })
             }
           </div>

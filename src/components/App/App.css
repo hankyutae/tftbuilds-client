@@ -2,8 +2,8 @@
 footer { 
   color:rgb(163, 185, 224);
 }
-.footer-border{
-  height:5rem;
+.footer-border{/* 
+  height:5rem; */
   width:100%;
   border-bottom: 2px dotted rgb(163, 185, 224);
 }

@@ -44,4 +44,6 @@
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  
+  padding-bottom:100px;
 }

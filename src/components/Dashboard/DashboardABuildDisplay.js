@@ -62,7 +62,7 @@ export default class DashboardABuildDisplay extends React.Component {
         .then(res => {
           this.setState({
             isRevealed: true
-          })
+          },this.props.handleMakePublic(this.props.index))
         })
     }
   }
