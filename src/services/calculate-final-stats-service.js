@@ -13,6 +13,7 @@ const ruleOfThumb={
   'critMultiplier':'add',
   'dodgeChance':'add',
   'damage':'add'
+
 }
 
 
@@ -97,7 +98,13 @@ function handleItem(id, stats, allItems) {
     //if gloves is involved
     if(ones === 9 || tens===9){
       //Riot's data files have started including the entirety of effects of the items, but only for gloves items, so might handle it that way
-      itemNumberToStatV2(allItems[id],stats);
+      if(ones===9 && tens===8){
+        itemNumberToStat(ones, stats, allItems);
+        itemNumberToStat(ones, stats, allItems);
+      }
+      else{
+        itemNumberToStatV2(allItems[id],stats);
+      }
     }
     else if (ones === 8) {
       //Synergy buffs get handled by syn
@@ -152,7 +159,7 @@ function itemNumberToStatV2(item,stats){
     'AS':'attackSpeed',
     'AttackSpeed':'attackSpeed',
     'AD':'damage',
-    'CriticalStrikeAmp':'critMultiplier'
+    'CriticalStrikeAmp':'critMultiplier',
   }
   item.effects.forEach((effect)=>{
     let affectedStat=conversion[effect.name];
