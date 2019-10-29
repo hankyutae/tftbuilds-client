@@ -1,68 +1,62 @@
-#TFT Builds
+# TFT Builds
 
-## Available Scripts
+[https://tftbuilds.now.sh/](https://tftbuilds.now.sh/)
 
-In the project directory, you can run:
+## What is TFT Builds
 
-### `npm start`
+TFT Builds allows users to create their own custom builds for Teamfight Tactics (an online competitive game by Riot Games) with live stat changes as you change your team.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Fork GIT
 
-### `npm test`
+run `npm i`
+run `npm run start`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deploy
 
-### `npm run build`
+1) change config.js to point to production server
+2) Add/update alias
+2) run `now`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
+--> React Router and Context
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### User Dashboard
 
-### `npm run eject`
+![User Dashboard](/src/screenShots/dash.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Builds UI Mobile
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Builds Mobile](/src/screenShots/fullbuildsize0.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Builds UI bigger
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Builds bigger](/src/screenShots/fullbuildsize1.png)
 
-## Learn More
+### Builds UI biggest
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Builds biggest](/src/screenShots/fullbuildsize2.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Add Champions Grid
 
-### Code Splitting
+![Add Champ Grid](/src/screenShots/searchchampgrid.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Add Champions Card
 
-### Analyzing the Bundle Size
+![Add Champ Card](/src/screenShots/searchchampcard.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Register Page
 
-### Making a Progressive Web App
+![Register Page](/src/screenShots/register.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Login Page
 
-### Advanced Configuration
+![Login Page](/src/screenShots/login.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
