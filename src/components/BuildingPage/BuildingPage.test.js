@@ -1,24 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import {BrowserRouter} from 'react-router-dom';
+import BuildingPage from './BuildingPage';
 import renderer from "react-test-renderer";
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>, div);
+      <BuildingPage/>
+  , div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
 it("renders the UI as expected", () => {
   const tree = renderer
-    .create(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+    .create( 
+      <BuildingPage/>
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

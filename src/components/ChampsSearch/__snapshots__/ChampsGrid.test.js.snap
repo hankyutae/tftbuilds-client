@@ -1,0 +1,1191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="champs-grid"
+>
+  <table>
+    <tbody>
+      <tr>
+        <td />
+        <td>
+          <div>
+            <img
+              alt="Assassin icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_assassin.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Assassin
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Blademaster icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_blademaster.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Blademaster
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Brawler icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_brawler.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Brawler
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Elementalist icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_elementalist.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Elementalist
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Guardian icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_guardian.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Guardian
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Gunslinger icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_gunslinger.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Gunslinger
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Knight icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_knight.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Knight
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Ranger icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_ranger.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Ranger
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Shapeshifter icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_shapeshifter.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Shapeshifter
+          </div>
+        </td>
+        <td>
+          <div>
+            <img
+              alt="Sorcerer icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_sorcerer.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Sorcerer
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Demon icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_demon.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Demon
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Evelynn icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_evelyn.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Aatrox icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_aatrox.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Brand icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_brand.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Varus icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_varus.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Elise icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_elise.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Swain icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_swain.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Morgana icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_morgana.png"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Dragon icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_dragon.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Dragon
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Pantheon icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_pantheon.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Shyvana icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_shyvana.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Aurelion Sol icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_aurelionsol.png"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Exile icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_exile.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Exile
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Yasuo icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_yasuo.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Glacial icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_glacial.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Glacial
+          </div>
+        </td>
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Volibear icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_volibear.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Lissandra icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_lissandra.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Anivia icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_anivia.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Braum icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_braum.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Sejuani icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_sejuani.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Ashe icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_ashe.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Hextech icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_hextech.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Hextech
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Camille icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_camille.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Vi icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_vi.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Jinx icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_jinx.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Jayce icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_jayce.png"
+            />
+          </div>
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Imperial icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_imperial.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Imperial
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Katarina icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_katarina.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Draven icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_draven.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Darius icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_darius.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Swain icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_swain.png"
+            />
+          </div>
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Ninja icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_ninja.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Ninja
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Zed icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_zed.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Akali icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_akali.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Shen icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_shen.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kennen icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kennen.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Noble icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_noble.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Noble
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Fiora icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_fiora.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Leona icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_leona.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Lucian icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_lucian.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Garen icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_garen.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kayle icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kayle.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Vayne icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_vayne.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Phantom icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_phantom.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Phantom
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Mordekaiser icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_mordekaiser.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kindred icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kindred.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Karthus icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_karthus.png"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Pirate icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_pirate.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Pirate
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Pyke icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_pyke.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Gangplank icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_gangplank.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Graves icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_graves.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Gangplank icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_gangplank.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Miss Fortune icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_missfortune.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Twisted Fate icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_twistedfate.png"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Robot icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_robot.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Robot
+          </div>
+        </td>
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Blitzcrank icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_blitzcrank.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Void icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_void.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Void
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kha'Zix icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_khazix.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kai'Sa icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kaisa.tft_set1_kaisa.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Rek'Sai icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_reksai.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Cho'Gath icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_chogath.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kai'Sa icon"
+              className="build-champ-icon button-cursor cost5"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kaisa.tft_set1_kaisa.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kassadin icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kassadin.png"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Wild icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_wild.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Wild
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Rengar icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_rengar.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Warwick icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_warwick.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Nidalee icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_nidalee.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Gnar icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_gnar.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Ahri icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_ahri.png"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <img
+              alt="Yordle icon"
+              className="grid-champ-class"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_yordle.png"
+            />
+          </div>
+          <div
+            className="grid-class-name"
+          >
+            Yordle
+          </div>
+        </td>
+        <td />
+        <td />
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Kennen icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kennen.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Tristana icon"
+              className="build-champ-icon button-cursor cost1"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_tristana.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Poppy icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_poppy.png"
+            />
+          </div>
+        </td>
+        <td />
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Gnar icon"
+              className="build-champ-icon button-cursor cost4"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_gnar.png"
+            />
+          </div>
+        </td>
+        <td>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Lulu icon"
+              className="build-champ-icon button-cursor cost2"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_lulu.png"
+            />
+          </div>
+          <div
+            className="build-champ-icon-box  grid-champ-icon-box"
+          >
+            <img
+              alt="Veigar icon"
+              className="build-champ-icon button-cursor cost3"
+              onClick={[Function]}
+              src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_veigar.png"
+            />
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

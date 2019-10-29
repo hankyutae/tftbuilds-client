@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<form
+  className="champs-search-form"
+  onSubmit={[Function]}
+>
+  <select
+    aria-label="Champ origin filter"
+    id="search-form-champ-origin"
+    name="search-champ"
+    onChange={[Function]}
+  >
+    <option
+      value="Any"
+    >
+       Any Origin 
+    </option>
+    <option
+      value="Void"
+    >
+       
+      Void
+       
+    </option>
+    <option
+      value="Wild"
+    >
+       
+      Wild
+       
+    </option>
+    <option
+      value="Demon"
+    >
+       
+      Demon
+       
+    </option>
+    <option
+      value="Exile"
+    >
+       
+      Exile
+       
+    </option>
+    <option
+      value="Ninja"
+    >
+       
+      Ninja
+       
+    </option>
+    <option
+      value="Noble"
+    >
+       
+      Noble
+       
+    </option>
+    <option
+      value="Robot"
+    >
+       
+      Robot
+       
+    </option>
+    <option
+      value="Dragon"
+    >
+       
+      Dragon
+       
+    </option>
+    <option
+      value="Pirate"
+    >
+       
+      Pirate
+       
+    </option>
+    <option
+      value="Yordle"
+    >
+       
+      Yordle
+       
+    </option>
+    <option
+      value="Glacial"
+    >
+       
+      Glacial
+       
+    </option>
+    <option
+      value="Hextech"
+    >
+       
+      Hextech
+       
+    </option>
+    <option
+      value="Phantom"
+    >
+       
+      Phantom
+       
+    </option>
+    <option
+      value="Imperial"
+    >
+       
+      Imperial
+       
+    </option>
+  </select>
+  <select
+    aria-label="Champ class filter"
+    id="search-form-champ-class"
+    name="search-champ"
+    onChange={[Function]}
+  >
+    <option
+      value="Any"
+    >
+       Any Class 
+    </option>
+    <option
+      value="Knight"
+    >
+       
+      Knight
+       
+    </option>
+    <option
+      value="Ranger"
+    >
+       
+      Ranger
+       
+    </option>
+    <option
+      value="Brawler"
+    >
+       
+      Brawler
+       
+    </option>
+    <option
+      value="Assassin"
+    >
+       
+      Assassin
+       
+    </option>
+    <option
+      value="Guardian"
+    >
+       
+      Guardian
+       
+    </option>
+    <option
+      value="Sorcerer"
+    >
+       
+      Sorcerer
+       
+    </option>
+    <option
+      value="Gunslinger"
+    >
+       
+      Gunslinger
+       
+    </option>
+    <option
+      value="Blademaster"
+    >
+       
+      Blademaster
+       
+    </option>
+    <option
+      value="Elementalist"
+    >
+       
+      Elementalist
+       
+    </option>
+    <option
+      value="Shapeshifter"
+    >
+       
+      Shapeshifter
+       
+    </option>
+  </select>
+  <select
+    aria-label="Champ price filter"
+    id="search-form-champ-price"
+    name="search-champ"
+    onChange={[Function]}
+  >
+    <option
+      value="0"
+    >
+       Any Price 
+    </option>
+    <option
+      value="1"
+    >
+       
+      1
+       
+    </option>
+    <option
+      value="2"
+    >
+       
+      2
+       
+    </option>
+    <option
+      value="3"
+    >
+       
+      3
+       
+    </option>
+    <option
+      value="4"
+    >
+       
+      4
+       
+    </option>
+    <option
+      value="5"
+    >
+       
+      5
+       
+    </option>
+  </select>
+  <div
+    className="reset-filters-box button-cursor"
+    onClick={[Function]}
+  >
+    Reset Filters
+  </div>
+  <div
+    className="search-form-champ-name-box"
+  >
+    <input
+      aria-label="Champ name filter"
+      id="search-form-champ-name"
+      name="search-champ"
+      onChange={[Function]}
+      placeholder="Search Champ Name"
+      type="text"
+    />
+  </div>
+</form>
+`;

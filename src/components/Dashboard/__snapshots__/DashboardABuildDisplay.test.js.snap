@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="build-display-in-dashboard-box"
+>
+  <div
+    className="dashboard-build-top"
+  >
+    <div
+      className="load-and-share"
+    >
+      <div
+        className="load-build-button button-hover-lighten"
+      >
+        <a
+          className="nav-link"
+          href="/create-build"
+          onClick={[Function]}
+        >
+           Load Build
+        </a>
+      </div>
+      <div
+        className="share-build-button button-hover-lighten"
+        onClick={[Function]}
+      >
+        Share
+      </div>
+    </div>
+    <div
+      className="dash-delete-build"
+    >
+      <div
+        className="red delete-build-button button-hover-lighten"
+        onClick={[Function]}
+      >
+        Delete 
+      </div>
+    </div>
+  </div>
+  <div
+    className="dashboard-build-bottom"
+  >
+    <div
+      className="build-display-in-dashboard"
+      onClick={[Function]}
+    >
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Kassadin icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kassadin.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        >
+          <img
+            alt="Bloodthirster icon"
+            className="dash-build-item-icon"
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_bloodthirster.tft.png"
+          />
+          <img
+            alt="Guardian Angel icon"
+            className="dash-build-item-icon"
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_guardianangel.tft.png"
+          />
+          <img
+            alt="Chain Vest icon"
+            className="dash-build-item-icon"
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_chainvest.tft.png"
+          />
+        </div>
+      </div>
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Ahri icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_ahri.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        >
+          <img
+            alt="Chain Vest icon"
+            className="dash-build-item-icon"
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_chainvest.tft.png"
+          />
+          <img
+            alt="Zeke's Herald icon"
+            className="dash-build-item-icon"
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_zekesherald.tft.png"
+          />
+          <img
+            alt="Phantom Dancer icon"
+            className="dash-build-item-icon"
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_phantomdancer.tft.png"
+          />
+        </div>
+      </div>
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Morgana icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_morgana.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        />
+      </div>
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Aurelion Sol icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_aurelionsol.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        />
+      </div>
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Karthus icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_karthus.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        />
+      </div>
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Rek'Sai icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_reksai.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        />
+      </div>
+      <div
+        className="dash-build-champ-details"
+      >
+        <img
+          alt="Cho'Gath icon"
+          className="dash-build-champ-icon"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_chogath.png"
+        />
+        <div
+          className="dash-box-champ-items"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

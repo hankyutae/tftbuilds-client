@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="Dashboard h2-nav-is-above"
+>
+  <div
+    className="display-account-builds-box"
+  >
+    <h2>
+      Your Builds
+    </h2>
+  </div>
+</div>
+`;

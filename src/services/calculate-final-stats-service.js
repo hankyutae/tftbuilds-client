@@ -98,13 +98,7 @@ function handleItem(id, stats, allItems) {
     //if gloves is involved
     if(ones === 9 || tens===9){
       //Riot's data files have started including the entirety of effects of the items, but only for gloves items, so might handle it that way
-      if(ones===9 && tens===8){
-        itemNumberToStat(ones, stats, allItems);
-        itemNumberToStat(ones, stats, allItems);
-      }
-      else{
-        itemNumberToStatV2(allItems[id],stats);
-      }
+      itemNumberToStatV2(allItems[id],stats);
     }
     else if (ones === 8) {
       //Synergy buffs get handled by syn
@@ -212,7 +206,7 @@ function handleItems(stats, citems, allItems) {
 
 
 function ultDamageEdgeCases(deepCopy,ultPropKey,stats){
-  if(ultPropKey==="PercentDamageIncreasePerStack"&& deepCopy.name==='Tristana'){
+  if(ultPropKey==="PercentDamageIncreasePerStack"&& deepCopy.name.toLowerCase()==='tristana'){
     return true;
   }
 }
@@ -246,10 +240,9 @@ function handleUlt(stats, deepCopy) {
       return;
     } */
   })
-
 }
 
-
+//deepCopy requires the keys items, name, traits
 function calcStats(deepCopy, syn, allItems) {
   //let deepCopy = JSON.parse(JSON.stringify(champ));
   //hp,mana,initialmana,damage,as,range,critchance,critdamage,armor,mr

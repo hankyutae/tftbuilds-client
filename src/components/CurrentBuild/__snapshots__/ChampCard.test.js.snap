@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="build-display-champion-card"
+>
+  <div
+    className="champion-simple-flex"
+  >
+    <div
+      className="edit-notice button-cursor button-hover-darken"
+      onClick={[Function]}
+    >
+      <strong>
+        Show Ult
+      </strong>
+    </div>
+    <div
+      className="b1"
+    >
+      <div
+        className="build-champ-icon-box "
+      >
+        <img
+          alt="Twisted Fate icon"
+          className="build-champ-icon cost2"
+          src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_twistedfate.png"
+        />
+        <div
+          className="build-champ-icon-box-price2"
+        >
+          2
+        </div>
+      </div>
+      <p>
+        Twisted Fate
+      </p>
+    </div>
+    <div
+      className="b2"
+    >
+      <p>
+        Pirate
+      </p>
+      <p>
+        Sorcerer
+      </p>
+    </div>
+    <div
+      className="b3"
+    >
+      <i
+        aria-hidden="true"
+        className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+        onClick={[Function]}
+      />
+      <div
+        className="champ-stars"
+      >
+        <span
+          className="fa fa-star silver"
+        />
+        <span
+          className="fa fa-star silver"
+        />
+      </div>
+      <span
+        aria-hidden="true"
+        className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="b4"
+    >
+      <div
+        className="button-cursor build-buttons button-hover-darken add-items-button"
+        onClick={[Function]}
+      >
+        Add Items
+      </div>
+      <div
+        className="build-items-box"
+      >
+        <div
+          className="item-img-div"
+        >
+          <img
+            alt="Recurve Bow icon"
+            className="build-item-icon button-cursor"
+            onClick={[Function]}
+            src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_recurvebow.tft.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="build-stats-table-div"
+    >
+      <table
+        className="build-stats-table"
+      >
+        <tbody>
+          <tr>
+            <td
+              className="table-stat-type hp"
+            >
+              HP
+            </td>
+            <td
+              className="table-stat-type mana"
+            >
+              Mana
+            </td>
+            <td
+              className="table-stat-type initalMana"
+            >
+              Init. Mana
+            </td>
+            <td
+              className="table-stat-type damage"
+            >
+              Damage
+            </td>
+            <td
+              className="table-stat-type attackSpeed"
+            >
+              AS
+            </td>
+            <td
+              className="table-stat-type range"
+            >
+              Range
+            </td>
+            <td
+              className="table-stat-type critMultiplier"
+            >
+              Crit. Mult.
+            </td>
+            <td
+              className="table-stat-type critChance"
+            >
+              Crit. Chance
+            </td>
+            <td
+              className="table-stat-type dodgeChance"
+            >
+              Dodge
+            </td>
+            <td
+              className="table-stat-type armor"
+            >
+              Armor
+            </td>
+            <td
+              className="table-stat-type magicResist"
+            >
+              MR
+            </td>
+          </tr>
+          <tr>
+            <td
+              className="hp"
+              onClick={[Function]}
+            >
+              <strong>
+                900
+              </strong>
+            </td>
+            <td
+              className="mana"
+              onClick={[Function]}
+            >
+              <strong>
+                50
+              </strong>
+            </td>
+            <td
+              className="initalMana"
+              onClick={[Function]}
+            >
+              <strong>
+                0
+              </strong>
+            </td>
+            <td
+              className="damage"
+              onClick={[Function]}
+            >
+              <strong>
+                72
+              </strong>
+            </td>
+            <td
+              className="button-cursor button-hover-darken attackSpeed"
+              onClick={[Function]}
+            >
+              <strong>
+                0.84
+              </strong>
+            </td>
+            <td
+              className="range"
+              onClick={[Function]}
+            >
+              <strong>
+                3
+              </strong>
+            </td>
+            <td
+              className="critMultiplier"
+              onClick={[Function]}
+            >
+              <strong>
+                1.5
+              </strong>
+            </td>
+            <td
+              className="critChance"
+              onClick={[Function]}
+            >
+              <strong>
+                0.25
+              </strong>
+            </td>
+            <td
+              className="dodgeChance"
+              onClick={[Function]}
+            >
+              <strong>
+                0
+              </strong>
+            </td>
+            <td
+              className="armor"
+              onClick={[Function]}
+            >
+              <strong>
+                20
+              </strong>
+            </td>
+            <td
+              className="magicResist"
+              onClick={[Function]}
+            >
+              <strong>
+                20
+              </strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      className="b5-remove button-cursor button-hover-darken"
+      onClick={[Function]}
+    >
+      <div>
+        E
+      </div>
+      <div>
+        R
+      </div>
+      <div>
+        A
+      </div>
+      <div>
+        S
+      </div>
+      <div>
+        E
+      </div>
+    </div>
+  </div>
+  <div
+    className="build-display-card-expansion"
+  />
+</div>
+`;

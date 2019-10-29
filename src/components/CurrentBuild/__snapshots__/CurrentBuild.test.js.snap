@@ -1,0 +1,2440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="current-build-display"
+>
+  <h2
+    className="current-build-title"
+  >
+    Your Current Build
+  </h2>
+  <div>
+    <div
+      className="build-display-synergies"
+    >
+      <div
+        className="synergies-expand-collapse button-cursor"
+        onClick={[Function]}
+      >
+        Collapse
+      </div>
+      <h3
+        className="synergy-header"
+      >
+        Synergies
+      </h3>
+      <div
+        className="synergies-box"
+      >
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box bronze-trait"
+          >
+            <img
+              alt="Gunslinger icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_gunslinger.png"
+            />
+          </div>
+          <div
+            className="build-trait-count"
+          >
+            2
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Gunslinger
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className="opaque"
+              >
+                
+              </span>
+              <span
+                className="applied-effect"
+              >
+                 
+                2
+                 
+              </span>
+              <span
+                className="opaque"
+              >
+                 &lt; 4 &lt; 6
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Pirate icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_pirate.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Pirate
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                2 / 3
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Sorcerer icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_sorcerer.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Sorcerer
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                2 / 3
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Noble icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_noble.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Noble
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 3
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Knight icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_knight.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Knight
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 2
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Yordle icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_yordle.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Yordle
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 3
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Wild icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_wild.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Wild
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 2
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Brawler icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_brawler.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Brawler
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 2
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Glacial icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_glacial.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Glacial
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 2
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Ranger icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_ranger.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Ranger
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 2
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="build-display-synergy button-cursor button-hover-darken2"
+          onClick={[Function]}
+        >
+          <div
+            className="build-traits-icon-box no-trait"
+          >
+            <img
+              alt="Demon icon"
+              className="build-traits-icon"
+              src="http://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_demon.png"
+            />
+          </div>
+          <div
+            className="build-trait-effect"
+          >
+            <div>
+              Demon
+            </div>
+            <div
+              className="trait-progression"
+            >
+              <span
+                className=""
+              >
+                 
+                1 / 2
+                 
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="build-display-champions"
+    >
+      <h3
+        className="champion-header"
+      >
+        Champions
+      </h3>
+      <button
+        className="current-build-page-new-build button-cursor"
+        onClick={[Function]}
+      >
+        Clear
+      </button>
+      <div
+        className="build-display-champion-cards-box"
+      >
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Twisted Fate icon"
+                  className="build-champ-icon cost2"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_twistedfate.png"
+                />
+                <div
+                  className="build-champ-icon-box-price2"
+                >
+                  2
+                </div>
+              </div>
+              <p>
+                Twisted Fate
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Pirate
+              </p>
+              <p>
+                Sorcerer
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star silver"
+                />
+                <span
+                  className="fa fa-star silver"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Guinsoo's Rageblade icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_guinsoosrageblade.tft.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        900
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        50
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        102
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.84
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        3
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Kayle icon"
+                  className="build-champ-icon cost5"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kayle.png"
+                />
+                <div
+                  className="build-champ-icon-box-price5"
+                >
+                  5
+                </div>
+              </div>
+              <p>
+                Kayle
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Noble
+              </p>
+              <p>
+                Knight
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Giant Slayer icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_giantslayer.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        2700
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        125
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        50
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        297
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.2
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        3
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        40
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Tristana icon"
+                  className="build-champ-icon cost1"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_tristana.png"
+                />
+                <div
+                  className="build-champ-icon-box-price1"
+                >
+                  1
+                </div>
+              </div>
+              <p>
+                Tristana
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Yordle
+              </p>
+              <p>
+                Gunslinger
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Giant Slayer icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_giantslayer.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1800
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        50
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        225
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.78
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        4
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Warwick icon"
+                  className="build-champ-icon cost1"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_warwick.png"
+                />
+                <div
+                  className="build-champ-icon-box-price1"
+                >
+                  1
+                </div>
+              </div>
+              <p>
+                Warwick
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Wild
+              </p>
+              <p>
+                Brawler
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Giant Slayer icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_giantslayer.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        2340
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        150
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        50
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        225
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.72
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        30
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Miss Fortune icon"
+                  className="build-champ-icon cost5"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_missfortune.png"
+                />
+                <div
+                  className="build-champ-icon-box-price5"
+                >
+                  5
+                </div>
+              </div>
+              <p>
+                Miss Fortune
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Pirate
+              </p>
+              <p>
+                Gunslinger
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Giant Slayer icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_giantslayer.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        2700
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        150
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        315
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.14
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        3
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Ashe icon"
+                  className="build-champ-icon cost3"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_ashe.png"
+                />
+                <div
+                  className="build-champ-icon-box-price3"
+                >
+                  3
+                </div>
+              </div>
+              <p>
+                Ashe
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Glacial
+              </p>
+              <p>
+                Ranger
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Giant Slayer icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_giantslayer.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1980
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        125
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        279
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.84
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        4
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+        <div
+          className="build-display-champion-card"
+        >
+          <div
+            className="champion-simple-flex"
+          >
+            <div
+              className="edit-notice button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <strong>
+                Show Ult
+              </strong>
+            </div>
+            <div
+              className="b1"
+            >
+              <div
+                className="build-champ-icon-box "
+              >
+                <img
+                  alt="Morgana icon"
+                  className="build-champ-icon cost3"
+                  src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_morgana.png"
+                />
+                <div
+                  className="build-champ-icon-box-price3"
+                >
+                  3
+                </div>
+              </div>
+              <p>
+                Morgana
+              </p>
+            </div>
+            <div
+              className="b2"
+            >
+              <p>
+                Demon
+              </p>
+              <p>
+                Sorcerer
+              </p>
+            </div>
+            <div
+              className="b3"
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-chevron-up button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+              <div
+                className="champ-stars"
+              >
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+                <span
+                  className="fa fa-star gold"
+                />
+              </div>
+              <span
+                aria-hidden="true"
+                className="fa fa-chevron-down button-cursor increase-fontsize-on-hover"
+                onClick={[Function]}
+              />
+            </div>
+            <div
+              className="b4"
+            >
+              <div
+                className="button-cursor build-buttons button-hover-darken add-items-button"
+                onClick={[Function]}
+              >
+                Add Items
+              </div>
+              <div
+                className="build-items-box"
+              >
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Giant Slayer icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_giantslayer.png"
+                  />
+                </div>
+                <div
+                  className="item-img-div"
+                >
+                  <img
+                    alt="Deathblade3 icon"
+                    className="build-item-icon button-cursor"
+                    onClick={[Function]}
+                    src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              className="build-stats-table-div"
+            >
+              <table
+                className="build-stats-table"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      className="table-stat-type hp"
+                    >
+                      HP
+                    </td>
+                    <td
+                      className="table-stat-type mana"
+                    >
+                      Mana
+                    </td>
+                    <td
+                      className="table-stat-type initalMana"
+                    >
+                      Init. Mana
+                    </td>
+                    <td
+                      className="table-stat-type damage"
+                    >
+                      Damage
+                    </td>
+                    <td
+                      className="table-stat-type attackSpeed"
+                    >
+                      AS
+                    </td>
+                    <td
+                      className="table-stat-type range"
+                    >
+                      Range
+                    </td>
+                    <td
+                      className="table-stat-type critMultiplier"
+                    >
+                      Crit. Mult.
+                    </td>
+                    <td
+                      className="table-stat-type critChance"
+                    >
+                      Crit. Chance
+                    </td>
+                    <td
+                      className="table-stat-type dodgeChance"
+                    >
+                      Dodge
+                    </td>
+                    <td
+                      className="table-stat-type armor"
+                    >
+                      Armor
+                    </td>
+                    <td
+                      className="table-stat-type magicResist"
+                    >
+                      MR
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      className="hp"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        2340
+                      </strong>
+                    </td>
+                    <td
+                      className="mana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        150
+                      </strong>
+                    </td>
+                    <td
+                      className="initalMana"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        50
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken damage"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        225
+                      </strong>
+                    </td>
+                    <td
+                      className="button-cursor button-hover-darken attackSpeed"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.72
+                      </strong>
+                    </td>
+                    <td
+                      className="range"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        2
+                      </strong>
+                    </td>
+                    <td
+                      className="critMultiplier"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        1.5
+                      </strong>
+                    </td>
+                    <td
+                      className="critChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0.25
+                      </strong>
+                    </td>
+                    <td
+                      className="dodgeChance"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        0
+                      </strong>
+                    </td>
+                    <td
+                      className="armor"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        30
+                      </strong>
+                    </td>
+                    <td
+                      className="magicResist"
+                      onClick={[Function]}
+                    >
+                      <strong>
+                        20
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              className="b5-remove button-cursor button-hover-darken"
+              onClick={[Function]}
+            >
+              <div>
+                E
+              </div>
+              <div>
+                R
+              </div>
+              <div>
+                A
+              </div>
+              <div>
+                S
+              </div>
+              <div>
+                E
+              </div>
+            </div>
+          </div>
+          <div
+            className="build-display-card-expansion"
+          />
+        </div>
+      </div>
+      <a
+        className="nav-link current-build-page-save-build button-cursor"
+        href="/login"
+        onClick={[Function]}
+      >
+        Log in To Save!
+      </a>
+    </div>
+  </div>
+</div>
+`;

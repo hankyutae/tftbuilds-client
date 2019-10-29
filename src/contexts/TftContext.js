@@ -38,10 +38,10 @@ export class TftProvider extends React.Component {
     arrayOfPrices:[1,2,3,4,5],
     arrayOfStars:['bronze','silver','gold'],
     numOfBasicItems:9,
-    champions: {},
-    items: {},
-    traits: {},
-    currentBuild:[],
+    champions: this.props.champions||{},
+    items: this.props.items||{},
+    traits: this.props.traits||{},
+    currentBuild:this.props.currentBuild||[],
     loginState:0,
     toggleLoginState:()=>{
       console.log('even made it here');

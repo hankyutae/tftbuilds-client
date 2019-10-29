@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<nav
+  role="navigation"
+>
+  <a
+    className="nav-link home-link active-nav-link"
+    href="/"
+    onClick={[Function]}
+  >
+    TFTBuilds
+  </a>
+  <div
+    className="nav-links"
+  >
+    <a
+      className="nav-link inactive-nav-link"
+      href="/login"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+    <a
+      className="nav-link inactive-nav-link"
+      href="/signup"
+      onClick={[Function]}
+    >
+      Register
+    </a>
+    <a
+      className="nav-link rightmost-nav-link inactive-nav-link"
+      href="/create-build"
+      onClick={[Function]}
+    >
+      Your Build
+    </a>
+  </div>
+</nav>
+`;

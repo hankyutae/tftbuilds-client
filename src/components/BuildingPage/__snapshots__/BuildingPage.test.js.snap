@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="create-builds-page"
+>
+  <div
+    className="current-build-display"
+  >
+    <h2
+      className="current-build-title"
+    >
+      Your Current Build
+    </h2>
+  </div>
+  <div
+    className="champs-search"
+  >
+    <h2
+      className="champs-search-h2"
+    >
+      Add a Champion
+      <div
+        className="filter-view-instructions"
+      >
+        Click on icon to add
+      </div>
+    </h2>
+    <div
+      className="view-type-box"
+    >
+      <div
+        className="view-type unselected button-cursor button-hover-lighten"
+        onClick={[Function]}
+      >
+        Card View
+      </div>
+      <div
+        className="view-type selected button-cursor"
+        onClick={[Function]}
+      >
+        Grid View
+      </div>
+    </div>
+  </div>
+</div>
+`;

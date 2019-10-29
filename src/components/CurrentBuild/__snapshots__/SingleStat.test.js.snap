@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<td
+  className="hp"
+  onClick={[Function]}
+>
+  <strong>
+    900
+  </strong>
+</td>
+`;

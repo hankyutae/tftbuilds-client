@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="build-display-champions"
+>
+  <h3
+    className="champion-header"
+  >
+    Champions
+  </h3>
+  <button
+    className="current-build-page-new-build button-cursor"
+  >
+    Clear
+  </button>
+  <div
+    className="building-notice"
+  >
+    Begin by adding champions from below 
+    <br />
+     "
+    <span
+      style={
+        Object {
+          "color": "#ffffff",
+        }
+      }
+    >
+      Add a Champion
+    </span>
+    " 
+    <br />
+     by clicking on the champ icon, or the card.
+    <br />
+    <span
+      style={
+        Object {
+          "color": "#ffffff",
+        }
+      }
+    >
+      Note!
+    </span>
+     There are 2 views to choose from when adding champions.
+  </div>
+  <div
+    className="build-display-champion-cards-box"
+  />
+  <a
+    className="nav-link current-build-page-save-build button-cursor"
+    href="/login"
+    onClick={[Function]}
+  >
+    Log in To Save!
+  </a>
+</div>
+`;

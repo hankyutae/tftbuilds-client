@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="flex-box-complete-item-info"
+>
+  <div
+    className="item-img-div"
+    onClick={[Function]}
+  >
+    <img
+      alt="Deathblade3 icon"
+      className="build-item-icon button-cursor"
+      src="http://raw.communitydragon.org/latest/game/assets/maps/particles/tft/tft_item_deathblade.tft.png"
+    />
+  </div>
+  <div
+    className="item-info-box"
+  >
+    <div
+      className="item-desc"
+    >
+      <div>
+        Whenever the wearer kills or participates in killing an enemy, gain +15 Attack Damage for the remainder of combat.
+        <br />
+        This effect can stack any number of times. Starts with @startingstacks@ stacks.
+      </div>
+    </div>
+  </div>
+</div>
+`;

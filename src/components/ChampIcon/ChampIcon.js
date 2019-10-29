@@ -1,5 +1,5 @@
 import React from 'react';
-import './ChampionIcon.css';
+import './ChampIcon.css';
 //import ImgLink from '../../services/create-img-link-service';
 
 export default class ChampionIcon extends React.Component{

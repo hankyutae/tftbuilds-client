@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="front-page-div"
+>
+  <header
+    className="front-page-header"
+    role="banner"
+  >
+    <h1>
+      <span>
+        TFTBuilds
+      </span>
+      <span
+        className="header-undertext"
+      >
+        Build comps. Win Games
+      </span>
+    </h1>
+  </header>
+  <section
+    className="s1"
+  >
+    <p>
+      TFTBuilds allows you to build a hypothetical composition along with items before you enter the arena! Each champions' stats will update based on the synergies/items/star levels.
+    </p>
+    <div
+      className="btn"
+    >
+      <a
+        className="nav-link"
+        href="/create-build"
+        onClick={[Function]}
+      >
+        Build a comp
+      </a>
+    </div>
+  </section>
+  <div />
+  <section
+    className="s2"
+  >
+    <p>
+      Sign up to save your builds!
+    </p>
+    <div
+      className="btn"
+    >
+      <a
+        className="nav-link"
+        href="/login"
+        onClick={[Function]}
+      >
+        Log in
+      </a>
+    </div>
+    <div
+      className="btn"
+    >
+      <a
+        className="nav-link"
+        href="/signup"
+        onClick={[Function]}
+      >
+        Sign up
+      </a>
+    </div>
+  </section>
+</div>
+`;

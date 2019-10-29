@@ -185,6 +185,11 @@ class ASynergy extends React.Component {
 
   }
   render() {
+
+    if(!this.props.trait){
+      return <> </>;
+    }
+
     let expandPortion = this.parseDesc(this.props.trait);
 
 

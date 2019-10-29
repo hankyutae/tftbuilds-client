@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+Array [
+  <div
+    className="svg-div"
+  >
+    <svg
+      className="svg-gold"
+      height="600"
+      width="310"
+    >
+      <defs>
+        <radialGradient
+          cx="50%"
+          cy="50%"
+          fx="50%"
+          fy="50%"
+          id="grad1"
+          r="90%"
+        >
+          <stop
+            className="offset1"
+            offset="0%"
+          />
+          <stop
+            className="offset2"
+            offset="100%"
+          />
+        </radialGradient>
+      </defs>
+      <polyline
+        className="hex-black"
+        points="150,0 300,87 300,97 150,10 0,97 0,87 150,0"
+      />
+       /&gt;
+      <polyline
+        className="hex-black"
+        points="150,556 300,470 300,480 150,566 0,480 0,470 150,556"
+      />
+      <polygon
+        fill="url(#grad1)"
+        points="150,10 300,97 300,470 150,556 0,470 0,97 150,10"
+      />
+    </svg>
+  </div>,
+  <form
+    className="login-box"
+    onSubmit={[Function]}
+  />,
+  <form
+    className="login-box"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="login-box-logo"
+    >
+      Login
+    </h1>
+    <fieldset
+      className="fieldset-style"
+    >
+      <div
+        role="alert"
+      />
+      <p>
+        <label
+          htmlFor="userid"
+        >
+          Username
+        </label>
+        <br />
+        <input
+          id="userid"
+          name="user_name"
+          type="text"
+        />
+      </p>
+      <p>
+        <label
+          htmlFor="password"
+        >
+          Password
+        </label>
+        <br />
+        <input
+          id="password"
+          name="password"
+          type="password"
+        />
+      </p>
+    </fieldset>
+    <button
+      className="login-sign-in"
+      type="submit"
+    >
+       Sign in 
+    </button>
+     
+    <br />
+    <div
+      className="login-helper"
+    >
+      <div
+        className="login-signup-link"
+      >
+        <p>
+          <a
+            className="create-account-from-login"
+            href="/signup"
+            onClick={[Function]}
+          >
+            Create account?
+          </a>
+        </p>
+      </div>
+    </div>
+  </form>,
+]
+`;

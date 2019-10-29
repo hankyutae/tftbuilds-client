@@ -1,0 +1,2893 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="champs-search-results"
+>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Tristana icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_tristana.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Yordle
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Gunslinger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Tristana
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Warwick icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_warwick.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Wild
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Brawler
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Warwick
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Kassadin icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kassadin.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Void
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Kassadin
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Elise icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_elise.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Shapeshifter
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Elise
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Vayne icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_vayne.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Noble
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ranger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Vayne
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Nidalee icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_nidalee.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Wild
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Shapeshifter
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Nidalee
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Mordekaiser icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_mordekaiser.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Phantom
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Knight
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Mordekaiser
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Garen icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_garen.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Noble
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Knight
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Garen
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Graves icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_graves.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Pirate
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Gunslinger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Graves
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Fiora icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_fiora.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Noble
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Fiora
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Kha'Zix icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_khazix.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Void
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Kha'Zix
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Darius icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_darius.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Imperial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Knight
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Darius
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Camille icon"
+        className="build-champ-icon cost1"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_camille.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Hextech
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Camille
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        1
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Twisted Fate icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_twistedfate.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Pirate
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Twisted Fate
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Blitzcrank icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_blitzcrank.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Robot
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Brawler
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Blitzcrank
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Shen icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_shen.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ninja
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Shen
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Ahri icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_ahri.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Wild
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Ahri
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Varus icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_varus.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ranger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Varus
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Lulu icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_lulu.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Yordle
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Lulu
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Jayce icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_jayce.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Hextech
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Shapeshifter
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Jayce
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Lissandra icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_lissandra.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Glacial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Elementalist
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Lissandra
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Braum icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_braum.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Glacial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Guardian
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Braum
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Lucian icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_lucian.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Noble
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Gunslinger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Lucian
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Zed icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_zed.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ninja
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Zed
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Rek'Sai icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_reksai.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Void
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Brawler
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Rek'Sai
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Pyke icon"
+        className="build-champ-icon cost2"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_pyke.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Pirate
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Pyke
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Ashe icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_ashe.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Glacial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ranger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Ashe
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Morgana icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_morgana.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Morgana
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Evelynn icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_evelyn.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Evelynn
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Gangplank icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_gangplank.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Pirate
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Gunslinger
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Gangplank
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Veigar icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_veigar.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Yordle
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Veigar
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Katarina icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_katarina.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Imperial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Katarina
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Poppy icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_poppy.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Yordle
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Knight
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Poppy
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Kennen icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kennen.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ninja
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Yordle
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Elementalist
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Kennen
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Shyvana icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_shyvana.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Dragon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Shapeshifter
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Shyvana
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Volibear icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_volibear.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Glacial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Brawler
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Volibear
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Rengar icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_rengar.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Wild
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Rengar
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Vi icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_vi.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Hextech
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Brawler
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Vi
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Aatrox icon"
+        className="build-champ-icon cost3"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_aatrox.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Aatrox
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Cho'Gath icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_chogath.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Void
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Brawler
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Cho'Gath
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Brand icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_brand.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Elementalist
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Brand
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Akali icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_akali.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ninja
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Akali
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Leona icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_leona.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Noble
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Guardian
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Leona
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Sejuani icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_sejuani.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Glacial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Knight
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Sejuani
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Draven icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_draven.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Imperial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Draven
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Aurelion Sol icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_aurelionsol.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Dragon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Aurelion Sol
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Gnar icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_gnar.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Wild
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Yordle
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Shapeshifter
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Gnar
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Kindred icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kindred.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Phantom
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ranger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Kindred
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Jinx icon"
+        className="build-champ-icon cost4"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_jinx.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Hextech
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Gunslinger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Jinx
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        4
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Kayle icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kayle.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Noble
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Knight
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Kayle
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Miss Fortune icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_missfortune.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Pirate
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Gunslinger
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Miss Fortune
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Karthus icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_karthus.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Phantom
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Sorcerer
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Karthus
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Anivia icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_anivia.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Glacial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Elementalist
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Anivia
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Swain icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_swain.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Imperial
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Demon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Shapeshifter
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Swain
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Pantheon icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_pantheon.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Dragon
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Guardian
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Pantheon
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Kai'Sa icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_kaisa.tft_set1_kaisa.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Void
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Ranger
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Assassin
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Kai'Sa
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-short-display button-cursor"
+    onClick={[Function]}
+  >
+    <div
+      className="champ-icon-box"
+    >
+      <img
+        alt="Yasuo icon"
+        className="build-champ-icon cost5"
+        src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_yasuo.png"
+      />
+      <div
+        className="search-champ-icon-box-traits-box"
+      >
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Exile
+           
+        </div>
+        <div
+          className="search-champ-icon-box-trait"
+        >
+           
+          Blademaster
+           
+        </div>
+      </div>
+    </div>
+    <div
+      className="champ-name-box"
+    >
+      <div
+        className="champ-name-box-name"
+      >
+        Yasuo
+      </div>
+      <div
+        className="champ-name-box-cost"
+      >
+        <div
+          alt="gold coins"
+          className="coins-white"
+        />
+        5
+      </div>
+    </div>
+  </div>
+</div>
+`;

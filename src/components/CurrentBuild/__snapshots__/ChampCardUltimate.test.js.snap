@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="build-stats-ultimate"
+>
+  <div
+    className="build-ult-desc"
+  >
+    <div>
+      Twisted Fate randomly picks a card, then throws it at his current target, dealing 
+      <strong>
+        250
+      </strong>
+       magic damage and creating a special effect based on the color of the card.
+      <br />
+      <br />
+      Blue: Restores 
+      <strong>
+        50
+      </strong>
+       mana to all allies adjacent to Twisted Fate.
+      <br />
+      Red: Deals 
+      <strong>
+        250
+      </strong>
+       to all enemies adjacent to the target.
+      <br />
+      Gold: Stuns the target for 
+      <strong>
+        3
+      </strong>
+       seconds.
+    </div>
+  </div>
+  <div
+    className="ult-prop-list"
+  >
+    <div
+      className="ult-prop"
+    >
+       
+       Red Card Damage: 
+       
+      <div
+        className="adding-final"
+      >
+        250
+      </div>
+       
+    </div>
+    <div
+      className="ult-prop"
+    >
+       
+       Blue Card Damage: 
+       
+      <div
+        className="adding-final"
+      >
+        250
+      </div>
+       
+    </div>
+    <div
+      className="ult-prop"
+    >
+       
+       Blue Card Mana Restore: 
+       
+      <div
+        className="adding-final"
+      >
+        50
+      </div>
+       
+    </div>
+    <div
+      className="ult-prop"
+    >
+       
+       Gold Card Stun Duration: 
+       
+      <div
+        className="adding-final"
+      >
+        3
+      </div>
+       
+    </div>
+    <div
+      className="ult-prop"
+    >
+       
+       Gold Card Damage: 
+       
+      <div
+        className="adding-final"
+      >
+        250
+      </div>
+       
+    </div>
+  </div>
+</div>
+`;

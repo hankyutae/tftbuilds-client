@@ -55,7 +55,7 @@ class BuildChampions extends React.Component {
         <button className='current-build-page-new-build button-cursor' onClick={this.props.newBuild}>
           Clear
         </button>
-        {this.props.champs.length===0 &&
+        {(!this.props.champs || this.props.champs.length===0) &&
           <div className='building-notice'>
             Begin by adding champions from below <br/> "<span style={{color:'#ffffff'}}>Add a Champion</span>" <br/> by clicking on the champ icon, or the card.<br></br>
             <span style={{color:'#ffffff'}}>Note!</span> There are 2 views to choose from when adding champions.
@@ -64,7 +64,9 @@ class BuildChampions extends React.Component {
 
         }
         <div className='build-display-champion-cards-box'>
-          {this.props.champs.map((champInfo, index) =>
+          {
+            this.props.champs &&
+            this.props.champs.map((champInfo, index) =>
             <ChampCard key={index} index={index} champ={this.props.allChamps[champInfo.id]} syn={this.props.syn} screenSize={this.state.screenSize} />
           )}
 

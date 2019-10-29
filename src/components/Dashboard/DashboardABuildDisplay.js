@@ -72,6 +72,9 @@ export default class DashboardABuildDisplay extends React.Component {
     this.setState({copySuccess:'Copied!'})
   }
   render() {
+    if(!this.props.build || !(this.props.build['build_data'])){
+      return <> </>;
+    }
     return (
       <div className='build-display-in-dashboard-box'>
         {Object.keys(this.context.champions).length !== 0 && Object.keys(this.context.items).length !== 0 &&

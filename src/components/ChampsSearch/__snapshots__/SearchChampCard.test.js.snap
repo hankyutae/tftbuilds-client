@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the UI as expected 1`] = `
+<div
+  className="champ-short-display button-cursor"
+  onClick={[Function]}
+>
+  <div
+    className="champ-icon-box"
+  >
+    <img
+      alt="Twisted Fate icon"
+      className="build-champ-icon cost2"
+      src="http://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_twistedfate.png"
+    />
+    <div
+      className="search-champ-icon-box-traits-box"
+    >
+      <div
+        className="search-champ-icon-box-trait"
+      >
+         
+        Pirate
+         
+      </div>
+      <div
+        className="search-champ-icon-box-trait"
+      >
+         
+        Sorcerer
+         
+      </div>
+    </div>
+  </div>
+  <div
+    className="champ-name-box"
+  >
+    <div
+      className="champ-name-box-name"
+    >
+      Twisted Fate
+    </div>
+    <div
+      className="champ-name-box-cost"
+    >
+      <div
+        alt="gold coins"
+        className="coins-white"
+      />
+      2
+    </div>
+  </div>
+</div>
+`;
