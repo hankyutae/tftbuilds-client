@@ -3,7 +3,8 @@ import './ChampsSearch.css';
 import ChampsSearchFilter from './ChampsSearchFilter';
 import ChampsSearchResults from './ChampsSearchResults';
 import ChampsGrid from './ChampsGrid';
-
+import CircleLoader from 'react-spinners/CircleLoader';
+import { css } from '@emotion/core';
 import TftContext from '../../contexts/TftContext';
 
 class ChampsSearch extends React.Component {
@@ -85,6 +86,11 @@ class ChampsSearch extends React.Component {
     }
   }
   render() {
+    const override = css`
+    display: block;
+    margin: 40px auto;
+    border-color: white;
+    `;
     return (
       <div className="champs-search">
         
@@ -117,12 +123,13 @@ class ChampsSearch extends React.Component {
           </div>
 
         }
+        
+        
 
-
-{
-          Object.keys(this.context.traits).length !== 0 &&
+        {
+          (Object.keys(this.context.traits).length !== 0 &&
           Object.keys(this.context.champions).length !== 0 &&
-          Object.keys(this.context.items).length !== 0 &&
+          Object.keys(this.context.items).length !== 0) ?
           <>
             <ChampsSearchFilter
               traits={this.context.traits}
@@ -145,36 +152,21 @@ class ChampsSearch extends React.Component {
             }
             
           </>
+          :
+          <div className='sweet-loading'>
+            <CircleLoader
+              css={override}
+              sizeUnit={"px"}
+              size={50}
+              color={'#ffffff'}
+              loading={true}
+            />
+          </div> 
+
           
 
         }
 
-        {/* 
-          Object.keys(this.context.traits).length !== 0 &&
-          Object.keys(this.context.champions).length !== 0 &&
-          Object.keys(this.context.items).length !== 0 &&
-          this.state.filterView ?
-          <>
-            <ChampsSearchFilter
-              traits={this.context.traits}
-              prices={this.context.arrayOfPrices}
-
-              filterOrigin={this.state.filterOrigin}
-              filterClass={this.state.filterClass}
-              filterPrice={this.state.filterPrice}
-              filterName={this.state.filterName}
-              handleOrigin={this.state.changeOrigin}
-              handleClass={this.state.changeClass}
-              handlePrice={this.state.changePrice}
-              handleName={this.state.changeName}
-
-            />
-            <ChampsSearchResults champs={this.filteredChampionList()} handleAdd={this.context.addChampToCurrentBuild} locale={this.props.locale} />
-          </>
-          :
-          <ChampsGrid origins={this.createOriginsAndClasses().origins} classes={this.createOriginsAndClasses().classes} champs={this.context.champions}  handleAdd={this.context.addChampToCurrentBuild}/>
-
-         */}
       </div >
     );
   }

@@ -6,6 +6,8 @@ import BuildChampions from './BuildChampions';
 import TftContext from '../../contexts/TftContext';
 import CalcService from '../../services/calculate-synergy-service';
 import TftBuildsApiService from '../../services/tftbuilds-api-service';
+import CircleLoader from 'react-spinners/CircleLoader';
+import { css } from '@emotion/core';
 //import TokenService from '../../services/token-service';
 
 class CurrentBuild extends React.Component {
@@ -28,7 +30,12 @@ class CurrentBuild extends React.Component {
     if (Object.keys(this.context.traits).length !== 0) {
       calcSyn = CalcService.calcSyn(this.context.traits, this.context.champions, this.context.currentBuild);
     }
-
+    const override = css`
+    display: block;
+    padding: 10px 0px;
+    margin: 40px auto;
+    border-color: white;
+    `;
     return (
       <div className="current-build-display">
         {/* <h2 className='current-build-title'>
@@ -54,14 +61,24 @@ class CurrentBuild extends React.Component {
         </h2>
 
         {
-          Object.keys(this.context.traits).length !== 0 &&
+          (Object.keys(this.context.traits).length !== 0 &&
           Object.keys(this.context.champions).length !== 0 &&
-          Object.keys(this.context.items).length !== 0 &&
+          Object.keys(this.context.items).length !== 0) ?
           (<div>
             <BuildSynergies syn={calcSyn} />
             <BuildChampions champs={this.context.currentBuild} allChamps={this.context.champions} syn={calcSyn} saveBuild={this.saveBuild} newBuild={this.newBuild} />
             
           </div>)
+          :
+          <div className='sweet-loading'>
+            <CircleLoader
+              css={override}
+              sizeUnit={"px"}
+              size={50}
+              color={'#ffffff'}
+              loading={true}
+            />
+          </div> 
         }
       </div >
     );

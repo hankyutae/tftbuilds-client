@@ -16,13 +16,13 @@
 }
 
 .current-build-display{
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.65)
   ), url('../../img/backsplash.jpg');
   background-repeat: repeat;
   background-position: 50% 0, 50% 0;
-  background-size: 150% auto;
+  background-size: 150% auto; */
 }
 .current-build-page-new-build{
   color:red;
@@ -39,4 +39,8 @@
   width: 211px;
   display:flex;
   justify-content: space-between;
+}
+
+.sweet-loading{
+  padding:1px 0px;
 }
