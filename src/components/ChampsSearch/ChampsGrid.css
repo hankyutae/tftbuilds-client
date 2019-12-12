@@ -48,11 +48,7 @@
 @media screen and (min-width:760px){
   .champs-grid{
     padding: 1rem;
-  }/* 
-  .champs-grid .grid-champ-icon{
-    width:45px;
-    height:45px;
-  } */
+  }
   
   .champs-grid>table td{
     width:50px;
