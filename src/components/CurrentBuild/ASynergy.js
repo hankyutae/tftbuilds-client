@@ -49,9 +49,9 @@ class ASynergy extends React.Component {
       effects.forEach((effect, effindex) => {
         let namesArr = [];
         let valuesArr = [];
-        effect.vars.forEach(varseffect => {
-          namesArr.push(varseffect.name);
-          valuesArr.push(varseffect.value);
+        Object.keys(effect.variables).forEach(varsKey => {
+          namesArr.push(varsKey);
+          valuesArr.push(effect.variables[varsKey]);
         })
         namesArr.push("MinUnits");
         valuesArr.push(effect.minUnits);
@@ -86,9 +86,9 @@ class ASynergy extends React.Component {
       effects.forEach((effect, effindex) => {
         let namesArr = [];
         let valuesArr = [];
-        effect.vars.forEach(varseffect => {
-          namesArr.push(varseffect.name);
-          valuesArr.push(varseffect.value);
+        Object.keys(effect.variables).forEach(varsKey => {
+          namesArr.push(varsKey);
+          valuesArr.push(effect.variables[varsKey]);
         })
         namesArr.push("MinUnits");
         valuesArr.push(effect.minUnits);
@@ -124,17 +124,18 @@ class ASynergy extends React.Component {
       let effIndex = 0;
       while (expandrow.length > 0 && effIndex<trait.effects.length) {
         //Get rid of </row> only take the first element.
+        let effect = trait.effects[effIndex];
         let row =expandrow[0].split('</row>')[0];
         let namesArr = [];
         let valuesArr = [];
-        trait.effects[effIndex].vars.forEach(varseffect => {
-          namesArr.push(varseffect.name);
-          valuesArr.push(varseffect.value);
+        Object.keys(effect.variables).forEach(varsKey => {
+          namesArr.push(varsKey);
+          valuesArr.push(effect.variables[varsKey]);
         })
         namesArr.push("MinUnits");
-        valuesArr.push(trait.effects[effIndex].minUnits);
+        valuesArr.push(effect.minUnits);
         namesArr.push("MaxUnits");
-        valuesArr.push(trait.effects[effIndex].maxUnits);
+        valuesArr.push(effect.maxUnits);
 
         let parsedRow = row;
         //Modify row to get rid of @stat@

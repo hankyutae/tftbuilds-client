@@ -136,7 +136,7 @@ class ChampCard extends React.Component {
     return [
       "hp",
       "mana",
-      "initalMana",
+      "initialMana",
       "damage",
       "attackSpeed",
       "range",
@@ -153,7 +153,7 @@ class ChampCard extends React.Component {
       hp: "HP",
       mana: "Mana",
       damage: 'Damage',
-      initalMana: "Init. Mana",
+      initialMana: "Init. Mana",
       magicResist: "MR",
       critChance: "Crit. Chance",
       critMultiplier: "Crit. Mult.",

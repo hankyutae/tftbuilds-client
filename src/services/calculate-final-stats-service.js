@@ -88,56 +88,21 @@ function handleSyn(stats, deepCopy, syn) {
 
 
 function handleItem(id, stats, allItems) {
-  let ones = id % 10;
-  let tens = Math.floor(id / 10) % 10;
-  if(tens===0){
-    itemNumberToStat(ones, stats, allItems);
+
+  itemNumberToStatV2(allItems[id],stats);
+
+  //RapidFireCannon
+  //stacks tested ingame in patch 9.14
+  if (id === 22) {
+    stats.range.mult *= 2;
   }
 
-  else{
-    //if gloves is involved
-    if(ones === 9 || tens===9){
-      //Riot's data files have started including the entirety of effects of the items, but only for gloves items, so might handle it that way
-      itemNumberToStatV2(allItems[id],stats);
-    }
-    else if (ones === 8) {
-      //Synergy buffs get handled by syn
-      //Spatula doubles the effect of the other item
-      itemNumberToStat(tens, stats, allItems);
-      itemNumberToStat(tens, stats, allItems);
-    }
-    else {
-      itemNumberToStat(ones, stats, allItems);
-      itemNumberToStat(tens, stats, allItems);
-    }
-
-    //Handle Item with bonuses to passive stats
-    //Currently assumes all of them stack might have to add exceptions
-    //IE
-    //Probably stacks, haven't checked though.
-    //this is now deathblade
-    /* if (id === 11) {
-      stats.critMultiplier.add += allItems[id].effects[0].value;
-    } */
-
-    //Zeke's Herald
-    //stacks tested 9.14
-    if (id === 17) {
-      stats.attackSpeed.mult += allItems[id].effects[0].value;
-    }
-
-    //RapidFireCannon
-    //stacks tested ingame in patch 9.14
-    if (id === 22) {
-      stats.range.mult *= 2;
-    }
-
-    //Rabadon's Deathcap
-    //stacks seen ingame in patch 9.14
-    if (id === 33) {
-      stats.ap.multmult += allItems[id].effects[0].value;
-    }
+  //Rabadon's Deathcap
+  //stacks seen ingame in patch 9.14
+  if (id === 33) {
+    stats.ap.multmult += allItems[id].effects['APPercentAmp'];
   }
+  
 }
 
 function itemNumberToStatV2(item,stats){
@@ -148,33 +113,33 @@ function itemNumberToStatV2(item,stats){
     'MagicResist':'magicResist',
     'extraMR':'magicResist',
     'Armor':'armor',
-    'Mana':'initalMana',
+    'Mana':'initialMana',
     'AP':'ap',
     'AS':'attackSpeed',
     'AttackSpeed':'attackSpeed',
     'AD':'damage',
     'CriticalStrikeAmp':'critMultiplier',
   }
-  item.effects.forEach((effect)=>{
-    let affectedStat=conversion[effect.name];
+  Object.keys(item.effects).forEach((effectName)=>{
+    let affectedStat=conversion[effectName];
     if(affectedStat){
-      stats[affectedStat][ruleOfThumb[affectedStat]]+=effect.value;
+      stats[affectedStat][ruleOfThumb[affectedStat]]+=item.effects[effectName];
     }
   })
 }
 
 function itemNumberToStat(num, stats, allItems) {
   if (num === 1) {
-    stats.damage.add += allItems[num].effects[0].value;
+    stats.damage.add += allItems[num].effects[0]['AD'];
   }
   else if (num === 2) {
-    stats.attackSpeed.mult += allItems[num].effects[0].value;
+    stats.attackSpeed.mult += allItems[num].effects[0]['AS'];
   }
   else if (num === 3) {
     stats.ap.mult += allItems[num].effects[0].value;
   }
   else if (num === 4) {
-    stats.initalMana.add += allItems[num].effects[0].value;
+    stats.initialMana.add += allItems[num].effects[0].value;
   }
   else if (num === 5) {
     stats.armor.add += allItems[num].effects[0].value;
@@ -205,43 +170,6 @@ function handleItems(stats, citems, allItems) {
 }
 
 
-function ultDamageEdgeCases(deepCopy,ultPropKey,stats){
-  if(ultPropKey==="PercentDamageIncreasePerStack"&& deepCopy.name.toLowerCase()==='tristana'){
-    return true;
-  }
-}
-
-function ultHealEdgeCases(deepCopy,ultPropKey,stats){
-  if(ultPropKey.toLowerCase()==="transformhealth"){
-    return true;
-  }
-}
-
-function handleUlt(stats, deepCopy) {
-  const exceptions=['Volibear','Draven','Rengar','Graves','Braum','Elise','Kayle','Kindred','Shen']
-  if(exceptions.includes(deepCopy.name)){
-    return;
-  }
-  deepCopy.ability.variables.forEach(ultProp=>{
-    if (ultProp["key"].toLowerCase().includes('damage')){
-      if(ultDamageEdgeCases(deepCopy,ultProp["key"]))
-        return;
-      stats.ultDescAffectedByAp.push(ultProp["key"]);
-      return;
-    }
-    if (ultProp["key"].toLowerCase().includes('heal')){
-      if(ultHealEdgeCases(deepCopy,ultProp["key"]))
-        return;
-      stats.ultDescAffectedByAp.push(ultProp["key"]);
-      return;
-    }
-    /* if (ultProp["key"].toLowerCase()==='manasteal'){
-      stats.ultDescAffectedByAp.push(ultProp["key"]);
-      return;
-    } */
-  })
-}
-
 //deepCopy requires the keys items, name, traits
 function calcStats(deepCopy, syn, allItems) {
   //let deepCopy = JSON.parse(JSON.stringify(champ));
@@ -251,7 +179,7 @@ function calcStats(deepCopy, syn, allItems) {
     damageHealthScale: [1, 1.8, 3.6],
     hp: { add: 0, mult: 100 },
     mana: { add: 0, mult: 100 },
-    initalMana: { add: 0, mult: 100 },
+    initialMana: { add: 0, mult: 100 },
     damage: { add: 0, mult: 100 },
     attackSpeed: { add: 0, mult: 100 },
     armor: { add: 0, mult: 100 },
@@ -264,12 +192,9 @@ function calcStats(deepCopy, syn, allItems) {
     ultDescAffectedByAp: [],
   }
   
-  if (deepCopy.traits.includes("Imperial")) {
-    statsToWatch.imperial = 1;
-  }
   handleItems(statsToWatch, deepCopy.items, allItems)
   handleSyn(statsToWatch, deepCopy, syn);
-  handleUlt(statsToWatch, deepCopy);
+  /* handleUlt(statsToWatch, deepCopy); */
   //final scaling some stat values
   statsToWatch.ap.mult=100+(statsToWatch.ap.mult-100)*(statsToWatch.ap.multmult/100)
   statsToWatch.critMultiplier.add /= 100;

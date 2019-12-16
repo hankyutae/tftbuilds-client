@@ -39,8 +39,8 @@ class CompleteItemInfoBox extends React.Component {
   }
   parseDesc=(itemInfo,item)=>{
     let namesToVal={};
-    itemInfo.effects.forEach(effect=>{
-      namesToVal[effect.name.toLowerCase()]=effect.value
+    Object.keys(itemInfo.effects).forEach(effect=>{
+      namesToVal[effect.toLowerCase()]=itemInfo.effects[effect];
     })
     let desc=this.stringFixer(itemInfo.desc);
     const problemItemDescs=[18,28,38,48,58,68,78];

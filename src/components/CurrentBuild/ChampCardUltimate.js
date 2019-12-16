@@ -30,23 +30,43 @@ class ChampCardUltimate extends React.Component {
     }
     return arr.join('');
   }
-  parseDesc = (stars = 1, apmult, statMod) => {
+  parseDesc = (stars = 1, apmult, statMod, modNames = []) => {
     let nameToVal = {};
     this.props.champInfo.ability.variables.forEach(variable => {
-      nameToVal[variable.key.toLowerCase()] = variable.values[stars];
+      nameToVal[variable.name.toLowerCase()] = variable.value[stars];
     })
     let desc = this.stringFixer(this.props.champInfo.ability.desc);
     Object.keys(nameToVal).forEach((name) => {
-      desc = desc.split(`@${name.toLowerCase()}@`).join(nameToVal[name]);
-      desc = desc.split(`@${name.toLowerCase()}percent@`).join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100) + '%');
-      desc = desc.split(`@${name.toLowerCase()}*100@`).join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100));
-      desc = desc.split(`@modified${name.toLowerCase()}@`).join(this.roundToTwoDecimalPlaces(nameToVal[name] * apmult))
+      let temp;
+      temp = desc.split(`@${name.toLowerCase()}@`)
+      if(temp.length>1){
+        desc=temp.join(nameToVal[name]);
+      }
+      temp = desc.split(`@${name.toLowerCase()}percent@`)
+      if(temp.length>1){
+        desc=temp.join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100) + '%');
+      }
+      temp = desc.split(`@${name.toLowerCase()}*100@`)
+      if(temp.length>1){
+        desc=temp.join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100));
+      }
+      temp = desc.split(`@modified${name.toLowerCase()}@`)
+      if(temp.length>1){
+        desc=temp.join(this.roundToTwoDecimalPlaces(nameToVal[name] * apmult))
+        modNames.push(name)
+      }
+      temp = desc.split(`@modified${name.toLowerCase()}*100@`)
+      if(temp.length>1){
+        desc=temp.join(this.roundToTwoDecimalPlaces(nameToVal[name] * 100* apmult))
+        modNames.push(name)
+      }
     })
 
 
     let splitByAt = desc.split('@')
     //specialcases
-    if (splitByAt.length > 1) {
+    //Will be moving this portion to the database
+    if (splitByAt.length > 1 && false) {
       //cases where modifiedDamage/modifiedheal is needed and they have exactly one stat with string Damage/Heal in it
       let oneDamageNameCases = ['twisted fate', 'warwick', 'miss fortune', 'evelyn', 'nidalee', 'poppy', 'shyvana', 'lucian', 'rek\'sai', 'anivia', 'vayne','pantheon','jinx'];
       let oneHealNameCases=['nidalee']
@@ -194,17 +214,17 @@ class ChampCardUltimate extends React.Component {
     return Math.round(num * scale) / scale;
   }
   handleUltStat = (prop, apmult, mod, stars) => {
-    if (mod.includes(prop.key) && apmult !== 1) {
+    if (mod.includes(prop.name.toLowerCase()) && apmult !== 1) {
       return <div className='adding-final'>
-        {`${prop.values[stars]} * ${this.roundToTwoDecimalPlaces(apmult)} = `}
+        {`${prop.value[stars]} * ${this.roundToTwoDecimalPlaces(apmult)} = `}
         <span className='adjusted-final'>
-          {this.roundToTwoDecimalPlaces(prop.values[stars] * apmult)}
+          {this.roundToTwoDecimalPlaces(prop.value[stars] * apmult)}
         </span>
       </div>;
     }
     else {
       return <div className='adding-final'>
-        {prop.values[stars]}
+        {prop.value[stars]}
       </div>;
     }
   }
@@ -225,16 +245,17 @@ class ChampCardUltimate extends React.Component {
   render() {
     const stars = this.props.champ.stars;
     const apmult = this.props.statMod.ap.mult;
-    const mod = this.props.statMod.ultDescAffectedByAp;
+    //const mod = this.props.statMod.ultDescAffectedByAp;
+    const modifiedStats =[];
     return (
       <div className="build-stats-ultimate">
         <div className='build-ult-desc'>
-          {this.parseDesc(stars, apmult, this.props.statMod)}
+          {this.parseDesc(stars, apmult, this.props.statMod, modifiedStats)}
         </div>
         <div className='ult-prop-list'>
           {this.props.champInfo.ability.variables.map(prop => {
             return (
-              <div className='ult-prop' key={prop.key}> {this.handleDumbCaseToSentenceCase(prop.key) + ': '} {this.handleUltStat(prop, apmult, mod, stars)} </div>
+              <div className='ult-prop' key={prop.name}> {this.handleDumbCaseToSentenceCase(prop.name) + ': '} {this.handleUltStat(prop, apmult, modifiedStats, stars)} </div>
             )
           })}
         </div>

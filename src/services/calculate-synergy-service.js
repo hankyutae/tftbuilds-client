@@ -42,22 +42,22 @@ function countSynergyFromAnItem(accTraitsFromItems, itemNum) {
       trait = 'Blademaster';
     }
     else if (num === 3) {
-      trait = 'Sorcerer';
+      trait = 'Inferno';
     }
     else if (num === 4) {
-      trait = 'Demon';
+      trait = 'Mage';
     }
     else if (num === 5) {
-      trait = 'Knight';
+      trait = 'Warden';
     }
     else if (num === 6) {
-      return;
+      trait = 'Light';
     }
     else if (num === 7) {
       trait = 'Glacial';
     }
     else if (num === 9) {
-      trait= 'Yordle';
+      trait= 'Berserker';
     }
     else {
 
