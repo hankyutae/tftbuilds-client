@@ -83,7 +83,6 @@ const CalcService = {
       champInfo.items.forEach(item => {
         countSynergyFromAnItem(accTraits, item);
       })
-      console.log(champInfo);
 
       let champ=allChamps[champInfo.id];
       //Multiple of same champ doesn't count towards synergy

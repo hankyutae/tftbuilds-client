@@ -35,7 +35,7 @@ export default TftContext;
 
 export class TftProvider extends React.Component {
   state = {
-    arrayOfPrices:[1,2,3,4,5],
+    arrayOfPrices:[1,2,3,4,5,7],
     arrayOfStars:['bronze','silver','gold'],
     numOfBasicItems:9,
     champions: this.props.champions||{},

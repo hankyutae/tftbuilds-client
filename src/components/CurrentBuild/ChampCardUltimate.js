@@ -216,7 +216,7 @@ class ChampCardUltimate extends React.Component {
   handleUltStat = (prop, apmult, mod, stars) => {
     if (mod.includes(prop.name.toLowerCase()) && apmult !== 1) {
       return <div className='adding-final'>
-        {`${prop.value[stars]} * ${this.roundToTwoDecimalPlaces(apmult)} = `}
+        {`${this.roundToTwoDecimalPlaces(prop.value[stars])} * ${this.roundToTwoDecimalPlaces(apmult)} = `}
         <span className='adjusted-final'>
           {this.roundToTwoDecimalPlaces(prop.value[stars] * apmult)}
         </span>
@@ -224,7 +224,7 @@ class ChampCardUltimate extends React.Component {
     }
     else {
       return <div className='adding-final'>
-        {prop.value[stars]}
+        {this.roundToTwoDecimalPlaces(prop.value[stars])}
       </div>;
     }
   }
@@ -235,7 +235,11 @@ class ChampCardUltimate extends React.Component {
         arr.push(str[i]);
       }
       else if (str[i] <= 'Z' && str[i] >= 'A') {
-        if(str[i-1] <= 'Z' && str[i-1] >= 'A'){
+        let allowedDouble=['AD','MS', 'HP', 'CC']
+        if (i>=2 && allowedDouble.includes(str.substring(i-2,i))){
+          arr.push(' ');
+        }
+        else if(str[i-1] <= 'Z' && str[i-1] >= 'A'){
         }
         else{
           arr.push(' ');

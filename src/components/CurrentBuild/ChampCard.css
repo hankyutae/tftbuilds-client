@@ -65,12 +65,14 @@
   position:relative;
   display:inline-block;
 }
+
 .build-champ-icon{
   border-radius:50%;
   width:35px;
+  z-index:3;
 }
 .build-champ-icon-box-price1{
-  z-index:2;
+  z-index:4;
   position:absolute;
   bottom:2px;
   left:0px;
@@ -82,7 +84,7 @@
   background-color:rgb(128,128,128);
 }
 .build-champ-icon-box-price2{
-  z-index:2;
+  z-index:4;
   position:absolute;
   bottom:2px;
   left:0px;
@@ -94,7 +96,7 @@
   background-color:rgb(17,178,136);
 }
 .build-champ-icon-box-price3{
-  z-index:2;
+  z-index:4;
   position:absolute;
   bottom:2px;
   left:0px;
@@ -106,7 +108,7 @@
   background-color:rgb(32,122,199);
 }
 .build-champ-icon-box-price4{
-  z-index:2;
+  z-index:4;
   position:absolute;
   bottom:2px;
   left:0px;
@@ -118,7 +120,7 @@
   background-color:rgb(196,64,218);
 }
 .build-champ-icon-box-price5{
-  z-index:2;
+  z-index:4;
   position:absolute;
   bottom:2px;
   left:0px;
@@ -128,6 +130,22 @@
   font-size:11px;
   width:12px;
   background-color:rgb(255,185,59);
+}
+.build-champ-icon-box-price7{
+  z-index:4;
+  position:absolute;
+  bottom:2px;
+  left:0px;
+  border-radius:50%;
+  color:white;
+  padding:0px 1px;
+  font-size:11px;
+  width:12px;
+  background: red; 
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); 
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); 
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); 
+  background: linear-gradient(45deg, orange , yellow, green, cyan, blue, violet);
 }
 
 
@@ -146,6 +164,24 @@
 .cost5{
   border: 1.5px solid rgb(255,185,59);
 }
+
+@keyframes rainbow {
+  0% {border-color: red;}
+  15% {border-color: orange;}
+  30% {border-color: yellow;}
+  45% {border-color: green;}
+  60% {border-color: cyan;}
+  75% {border-color: blue;}
+  90% {border-color: violet;}
+  100% {border-color: white;}
+
+}
+
+.cost7{
+  border: 1.5px solid red;
+  animation: rainbow 6s infinite alternate;
+}
+
 
 .build-display-champion-card p{
   margin:0;
@@ -339,6 +375,10 @@
   .cost5{
     border: 3px solid rgb(255,185,59);
   }
+  .cost7{
+    border: 3px solid red;
+    animation: rainbow 6s infinite alternate;
+  }
 
 
   .build-champ-icon-box-price1{
@@ -366,6 +406,12 @@
     width:16px;
   }
   .build-champ-icon-box-price5{
+    bottom:3px;
+    left:0px;
+    font-size:14px;
+    width:16px;
+  }
+  .build-champ-icon-box-price7{
     bottom:3px;
     left:0px;
     font-size:14px;

@@ -191,7 +191,6 @@ function handleItems(stats, citems, allItems) {
 function calcStats(deepCopy, syn, allItems) {
   //let deepCopy = JSON.parse(JSON.stringify(champ));
   //hp,mana,initialmana,damage,as,range,critchance,critdamage,armor,mr
-  console.log(deepCopy);
   let statsToWatch = {
     damageHealthScale: [1, 1.8, 3.6],
     hp: { add: 0, mult: 100 },
