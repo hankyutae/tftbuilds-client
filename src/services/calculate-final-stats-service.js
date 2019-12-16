@@ -45,12 +45,7 @@ function handleSyn(stats, deepCopy, syn) {
 
   //Local Syns that change passive stats
   //Assassin,Imperial(?),Brawler, Ninja
-  if (syn["Assassin"] !== undefined && syn["Assassin"].effectNum >= 0) {
-    if (deepCopy.traits.includes("Assassin") || checkIfItemsGiveSynergy(deepCopy.items,"Assassin")) {
-      stats.critMultiplier.add += syn["Assassin"].effects[syn["Assassin"].effectNum]["vars"][0]["value"];
-      stats.critChance.add+= syn["Assassin"].effects[syn["Assassin"].effectNum]["vars"][1]["value"];
-    }
-  }
+  
 
   if (syn["Yordle"] !== undefined && syn["Yordle"].effectNum >= 0) {
     if (deepCopy.traits.includes("Yordle") || checkIfItemsGiveSynergy(deepCopy.items,"Yordle")) {
@@ -80,10 +75,32 @@ function handleSyn(stats, deepCopy, syn) {
 
 
 
-  //Syns to keep a lookout for:
-  //Robot - once initial mana is fixed
-  //Wild - To add potential
-  //
+  //Set2
+  if (syn["Assassin"] !== undefined && syn["Assassin"].effectNum >= 0) {
+    if (deepCopy.traits.includes("Assassin") || checkIfItemsGiveSynergy(deepCopy.items,"Assassin")) {
+      stats.critMultiplier.add += syn["Assassin"].effects[syn["Assassin"].effectNum]["variables"]['CritAmpPercent'];
+      stats.critChance.add+= syn["Assassin"].effects[syn["Assassin"].effectNum]["variables"]['CritChanceAmpPercent'];
+    }
+  }
+  if (syn["Warden"] !== undefined && syn["Warden"].effectNum >= 0) {
+    if (deepCopy.traits.includes("Warden") || checkIfItemsGiveSynergy(deepCopy.items,"Warden")) {
+      let armorMult=syn["Warden"].effects[syn["Warden"].effectNum]["variables"]['ArmorPercentIncrease']
+      stats.armor.add += Number(armorMult)*(stats.armor.add + deepCopy.stats.armor)/100;
+    }
+  }
+  if (syn["Mystic"] !== undefined && syn["Mystic"].effectNum >= 0) {
+    stats.magicResist.add += syn["Mystic"].effects[syn["Mystic"].effectNum]["variables"]['MagicResist'];
+  }
+  if (syn["Cloud"] !== undefined && syn["Cloud"].effectNum >= 0) {
+    stats.dodgeChance.add += syn["Cloud"].effects[syn["Cloud"].effectNum]["variables"]['ProcPercent'];
+  }
+  if (syn["Berserker"] !== undefined && syn["Berserker"].effectNum === 1) {
+    if (deepCopy.traits.includes("Berserker") || checkIfItemsGiveSynergy(deepCopy.items,"Berserker")) {
+      stats.damage.add += syn["Berserker"].effects[syn["Berserker"].effectNum]["variables"]['ADBonus'];
+    }
+  }
+
+  
 }
 
 
@@ -174,7 +191,7 @@ function handleItems(stats, citems, allItems) {
 function calcStats(deepCopy, syn, allItems) {
   //let deepCopy = JSON.parse(JSON.stringify(champ));
   //hp,mana,initialmana,damage,as,range,critchance,critdamage,armor,mr
-
+  console.log(deepCopy);
   let statsToWatch = {
     damageHealthScale: [1, 1.8, 3.6],
     hp: { add: 0, mult: 100 },

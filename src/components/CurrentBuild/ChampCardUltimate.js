@@ -229,13 +229,17 @@ class ChampCardUltimate extends React.Component {
     }
   }
   handleDumbCaseToSentenceCase = (str) => {
-    const arr = [];
-    for (let i = 0; i < str.length; i++) {
+    const arr = [ str[0] ];
+    for (let i = 1; i < str.length; i++) {
       if (str[i] <= 'z' && str[i] >= 'a') {
         arr.push(str[i]);
       }
       else if (str[i] <= 'Z' && str[i] >= 'A') {
-        arr.push(' ');
+        if(str[i-1] <= 'Z' && str[i-1] >= 'A'){
+        }
+        else{
+          arr.push(' ');
+        }
         arr.push(str[i]);
       }
     }

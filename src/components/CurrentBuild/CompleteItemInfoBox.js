@@ -43,12 +43,6 @@ class CompleteItemInfoBox extends React.Component {
       namesToVal[effect.toLowerCase()]=itemInfo.effects[effect];
     })
     let desc=this.stringFixer(itemInfo.desc);
-    const problemItemDescs=[18,28,38,48,58,68,78];
-    if(problemItemDescs.includes(item)){
-      desc=desc.split('<br>');
-      desc.shift();
-      desc=desc.join('<br>');
-    }
     desc=desc.split('<tftitemrules>');
     desc=desc.join('');
     desc=desc.split('</tftitemrules>');
@@ -58,14 +52,7 @@ class CompleteItemInfoBox extends React.Component {
     desc=desc.split('<br>').map(str=>str.trim()).join('<br>').split('<br><br>').join('<br>')
 
     Object.keys(namesToVal).forEach((name,index)=>{
-      desc=desc.split(`@${name.toLowerCase()}@`).join(namesToVal[name]);
-      desc=desc.split(`@chanceonhittodisarm@`).join(namesToVal['2426EA7E'.toLowerCase()]);      
-      desc=desc.split(`@chanceonhittosilence@`).join(namesToVal['2275757B'.toLowerCase()]);      
-      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);       
-      desc=desc.split(`@stasisduration@`).join(namesToVal['C425872E'.toLowerCase()]);        
-      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);        
-      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);        
-      desc=desc.split(`@chanceonhittoshrink@`).join(namesToVal['A56E0A21'.toLowerCase()]);                                            
+      desc=desc.split(`@${name.toLowerCase()}@`).join(namesToVal[name]);                                         
     })
 
     return <div>{ReactHtmlParser(desc)}</div>;

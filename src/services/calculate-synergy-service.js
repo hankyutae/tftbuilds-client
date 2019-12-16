@@ -75,6 +75,7 @@ const CalcService = {
   calcSyn: (allTraits, allChamps, currentBuild) => {
     const checkedChamps = [];
     const countTraits = {};
+    let hasBeenLux = false;
     currentBuild.forEach(champInfo => {
       //What I've seen from various bugs is that a single chess 
       //piece can only give at most one of every trait.
@@ -82,7 +83,7 @@ const CalcService = {
       champInfo.items.forEach(item => {
         countSynergyFromAnItem(accTraits, item);
       })
-
+      console.log(champInfo);
 
       let champ=allChamps[champInfo.id];
       //Multiple of same champ doesn't count towards synergy
@@ -94,11 +95,19 @@ const CalcService = {
         });
         checkedChamps.push(champ.name)
       }
+
       accTraits.forEach(trait => {
+
+        //Deal with multiple luxes I know not possible in game, but don't want to implement a restricting system yet.
+        let inc=1;
+        if(trait!='Avatar' && champ.name==='Lux' && allChamps[champInfo.id].traits.includes(trait) && !hasBeenLux){
+          inc=2;
+          hasBeenLux=true;
+        }
         if (!countTraits[trait])
-          countTraits[trait] = 1;
+          countTraits[trait] = inc;
         else
-          countTraits[trait]++;
+          countTraits[trait]+=inc;
       })
     });
 
