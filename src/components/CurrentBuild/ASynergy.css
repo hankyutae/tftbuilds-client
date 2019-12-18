@@ -3,6 +3,10 @@
   font-size:70%;
 }
 
+.colors{
+  border:2px solid rgb(124, 150, 158);
+}
+
 .build-display-synergy{
   display:inline-flex;
   align-items:center;

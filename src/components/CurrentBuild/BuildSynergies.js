@@ -17,6 +17,9 @@ class BuildSynergies extends React.Component {
         <div className="synergies-expand-collapse button-cursor" onClick={()=>this.handleClick()}>
           {this.state.isExpanded? 'Collapse' : 'Expand'}
         </div>
+        <div className="patch-version">
+          Patch 9.24b
+        </div>
         <h3 className="synergy-header">
           Synergies
         </h3>

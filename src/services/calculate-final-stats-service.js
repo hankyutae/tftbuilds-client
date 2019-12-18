@@ -189,10 +189,9 @@ function handleItems(stats, citems, allItems) {
 
 //deepCopy requires the keys items, name, traits
 function calcStats(deepCopy, syn, allItems) {
-  //let deepCopy = JSON.parse(JSON.stringify(champ));
   //hp,mana,initialmana,damage,as,range,critchance,critdamage,armor,mr
   let statsToWatch = {
-    damageHealthScale: [1, 1.8, 3.6],
+    damageHealthScale: [1, 1.8, 1.8*1.8],
     hp: { add: 0, mult: 100 },
     mana: { add: 0, mult: 100 },
     initialMana: { add: 0, mult: 100 },

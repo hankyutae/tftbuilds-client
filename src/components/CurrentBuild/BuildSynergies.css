@@ -18,6 +18,14 @@
 
 }
 
+.patch-version{
+  position:absolute;
+  font-size:90%;
+  left:5px;
+  top:5px;
+
+}
+
 
 /* .build-display-synergies .expand-collapse{
   font-size:90%;
