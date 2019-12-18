@@ -1,5 +1,6 @@
 /* eslint-disable no-loop-func */
 import React from 'react';
+import TftContext from '../../contexts/TftContext';
 import ImgLink from '../../services/create-img-link-service';
 import './ASynergy.css';
 
@@ -7,10 +8,9 @@ class ASynergy extends React.Component {
   state = {
     isExpanded: false
   }
+  static contextType = TftContext
   handleExpand = () => {
-    this.setState({
-      isExpanded: !this.state.isExpanded
-    })
+    this.context.toggleTraitDesc(this.props.trait.name)
   };
   stringFixer = (string) => {
     const arr = [];
@@ -246,7 +246,7 @@ class ASynergy extends React.Component {
               <span className='opaque'>{last}</span>
             </div>
           </div>
-          {this.state.isExpanded && expandPortion}
+          {this.context.expandedTraits[this.props.trait.name] && expandPortion}
         </div>
       );
 
@@ -268,7 +268,7 @@ class ASynergy extends React.Component {
               <span className=''> {this.props.trait.count + ' / ' + this.props.trait.effects[0].minUnits} </span>
             </div>
           </div>
-          {this.state.isExpanded && expandPortion}
+          {this.context.expandedTraits[this.props.trait.name] && expandPortion}
         </div>
       );
     }

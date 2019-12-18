@@ -4,6 +4,7 @@ export const TftContext = React.createContext({
   error: null,
   arrayOfPrices:[1,2,3,4,5],
   arrayOfStars:['bronze','silver','gold'],
+  expandedTraits:{},
   numOfBasicItems:9,
   loginState:0,
   toggleLoginState :  ()=>{ },
@@ -25,6 +26,7 @@ export const TftContext = React.createContext({
   toggleStatsOnCurrentBuild:()=>{},
   toggleAddItemOnCurrentBuild:()=>{},
   toggleUltOnCurrentBuild:()=>{},
+  toggleTraitDesc:()=>{},
   champions: {},
   items: {},
   traits: {},
@@ -42,11 +44,19 @@ export class TftProvider extends React.Component {
     items: this.props.items||{},
     traits: this.props.traits||{},
     currentBuild:this.props.currentBuild||[],
+    expandedTraits:this.props.expandedTraits ||{},
     loginState:0,
     toggleLoginState:()=>{
       console.log('even made it here');
       this.setstate({
         loginState:(this.state.loginState+1)
+      })
+    },
+    toggleTraitDesc:(trait)=>{
+      let newTraitList={...this.state.expandedTraits};
+      newTraitList[trait]=!newTraitList[trait];
+      this.setState({
+        expandedTraits:newTraitList
       })
     },
     toggleExpandedOnCurrentBuild:(index)=>{

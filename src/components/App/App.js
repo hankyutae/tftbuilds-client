@@ -25,12 +25,12 @@ class App extends React.Component {
     this.context.clearError();
     TftBuildsApiService.getChampions()
       .then(this.context.setChampions)
-      .then(()=>{
+      /* .then(()=>{
         Object.keys(this.context.champions).forEach(key=>{
           this.context.addChampToCurrentBuild({...this.context.champions[key],stars:Math.ceil(Math.random()*3),items:[1,2,3]});
         })
         
-      })
+      }) */
       .catch(this.context.setError)
     TftBuildsApiService.getItems()
       .then(this.context.setItems)
