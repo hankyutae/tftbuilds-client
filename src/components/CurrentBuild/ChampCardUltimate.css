@@ -1,8 +1,6 @@
 
 .build-stats-ultimate{
-  padding:10px;/* 
-  flex-basis:50%; *//* 
-  flex-grow:1; */
+  padding:10px;
   font-size:70%;
   display:flex;
   flex-wrap:wrap;
@@ -21,9 +19,7 @@
   justify-content:flex-start;
   padding:5px;
 }
-/* .ult-prop{
-  margin-right:15px;
-} */
+
 .adding-final{
   display:inline;
   color:magenta;

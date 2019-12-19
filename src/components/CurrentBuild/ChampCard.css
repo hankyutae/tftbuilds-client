@@ -11,10 +11,8 @@
 
 .build-display-champion-card{
   position:relative;
-  background-color: azure;/* 
-  padding:4px 2px; */
-  width:100%;/* 
-  max-width:550px; */
+  background-color: azure;
+  width:100%;
   margin:10px auto;
   overflow-x:auto;
   overflow-y:hidden;
@@ -31,27 +29,17 @@
 
 }
 
-.build-buttons{/* 
-  display:inline-block; */
+.build-buttons{
   padding:2px;
   font-weight:bolder;
-  color:darkblue;/* 
-  background-color: rgb(221,221,221);
-  backdrop-filter: blur(3px); */
+  color:darkblue;
 }
 
-/* .add-items-button{
-  justify-self:flex-start;
-} */
 
 .champion-simple-flex{
   position:relative;
-  display:flex;/* 
-  align-items:center;
-  justify-content:space-around; */
-  height: 68px;/* 
-  overflow-x:auto;
-  overflow-y:auto; */
+  display:flex;
+  height: 68px;
 
 }
 
@@ -262,11 +250,6 @@
   font-weight:900;
 }
 
-/* .remove-champ-button{
-  color:red;
-  transform:rotate(90deg);
-  -webkit-transform:rotate(90deg);
-} */
 
 .top-right{
   position:absolute;
@@ -289,16 +272,6 @@
 
 
 
-
-/* .build-display-card-expansion{
-  position:relative;
-  margin:5px;
-  padding:5px;
-  padding-top:17px;
-  background-color:rgb(225, 243, 202);
-  color:black;
-  text-align:left;
-} */
 .build-display-card-expansion>section{
   
   margin:5px;

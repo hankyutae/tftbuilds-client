@@ -1,9 +1,5 @@
-.build-display-synergies{/* 
-  background-color:rgba(66, 67, 78,.6); */
-  color:gold;/* 
-  padding-top:calc(30px + 1em); *//* 
-  padding-top:1em;
-  padding-bottom:1em; */
+.build-display-synergies{
+  color:gold;
   padding-bottom:1em;
   position:relative;
 }
@@ -25,9 +21,3 @@
   top:5px;
 
 }
-
-
-/* .build-display-synergies .expand-collapse{
-  font-size:90%;
-}
- */
